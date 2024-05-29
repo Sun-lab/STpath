@@ -1,7 +1,7 @@
 # STpath
 
 ## Step-by-Step Guide
-1. Setup Environment
+### Setup Environment
    - Load Required Modules: Ensure that the necessary modules are loaded. This can be done via the shell script.
    - Activate Conda Environment: Activate the conda environment where TensorFlow is installed.
 2. Prepare Data
