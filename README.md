@@ -69,9 +69,13 @@ sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${
 1. Load Required Modules: Ensure that the necessary modules are loaded. This can be done via the shell script.
 2. Activate Conda Environment: Activate the conda environment where TensorFlow is installed.
 ### Prepare Data
-1. Generate response variables.
-2. Create image patches.
-3. Ensure the data is in CSV format and located in the appropriate directory. The CSV file should contain image filenames or image IDs and corresponding response variables. For classification tasks, save all labels in one column; for regression tasks, save each response variable in a separate column.
+1. Generate response variables. Save the response variable to the `data_file` CSV file. 
+  - Run CARD (`.R`) to obtain the cell type proportions for regression tasks.
+  - Run Seurat (`clustering.R`) to obtain the clusters for classification tasks.
+  - Use other types of response variables of interest.
+2. Create image patches. Save the filename of each patch in the `data_file` CSV file if the filenames are not the same as the patch IDs. 
+  - Run `.py` to generate image patches. 
+4. Ensure the data is in CSV format and located in the appropriate directory. The CSV file should contain patch IDs or image patch filenames (if not the same as patch ID) and corresponding response variables. For classification tasks, save all labels in one column; for regression tasks, save each response variable in a separate column.
 ### Edit Configuration and Run the Shell Script
 1. Update the parameters in the shell script `submit_run_STpath.sh` according to your project.
 2. Run the Shell Script. Logs will be created and saved in the submit_run_STpath_log directory.
