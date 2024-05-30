@@ -15,7 +15,7 @@ This script handles the main logic for the pipeline:
 4. Create Data Generators: Generates batches of tensor image data
 5. Create Model: Creates and compiles a transfer learning model.
 6. Train Model: Trains the model with optional fine-tuning.
-7. Evaluate Model: Evaluates the model on validation/testing datasets.
+7. Predict New Data: Makes predictions on the test dataset and saves results.
 8. Plot Results: Plots learning curves and ROC curves.
 9. Run Hyperparameters Tuning: Runs hyperparameter tuning and model training.
 10. Main Function: Runs the training process with specified parameters.
@@ -88,11 +88,11 @@ result_path/
 │   └── ...
 ├── eval_{project}_{outcome_list}/
 │   ├── test_pred_{model_name}.csv
-│   ├── test_metrics_{model_name}.txt
+│   ├── test_metrics_{model_name}.csv
 |   ├── metrics_history_{model_name}.csv
-|   ├── report_{model_name}.txt (if the task is classification)
+|   ├── report_{model_name}.txt (if classification)
 │   └── ...
-└── roc_{project}_{outcome_list}/ (if the task is classification)
+└── roc_{project}_{outcome_list}/ (if classification)
     ├── ROC_curve_test_{model_name}.png
     └── ...
 ```
@@ -106,7 +106,7 @@ Description of Files
    - `metrics_history_{model_name}.csv`: History of model metrics and model loss during training.
    - `test_pred_{model_name}.csv`: Predictions made by the model on the testing dataset.
    - `test_metrics_{model_name}.txt`: Evaluation metrics (model metrics and model loss) for the testing dataset
-   - `report_{model_name}.txt`: Classification report and confusion matrix of testing dataset. 
+   - `report_{model_name}.txt`: Classification report and confusion matrix of the testing dataset. 
 4. roc_{project}_{outcome_list}/: This directory contains the ROC curve plots for the test datasets.
    - `ROC_curve_test_{model_name}.png`: ROC curve for the test dataset.
 
