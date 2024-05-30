@@ -63,6 +63,14 @@ sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${
                --dropout_rate 0 \
                --dense_layer_size 0"
 ```
+### `clustering_preprocess.R`
+This script handles the preprocessing and filtering of the ST data to prepare for clustering:
+1. Create Seurat objects from the count matrices of all samples to be clustered. 
+2. Perform spot filtering to remove spots with abnormal gene detection
+3. Perform gene filtering to remove genes that are rarely expressed.
+The output is a Seurat object ready for clustering (`clustering.R`)
+### `clustering.R`
+This script handles the normalization, integration, clustering, and identifying markers for a pre-processed Seurat object obtained by `clustering_preprocess.R`.
 
 ## Step-by-Step Guide
 ### Setup Environment
