@@ -76,42 +76,40 @@ sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${
 After running the pipeline, you will find the following files and folders in the result path specified:
 ```
 result_path/
-├── model_project_outcome/
-│   ├── model.hdf5
-│   ├── fine_tuned_model.hdf5 (if fine-tuning is enabled)
+├── training_{project}_{outcome_list}.csv
+├── testing_{project}_{outcome_list}.csv
+├── validation_{project}_{outcome_list}.csv
+├── model_{project}_{outcome_list}/
+│   ├── {model_name}.hdf5
+│   ├── fine_tuned_{model_name}.hdf5 (if fine-tuning is enabled)
 │   └── ...
-├── test_project_outcome/
-│   ├── pred_model.csv
-│   ├── eval_model.txt
+├── curve_{project}_{outcome_list}/
+│   ├── 
 │   └── ...
-├── val_project_outcome/
-│   ├── pred_model.csv
-│   ├── eval_model.txt
+├── eval_{project}_{outcome_list}/
+│   ├── test_pred_{model_name}.csv
+│   ├── test_metrics_{model_name}.txt
+|   ├── metrics_history_{model_name}.csv
+|   ├── report_{model_name}.txt (if the task is classification)
 │   └── ...
-├── metrics_project_outcome/
-│   ├── Model_Accuracy.png
-│   ├── Model_Loss.png
-│   └── ...
-└── roc_project_outcome/
-    ├── ROC_curve_val_model.png
-    └── ROC_curve_test_model.png
+└── roc_{project}_{outcome_list}/ (if the task is classification)
+    ├── ROC_curve_test_{model_name}.png
+    └── ...
 ```
 Description of Files
-1. model_project_outcome/: This directory contains the saved models.
-   - `model.hdf5`: The primary trained model.
-   - `fine_tuned_model.hdf5`: The fine-tuned model (if fine-tuning is enabled).
-2. test_project_outcome/: This directory contains the results and evaluations for the test dataset.
-   - `pred_model.csv`: Predictions made by the model on the test dataset.
-   - `eval_model.txt`: Evaluation metrics such as classification report and confusion matrix for the test dataset.
-3. val_project_outcome/: This directory contains the results and evaluations for the validation dataset.
-   - `pred_model.csv`: Predictions made by the model on the validation dataset.
-   - `eval_model.txt`: Evaluation metrics such as classification report and confusion matrix for the validation dataset.
-4. metrics_project_outcome/: This directory contains the plots for training and validation metrics.
-   - `Model_Accuracy.png`: Plot of the model accuracy over epochs.
-   - `Model_Loss.png`: Plot of the model loss over epochs.
-5. roc_project_outcome/: This directory contains the ROC curve plots for the validation and test datasets.
-   - `ROC_curve_val_model.png`: ROC curve for the validation dataset.
-   - `ROC_curve_test_model.png`: ROC curve for the test dataset.
+1. model_{project}_{outcome_list}/: This directory contains the saved models.
+   - `{model_name}.hdf5`: The trained model.
+   - `fine_tuned_{model_name}.hdf5`: The fine-tuned model (if fine-tuning is enabled).
+2. curve_{project}_{outcome_list}/: This directory contains the plots for the learning curve for training and validation.
+   - : Plots of the learning curve.
+3. eval_{project}_{outcome_list}/: This directory contains the results and evaluations for the testing dataset.
+   - `metrics_history_{model_name}.csv`: History of model metrics and model loss during training.
+   - `test_pred_{model_name}.csv`: Predictions made by the model on the testing dataset.
+   - `test_metrics_{model_name}.txt`: Evaluation metrics (model metrics and model loss) for the testing dataset
+   - `report_{model_name}.txt`: Classification report and confusion matrix of testing dataset. 
+4. roc_{project}_{outcome_list}/: This directory contains the ROC curve plots for the test datasets.
+   - `ROC_curve_test_{model_name}.png`: ROC curve for the test dataset.
+
 
 
 
