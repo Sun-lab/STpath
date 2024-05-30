@@ -1,1 +1,1 @@
-# STpath
+# STpath## data folder### He_2020- `id_symbol_mapping.RData`:- `integrated_st_obj_clusters_filt_zeros_all_90.RData`- `prop_ann_meta.RData`:
