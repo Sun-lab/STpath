@@ -1,3 +1,40 @@
+# Date last modified: May 31, 2024 by Zhining Sui
+# Program: clustering_preprocess.R
+# Purpose: Preprocess and filter spatial transcriptomics (ST) expression data to prepare for clustering.
+#-------------------------------------------------------------------------------
+# Data Inputs:
+# - `raw_data_dir`: Path to the raw ST data directory (where the count matrices locate).
+# - `processed_data_dir`: Path to the processed data directory (where the Seurat objects will be saved).
+# - `figure_dir`: Path to the directory where figures will be saved.
+# - metadata file for the sample (includes information for each sample)
+# - metadata file for spatial transcriptomics data (includes the file names of count matrices).
+#
+# Data Outputs:
+# - Processed and filtered Seurat objects saved in `processed_data_dir`.
+# - Quality control (QC) plots saved in `figure_dir`.
+#-------------------------------------------------------------------------------
+# Notes:
+# 1. This script includes spot filtering to remove spots with abnormal gene detection. (Section `Filter spots`)
+#   - Filter out spots that have very few or a lot features detected, < 500 or > 4000.
+#   - Only filter out genes that are not expressed in all the spots. 
+#   - Output Seurat object: `merged_st_obj_filt_spots.rds`
+# 2. After spot filtering, three ways of gene filtering is performed to remove genes that are rarely expressed:
+#   - Section `Filter genes 1`: 
+#     - For each sample, after filtering out poor spots, filter out genes that are not expressed in more than 90% of spots. 
+#     - Output Seurat object: `merged_st_obj_filt_zeros_per_sample.rds`
+#   - Section `Filter genes 2`: 
+#     - Filter out any genes that are not expressed in more than 90% of spots in at least one sample.
+#     - Identify common highly expressed genes that are expressed in more than 10% of spots in all samples. Filter out all other genes. 
+#     - Output Seurat object: `merged_st_obj_filt_common_high_expr_genes.rds`
+#   - Section `Filter genes 3`: 
+#     - First merge all the samples to get a pooled expression matrix, and then filter out genes that are not expressed in more than 90% of spots. 
+#     - Output Seurat object: `merged_st_obj_filt_zeros_all.rds`
+#-------------------------------------------------------------------------------
+
+
+
+filtered_zeros_all_90: f
+
 library(Seurat) 
 library(tidyverse)
 library(Matrix) 

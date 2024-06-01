@@ -1,3 +1,37 @@
+# Date last modified: May 31, 2024 by Zhining Sui
+# Program: clustering.R
+# Purpose: Normalize, integrate, and cluster spatial transcriptomics (ST) data and identify differentially expressed (DE) markers.
+#-------------------------------------------------------------------------------
+# Data Inputs:
+# - `processed_data_dir`: Path to the processed data directory (where the Seurat objects to be clustered are saved).
+# - `cluster_rslt_dir`: Path to the directory where clustering results will be saved.
+# - `merged_st_obj`: Seurat object containing filtered ST data (should be in `processed_data_dir`).
+# - `id_symbol_mapping`: Data frame for mapping gene IDs to gene symbols (optional).
+#
+# Data Outputs:
+# - Normalized, integrated, and clustered Seurat objects saved in `processed_data_dir` and `cluster_rslt_dir`.
+# - Identified DE markers and top 10 DE markers for each cluster saved in `cluster_rslt_dir`.
+#-------------------------------------------------------------------------------
+# Notes:
+# 1. **Normalization** (function `normalize_data`):
+#    - SCTransform normalization followed by PCA, neighbor finding, clustering, and UMAP embedding.
+#    - Log-normalization followed by PCA, neighbor finding, clustering, and UMAP embedding.
+#    - Output Seurat object: `merged_st_obj_normalized_<suffix>.rds`
+# 2. **Integration** (function `integrate_data`):
+#    - Integrate data using CCA, RPCA, and Harmony methods with both log-normalized and SCTransform data.
+#    - Output Seurat object: `integrated_st_obj_<suffix>.rds`
+# 3. **Clustering** (function `perform_clustering`):
+#    - Perform clustering using integrated reductions at multiple resolutions.
+#    - Output Seurat object: `clustered_st_obj_<suffix>.rds`
+# 4. **Identification of DE Markers** (function `identify_DE_markers`):
+#    - Identify DE markers for each cluster.
+#    - Output list of DE markers: `DE_markers_identified_<suffix>.rds`
+# 5. **Identification of Top 10 DE Markers** (function `identify_top10_markers`):
+#    - Extract top 10 DE markers for each cluster based on adjusted p-value and log fold change.
+#    - Output list of top 10 DE markers: `top10_DE_markers_identified_<suffix>.rds`
+#-------------------------------------------------------------------------------
+
+
 library(Seurat) 
 library(ggplot2) 
 library(cowplot) 
