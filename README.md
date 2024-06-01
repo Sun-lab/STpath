@@ -6,7 +6,7 @@ Before running the pipeline, ensure that the following software and libraries ar
    - Required Python libraries: numpy, pandas, argparse, ast, matplotlib, cv2, scikit-learn
    - Shell access with Slurm workload manager
 
-## Script Breakdown
+## Scripts
 ### `run_STpath.py`
 This script handles the main logic for the pipeline:
 1. Setup Paths: Creates necessary directories for saving results.
@@ -19,10 +19,9 @@ This script handles the main logic for the pipeline:
 8. Plot Results: Plots learning curves and ROC curves.
 9. Run Hyperparameters Tuning: Runs hyperparameter tuning and model training.
 10. Main Function: Runs the training process with specified parameters.
-
-### `submit_run_STpath.sh`
-This shell script sets up the environment, loads necessary modules, activates the conda environment, and submits the job to the Slurm workload manager with the specified parameters.
-1. Arguments:
+    
+To run the script, use the provided shell script `submit_run_STpath.sh`. This shell script sets up the environment, loads necessary modules, activates the conda environment, and submits the job to the Slurm workload manager with the specified parameters.
+- Arguments:
    - `project`: Name of your project.
    - `task`: Type of task, either "classification" or "regression".
    - `data_file`: Path to the CSV file containing data.
@@ -43,7 +42,7 @@ This shell script sets up the environment, loads necessary modules, activates th
    - `image_resize`: Size of image input to the model (default: 224).
    - `num_epoch`: Maximum number of epochs (default: 500).
    - `patience`: Early stopping patience (default: 20).
-2. Example Command for job submission:
+- Example command for job submission:
 ```
 sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${base_model}_${outcome_list}_${image}_${optimizer}_${batch_size}_${learning_rate}_${dropout_rate}_${dense_layer_size}.log" \
        -p campus-new --job-name=class_try \
@@ -63,12 +62,12 @@ sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${
                --dropout_rate 0 \
                --dense_layer_size 0"
 ```
-### `clustering_preprocess.R`
-This script handles the preprocessing and filtering of the ST data to prepare for clustering. It creates Seurat objects from the count matrices of all samples to be clustered and performs spot filtering to remove spots with abnormal gene detection and gene filtering to remove genes that are rarely expressed. The output is a Seurat object ready for clustering (`clustering.R`)
-### `clustering.R`
-This script handles the normalization, integration, clustering, and identifying markers for a pre-processed Seurat object obtained by `clustering_preprocess.R`.
 ### `create_patches.py`
 This script creates patches from the full-resolution WSIs based on the ST data such that there is one spot in each patch. 
+### `clustering_preprocess.R`
+This script handles the preprocessing of the ST count matrices to prepare for clustering. It performs filtering and creates Seurat objects from the count matrices of all samples, which are ready for clustering (`clustering.R`)
+### `clustering.R`
+This script handles the normalization, integration, clustering, and identifying markers for a pre-processed Seurat object obtained by `clustering_preprocess.R`.
 ## Step-by-Step Guide
 ### Setup Environment
 1. Load Required Modules: Ensure that the necessary modules are loaded. This can be done via the shell script.
@@ -76,10 +75,10 @@ This script creates patches from the full-resolution WSIs based on the ST data s
 ### Prepare Data
 1. Generate response variables. Save the response variable to the `data_file` CSV file. 
   - Run CARD (`.R`) to obtain the cell type proportions for regression tasks.
-  - Run Seurat (`clustering.R`) to obtain the clusters for classification tasks.
+  - Run Seurat (`clustering_preprocess.R` and `clustering.R`) to obtain the clusters for classification tasks.
   - Use other types of response variables of interest.
 2. Create image patches. Save the filename of each patch in the `data_file` CSV file if the filenames are not the same as the patch IDs. 
-  - Run `.py` to generate image patches. 
+  - Run `create_patches.py` to generate image patches. 
 4. Ensure the data is in CSV format and located in the appropriate directory. The CSV file should contain patch IDs or image patch filenames (if not the same as patch ID) and corresponding response variables. For classification tasks, save all labels in one column; for regression tasks, save each response variable in a separate column.
 ### Edit Configuration and Run the Shell Script
 1. Update the parameters in the shell script `submit_run_STpath.sh` according to your project.
