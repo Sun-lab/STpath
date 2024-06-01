@@ -71,7 +71,8 @@ This script handles the preprocessing and filtering of the ST data to prepare fo
 The output is a Seurat object ready for clustering (`clustering.R`)
 ### `clustering.R`
 This script handles the normalization, integration, clustering, and identifying markers for a pre-processed Seurat object obtained by `clustering_preprocess.R`.
-
+### `create_patches.py`
+This script creates patches from the full-resolution WSIs based on the ST data such that there is one spot in each patch. 
 ## Step-by-Step Guide
 ### Setup Environment
 1. Load Required Modules: Ensure that the necessary modules are loaded. This can be done via the shell script.
