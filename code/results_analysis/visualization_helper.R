@@ -8,6 +8,7 @@ library(gtable)
 library(grid)
 library(patchwork)
 library(reshape2)
+library(stringr)
 library(cowplot)
 theme_set(theme_cowplot())
 
@@ -181,11 +182,19 @@ visualize_umap <- function(cluster_methods,
                            tag.size = 13,
                            plot_titles = NULL,
                            includes_number = F,
-                           includes_tag = F){
+                           includes_tag = F,
+                           returns_plot = 1){
+  
+  seurat_obj@meta.data[, split.by.1] <- str_to_title(seurat_obj@meta.data[, split.by.1])
+  seurat_obj@meta.data[, split.by.2] <- str_to_title(seurat_obj@meta.data[, split.by.2])
+  
+  if(is.character(returns_plot)){
+    returns_plot <- which(cluster_methods %in% returns_plot)
+  }
+  return_list <- list()
   
   pdf(file.path(cluster_dir, paste0(fn_prefix, "_", fn_suffix, ".pdf")), 
       width = pdf_width, height = pdf_height, onefile=FALSE)
-  
   num = 1
   for (cm in cluster_methods) {
     m <- strsplit(cm, "_")[[1]][1]
@@ -202,7 +211,7 @@ visualize_umap <- function(cluster_methods,
     Idents(seurat_obj) <- cm
     colors_cluster <- scales::hue_pal()(length(unique(seurat_obj@meta.data[, cm])))
     colors_cluster <- setNames(colors_cluster, levels(seurat_obj@meta.data[,cm]))
-            
+    
     p1 <- DimPlot(seurat_obj,
                   reduction = paste0("umap.", m),
                   label = F,
@@ -228,21 +237,34 @@ visualize_umap <- function(cluster_methods,
     }
     
     if(includes_number){
-      counts_1 <- seurat_obj@meta.data %>% 
-        group_by(get(cm)) %>% 
-        summarise(count = n()) %>%
-        as.data.frame()
-      colnames(counts_1)[1] <- cm
+      if(is.null(split.by.1)){
+        counts_1 <- seurat_obj@meta.data %>% 
+          group_by(get(cm)) %>%
+          summarise(count = n()) %>%
+          as.data.frame()
+        colnames(counts_1)[1] <- cm
+        counts_1$x <- c(-2, 3, 8)
+        counts_1$y <- Inf
+      }else{
+        counts_1 <- seurat_obj@meta.data %>% 
+          group_by(get(cm), get(split.by.1)) %>% 
+          summarise(count = n()) %>%
+          as.data.frame()
+        colnames(counts_1) <- c(cm, split.by.1, "count")
+        counts_1$x <- ifelse(counts_1[, cm] == 0, -2,
+                             ifelse(counts_1[, cm] == 1, 3, 8))
+        counts_1$y <- Inf 
+      }
       
       p1 <- p1 + geom_text(data = counts_1, 
-                           aes(x = c(-2, 3, 8), y = Inf, 
-                               label = paste0("Count: ", count),
-                               color = get(cm)),
-                           vjust = 2,
-                           alpha = 1,
-                           size = 5, 
-                           inherit.aes = FALSE,
-                           show.legend = FALSE)
+                  aes(x = x, y = y, 
+                      label = paste0("Count: ", count),
+                      color = get(cm)),
+                  alpha = 1,
+                  vjust = 2,
+                  size = 4, 
+                  inherit.aes = FALSE,
+                  show.legend = FALSE)
         
     }
     
@@ -267,10 +289,10 @@ visualize_umap <- function(cluster_methods,
  
       if(includes_number){
         counts_2 <- seurat_obj@meta.data %>% 
-          group_by(get(cm), label) %>% 
+          group_by(get(cm), get(split.by.2)) %>% 
           summarise(count = n()) %>%
           as.data.frame()
-        colnames(counts_2)[1] <- cm
+        colnames(counts_2) <- c(cm, split.by.2, "count")
         counts_2$x <- ifelse(counts_2[, cm] == 0, -2,
                              ifelse(counts_2[, cm] == 1, 3, 8))
         counts_2$y <- Inf 
@@ -298,13 +320,21 @@ visualize_umap <- function(cluster_methods,
           theme(plot.tag = element_text(size = tag.size))
       }
       print(p)
-    
     }else{
-      print(p1)
+      p = p1 + plot_layout(ncol = 1) & 
+        theme(legend.position = 'bottom',
+              legend.justification = "center")
+      print(p)
     }
+    
+    if(num %in% returns_plot){
+      return_list[[cm]] <- p
+    }
+    
     num = num + 1
   }
   dev.off()
+  return(return_list)
 }
 
 visualize_markers_heatmap <- function(cluster_methods, 

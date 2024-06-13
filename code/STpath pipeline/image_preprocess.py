@@ -96,6 +96,8 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
             if img.endswith(img_format) and not os.path.isfile(output_path + img):
                 to_transform_id = re.sub(img_format, '', img)
                 to_transform = cv2.cvtColor(cv2.imread(os.path.join(dir_to_transform, img)), cv2.COLOR_BGR2RGB)
+                is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold, clean_params = {'min_size': 100})
+                
                 if is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold):
                     t_to_transform = T(to_transform)
                     norm, H, E = normalizer.normalize(I=t_to_transform, stains=True)
@@ -239,11 +241,11 @@ def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', thr
 
 
 # Example usage
-ORIGINAL_IMG_DIR = '../../output/10X/patch/'
-NORMALIZED_IMG_DIR = '../../output/10X/patch_normalized/'
-TISSUE_IMG_DIR = '../../output/10X/patch_tissue_detected/'
+ORIGINAL_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch/'
+NORMALIZED_IMG_DIR = '../../output/He_2020/patch_normalized/'
+TISSUE_IMG_DIR = '../../output/He_2020/patch_tissue_detected/'
 
-stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + '10X_FF_AAACACCAATAACTGC-1.jpg',
+stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + 'CID4535_AAGCTCGTGCCAAGTC-1.jpg',
                 dir_to_transform=ORIGINAL_IMG_DIR,
                 output_format='jpg', output_path=NORMALIZED_IMG_DIR + 'macenko/', 
                 method='macenko', tissue_check_threshold = 0.3, save_tissue_check_dir = TISSUE_IMG_DIR)

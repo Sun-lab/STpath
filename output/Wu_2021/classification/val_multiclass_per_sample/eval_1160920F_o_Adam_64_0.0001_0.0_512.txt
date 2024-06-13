@@ -1,0 +1,16 @@
+The classification report:
+                                        precision    recall  f1-score   support
+
+                        Adipose tissue       0.00      0.00      0.00        15
+Invasive cancer + stroma + lymphocytes       0.78      0.81      0.79       463
+                           Lymphocytes       0.22      0.75      0.35        32
+           Normal glands + lymphocytes       0.35      0.25      0.29        44
+                                Stroma       0.43      0.28      0.34       170
+
+                              accuracy                           0.63       724
+                             macro avg       0.36      0.42      0.35       724
+                          weighted avg       0.63      0.63      0.62       724
+
+The confusion matrix:
+[[  0,   6],
+ [  0, 373]]

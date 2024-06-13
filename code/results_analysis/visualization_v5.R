@@ -21,16 +21,25 @@ source("visualization_helper.R")
 # ========== FILTERED (zeros all samples, 90%) ========== ----------------------
 
 ### directories ----
-# sc_dir = "../../st2image_data/Wu_2021/data/scRNASeq/"
 data_dir = "../../data/He_2020/"
-# st_output_dir = "../../st2image_data/He_2020/output/"
-# dvn_dir = "../output/He_2020/deconvolution/"
 cluster_dir = "../../output/He_2020/clustering/"
 
 annotations <- read.csv(file.path(data_dir, "He_clusters_filt_zeros_all_90.csv")) %>%
   remove_rownames() %>%
   column_to_rownames("X") %>%
   mutate(across(where(is.integer), as.factor))
+
+tab1 <- as.data.frame.matrix(table(annotations$pid, annotations$label))
+tab2 <- as.data.frame.matrix(table(annotations$pid, annotations$integrated.cca.lognorm_clusters_0.1))
+
+tab <- bind_cols(tab1, tab2)
+
+library(kableExtra)
+kbl(tab, col.names = c("Non", "Tumor", "Cluster 0", "Cluster 1", "Cluster 2"),
+    format = "latex") %>%
+  kable_classic() %>%
+  add_header_above(c(" " = 1, "He et al." = 2, "Seurat v5" = 3))
+  
 
 load(file.path(data_dir, "integrated_st_obj_clusters_filt_zeros_all_90.RData"))
 seurat_integrated <- integrated_st_obj_clusters_filt
@@ -99,6 +108,7 @@ visualize_umap(cluster_methods = "integrated.cca.lognorm_clusters_0.1",
                pdf_width = 20, 
                includes_number = T,
                includes_tag = T)
+
 
 visualize_umap(cluster_methods = "integrated.cca.lognorm_clusters_0.1",
                seurat_obj = seurat_integrated,
@@ -244,5 +254,57 @@ visualize_clusters_comparison_spotplot(annotation_df_list = list(annotations_clu
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+p_list <- visualize_umap(cluster_methods = "integrated.cca.lognorm_clusters_0.1",
+                         seurat_obj = seurat_integrated,
+                         fn_suffix = "integrated.cca.lognorm_clusters_0.1",
+                         split.by.1 = "label",
+                         n_col.1 = 1,
+                         strip.text.size = 14,
+                         axis.text.size = 12,
+                         legend.text.size = 12,
+                         axis.title.size = 14,
+                         legend.point.size = 4,
+                         tag.size = 14,
+                         pdf_height = 6,
+                         pdf_width = 7, 
+                         plot_titles = "",
+                         includes_number = T,
+                         returns_plot = 1)
+
+p_umap <- p_list[[1]]
+
+scatterplot_AUC <- scatterplot_AUC + 
+  theme(legend.text = element_text(size = 15),
+        legend.title = element_text(size = 16),
+        axis.text.x = element_text(size = 14),
+        axis.text.y = element_text(size = 16),
+        axis.title = element_text(size = 16)) 
+p_AUC_He
+
+fig6 <- free(scatterplot_AUC) / ((p_umap | free(p_AUC_He)) & 
+                                   theme(axis.text = element_text(size = 14),
+                                         axis.title = element_text(size = 16),
+                                         legend.text = element_text(size = 14),
+                                         legend.title = element_text(size = 16)))+ 
+  plot_annotation(tag_levels = 'A',
+                  tag_prefix = "(",
+                  tag_suffix = ")") & 
+  theme(plot.tag = element_text(size = 16, face = "bold")) 
+
+ggsave(paste0("Fig6.png"), fig6, width = 11.5, height = 10.5)
+
+
+
 
 

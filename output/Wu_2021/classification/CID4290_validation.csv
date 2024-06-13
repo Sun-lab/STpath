@@ -1,0 +1,364 @@
+,Unnamed: 0,nCount_RNA,nFeature_RNA,subtype,patientid,Classification,X,img_path
+2384,GGAAGGACACCGTATA-1,9015,3189,ER,CID4290,Invasive cancer + stroma,CID4290_GGAAGGACACCGTATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGAAGGACACCGTATA-1.jpg
+1401,ACTGAATGGCGAAAGT-1,3588,1879,ER,CID4290,Invasive cancer + stroma,CID4290_ACTGAATGGCGAAAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTGAATGGCGAAAGT-1.jpg
+2161,CCCATATAGGTCGATT-1,8900,3241,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_CCCATATAGGTCGATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCATATAGGTCGATT-1.jpg
+2142,AAACCTAAGCAGCCGG-1,8621,3023,ER,CID4290,Invasive cancer + stroma,CID4290_AAACCTAAGCAGCCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACCTAAGCAGCCGG-1.jpg
+946,TCTGATTGGAAATGGA-1,4653,2068,ER,CID4290,Invasive cancer + stroma,CID4290_TCTGATTGGAAATGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTGATTGGAAATGGA-1.jpg
+663,AGATCTCAGGTGTGAT-1,24771,5252,ER,CID4290,Invasive cancer + stroma,CID4290_AGATCTCAGGTGTGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGATCTCAGGTGTGAT-1.jpg
+1154,GTTTCTGCAGTCTCCC-1,1276,841,ER,CID4290,Invasive cancer + stroma,CID4290_GTTTCTGCAGTCTCCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTTTCTGCAGTCTCCC-1.jpg
+684,GACTCGCGGGAATGAC-1,5028,2035,ER,CID4290,Invasive cancer + stroma,CID4290_GACTCGCGGGAATGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GACTCGCGGGAATGAC-1.jpg
+1100,TAGACTACCTAGCGTT-1,4584,2168,ER,CID4290,Invasive cancer + stroma,CID4290_TAGACTACCTAGCGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGACTACCTAGCGTT-1.jpg
+826,GTTGGATTGAGAACAC-1,13047,3903,ER,CID4290,Invasive cancer + stroma,CID4290_GTTGGATTGAGAACAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTTGGATTGAGAACAC-1.jpg
+196,TCCTGGCGCTGCCTGG-1,14914,4448,ER,CID4290,Invasive cancer + stroma,CID4290_TCCTGGCGCTGCCTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCTGGCGCTGCCTGG-1.jpg
+1513,TCTGTTACCCAGCATA-1,4999,2325,ER,CID4290,Invasive cancer + stroma,CID4290_TCTGTTACCCAGCATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTGTTACCCAGCATA-1.jpg
+1808,AGTACTCTTATGCCCA-1,6828,2626,ER,CID4290,Invasive cancer + stroma,CID4290_AGTACTCTTATGCCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGTACTCTTATGCCCA-1.jpg
+1275,AATCGCGCAGAGGACT-1,5174,2142,ER,CID4290,Invasive cancer + stroma,CID4290_AATCGCGCAGAGGACT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATCGCGCAGAGGACT-1.jpg
+1036,GAGAGGGCGCGAGGTT-1,7438,3105,ER,CID4290,Invasive cancer + stroma,CID4290_GAGAGGGCGCGAGGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGAGGGCGCGAGGTT-1.jpg
+1491,GAGCGCGCACGAGTAG-1,11225,3517,ER,CID4290,Invasive cancer + stroma,CID4290_GAGCGCGCACGAGTAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGCGCGCACGAGTAG-1.jpg
+2430,AATAACGTCGCGCCCA-1,6308,2775,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_AATAACGTCGCGCCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATAACGTCGCGCCCA-1.jpg
+2027,CTCCTCCAGCTCACAC-1,18730,4704,ER,CID4290,Invasive cancer + stroma,CID4290_CTCCTCCAGCTCACAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCCTCCAGCTCACAC-1.jpg
+1437,CGGTGCGCGTTGGTCC-1,16585,4757,ER,CID4290,Invasive cancer + stroma,CID4290_CGGTGCGCGTTGGTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGGTGCGCGTTGGTCC-1.jpg
+1184,TTACATGCCACAACTA-1,5309,2133,ER,CID4290,Invasive cancer + stroma,CID4290_TTACATGCCACAACTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTACATGCCACAACTA-1.jpg
+606,ATAGAGTTATCAACTT-1,2301,1269,ER,CID4290,Invasive cancer + stroma,CID4290_ATAGAGTTATCAACTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATAGAGTTATCAACTT-1.jpg
+194,GGTGCAGAGCCTATCG-1,15603,4355,ER,CID4290,Invasive cancer + stroma,CID4290_GGTGCAGAGCCTATCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTGCAGAGCCTATCG-1.jpg
+1840,TTAGGTCATAACCGAC-1,2054,1272,ER,CID4290,Invasive cancer + stroma,CID4290_TTAGGTCATAACCGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAGGTCATAACCGAC-1.jpg
+2033,GATCTGCTATCTAAGG-1,5291,2438,ER,CID4290,Invasive cancer + stroma,CID4290_GATCTGCTATCTAAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATCTGCTATCTAAGG-1.jpg
+479,ATTACTTACTGGGCAT-1,7553,2842,ER,CID4290,Invasive cancer + stroma,CID4290_ATTACTTACTGGGCAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATTACTTACTGGGCAT-1.jpg
+1847,GGCCGTTTGGGTTTCA-1,13461,3582,ER,CID4290,Invasive cancer + stroma,CID4290_GGCCGTTTGGGTTTCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGCCGTTTGGGTTTCA-1.jpg
+1440,AACGTACTGTGGGTAC-1,14345,4669,ER,CID4290,Invasive cancer + stroma,CID4290_AACGTACTGTGGGTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACGTACTGTGGGTAC-1.jpg
+2273,GGGCAGTCAACGCCAA-1,2227,1287,ER,CID4290,Invasive cancer + stroma,CID4290_GGGCAGTCAACGCCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGCAGTCAACGCCAA-1.jpg
+1553,GCTGCTACTGCGTAGC-1,1965,1187,ER,CID4290,Invasive cancer + stroma,CID4290_GCTGCTACTGCGTAGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTGCTACTGCGTAGC-1.jpg
+468,CGACTCAGGATGTTAT-1,10983,3629,ER,CID4290,Invasive cancer + stroma,CID4290_CGACTCAGGATGTTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGACTCAGGATGTTAT-1.jpg
+2228,TATGAAGAATTAAGGT-1,2891,1555,ER,CID4290,Invasive cancer + stroma,CID4290_TATGAAGAATTAAGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATGAAGAATTAAGGT-1.jpg
+1783,CGATTAAATATCTCCT-1,1962,1259,ER,CID4290,Invasive cancer + stroma,CID4290_CGATTAAATATCTCCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGATTAAATATCTCCT-1.jpg
+2378,CGCTTTCCGCCAAGGT-1,1125,746,ER,CID4290,Invasive cancer + stroma,CID4290_CGCTTTCCGCCAAGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCTTTCCGCCAAGGT-1.jpg
+195,ACTATATGCTGTGTTC-1,14614,4258,ER,CID4290,Invasive cancer + stroma,CID4290_ACTATATGCTGTGTTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTATATGCTGTGTTC-1.jpg
+1952,GGCTTTCAATAAGGGT-1,25788,5980,ER,CID4290,Invasive cancer + stroma,CID4290_GGCTTTCAATAAGGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGCTTTCAATAAGGGT-1.jpg
+597,CTAAATCCTATTCCGG-1,4899,2214,ER,CID4290,Invasive cancer + stroma,CID4290_CTAAATCCTATTCCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTAAATCCTATTCCGG-1.jpg
+1337,TAAGGCTGAATCCCTC-1,37481,6373,ER,CID4290,Invasive cancer + stroma,CID4290_TAAGGCTGAATCCCTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAAGGCTGAATCCCTC-1.jpg
+1662,CGCAGGCGATCCAAAC-1,7943,3110,ER,CID4290,Invasive cancer + stroma,CID4290_CGCAGGCGATCCAAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCAGGCGATCCAAAC-1.jpg
+933,CAAGGTCCTATAGGCT-1,3619,1694,ER,CID4290,Invasive cancer + stroma,CID4290_CAAGGTCCTATAGGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAAGGTCCTATAGGCT-1.jpg
+798,GGGACTGCATAGATAG-1,5185,2422,ER,CID4290,Invasive cancer + stroma,CID4290_GGGACTGCATAGATAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGACTGCATAGATAG-1.jpg
+1987,AAACATTTCCCGGATT-1,9121,3342,ER,CID4290,Invasive cancer + stroma,CID4290_AAACATTTCCCGGATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACATTTCCCGGATT-1.jpg
+247,CATGTAGGAGCGCCAA-1,13454,3549,ER,CID4290,Invasive cancer + stroma,CID4290_CATGTAGGAGCGCCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGTAGGAGCGCCAA-1.jpg
+209,TGGGCACGTTCTATGG-1,7615,3114,ER,CID4290,Invasive cancer + stroma,CID4290_TGGGCACGTTCTATGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGGGCACGTTCTATGG-1.jpg
+777,TGATGGCTGTTTCTGA-1,17228,4229,ER,CID4290,Invasive cancer + stroma,CID4290_TGATGGCTGTTTCTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGATGGCTGTTTCTGA-1.jpg
+1607,GCCATCGAGCTGCGTG-1,13002,3959,ER,CID4290,Invasive cancer + stroma,CID4290_GCCATCGAGCTGCGTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCATCGAGCTGCGTG-1.jpg
+2081,GGGTCTATCGCTTTCC-1,16939,4406,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GGGTCTATCGCTTTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGTCTATCGCTTTCC-1.jpg
+1298,GTGATCATAGATCTGC-1,21150,5558,ER,CID4290,Invasive cancer + stroma,CID4290_GTGATCATAGATCTGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGATCATAGATCTGC-1.jpg
+666,CAGCAGCCCGTTCCTT-1,12562,3799,ER,CID4290,Invasive cancer + stroma,CID4290_CAGCAGCCCGTTCCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAGCAGCCCGTTCCTT-1.jpg
+1810,TTGTGAACCTAATCCG-1,5775,2483,ER,CID4290,Invasive cancer + stroma,CID4290_TTGTGAACCTAATCCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGTGAACCTAATCCG-1.jpg
+1393,CAAGAGGGCGGAGTAC-1,8894,3199,ER,CID4290,Invasive cancer + stroma,CID4290_CAAGAGGGCGGAGTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAAGAGGGCGGAGTAC-1.jpg
+634,GAGATGACAATCCTTA-1,1395,782,ER,CID4290,Stroma,CID4290_GAGATGACAATCCTTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGATGACAATCCTTA-1.jpg
+1370,CGTCACGTCCATTGGT-1,8226,3374,ER,CID4290,Invasive cancer + stroma,CID4290_CGTCACGTCCATTGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGTCACGTCCATTGGT-1.jpg
+1172,TGAGAGATTTACCACG-1,7483,2568,ER,CID4290,Invasive cancer + stroma,CID4290_TGAGAGATTTACCACG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGAGAGATTTACCACG-1.jpg
+749,CGCTTTCTTGCATTCG-1,7711,2790,ER,CID4290,Invasive cancer + stroma,CID4290_CGCTTTCTTGCATTCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCTTTCTTGCATTCG-1.jpg
+1561,TCTGATGTATTCTGTC-1,10597,3667,ER,CID4290,Invasive cancer + stroma,CID4290_TCTGATGTATTCTGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTGATGTATTCTGTC-1.jpg
+632,GGCCCGTATACCATGC-1,2179,1196,ER,CID4290,Stroma,CID4290_GGCCCGTATACCATGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGCCCGTATACCATGC-1.jpg
+252,GGACGTCCATAGTTGG-1,3279,1548,ER,CID4290,Stroma,CID4290_GGACGTCCATAGTTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGACGTCCATAGTTGG-1.jpg
+2381,CCACTCAGATCCGCAA-1,2149,1318,ER,CID4290,Invasive cancer + stroma,CID4290_CCACTCAGATCCGCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCACTCAGATCCGCAA-1.jpg
+1281,GCCACAATTTAAGGAC-1,1713,1125,ER,CID4290,Invasive cancer + stroma,CID4290_GCCACAATTTAAGGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCACAATTTAAGGAC-1.jpg
+2148,CGCCCAGCGTTTCACG-1,2099,1197,ER,CID4290,Invasive cancer + stroma,CID4290_CGCCCAGCGTTTCACG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCCCAGCGTTTCACG-1.jpg
+2124,GGTCTTGAGCGCTCTT-1,3702,1982,ER,CID4290,Invasive cancer + stroma,CID4290_GGTCTTGAGCGCTCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTCTTGAGCGCTCTT-1.jpg
+378,TCTTGGTAACACCAAA-1,7826,3234,ER,CID4290,Invasive cancer + stroma,CID4290_TCTTGGTAACACCAAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTTGGTAACACCAAA-1.jpg
+1448,GGGCGTCACCACGTAA-1,21639,5621,ER,CID4290,Invasive cancer + stroma,CID4290_GGGCGTCACCACGTAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGCGTCACCACGTAA-1.jpg
+1426,TGGGCAATAGTTGGGT-1,17351,4652,ER,CID4290,Invasive cancer + stroma,CID4290_TGGGCAATAGTTGGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGGGCAATAGTTGGGT-1.jpg
+483,CTCGTTTCTAATGTTT-1,9864,3450,ER,CID4290,Invasive cancer + stroma,CID4290_CTCGTTTCTAATGTTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCGTTTCTAATGTTT-1.jpg
+1297,AAATCGTGTACCACAA-1,17361,4910,ER,CID4290,Invasive cancer + stroma,CID4290_AAATCGTGTACCACAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAATCGTGTACCACAA-1.jpg
+2340,ATCTACCATCTGCTCC-1,16053,4727,ER,CID4290,Invasive cancer + stroma,CID4290_ATCTACCATCTGCTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCTACCATCTGCTCC-1.jpg
+1087,GTGACCGCACACTACG-1,11232,3496,ER,CID4290,Invasive cancer + stroma,CID4290_GTGACCGCACACTACG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGACCGCACACTACG-1.jpg
+2199,AAACTCGGTTCGCAAT-1,2082,1266,ER,CID4290,Invasive cancer + stroma,CID4290_AAACTCGGTTCGCAAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACTCGGTTCGCAAT-1.jpg
+896,AAGCTCGTGCCAAGTC-1,2377,1345,ER,CID4290,Invasive cancer + stroma,CID4290_AAGCTCGTGCCAAGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGCTCGTGCCAAGTC-1.jpg
+1812,TCCTTTAAATCCGCTT-1,12832,4208,ER,CID4290,Invasive cancer + stroma,CID4290_TCCTTTAAATCCGCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCTTTAAATCCGCTT-1.jpg
+2371,GAGCTCAACATGAGCG-1,1933,1196,ER,CID4290,Invasive cancer + stroma,CID4290_GAGCTCAACATGAGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGCTCAACATGAGCG-1.jpg
+1205,TTGACTACCATATGGT-1,17714,5017,ER,CID4290,Invasive cancer + stroma,CID4290_TTGACTACCATATGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGACTACCATATGGT-1.jpg
+2126,TCTTGCTCCCGATACT-1,2255,1307,ER,CID4290,Invasive cancer + stroma,CID4290_TCTTGCTCCCGATACT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTTGCTCCCGATACT-1.jpg
+1951,GAAGCCTGCACATTCC-1,9714,3359,ER,CID4290,Invasive cancer + stroma,CID4290_GAAGCCTGCACATTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAAGCCTGCACATTCC-1.jpg
+1381,GTCGTACCATCTCGGG-1,6516,2782,ER,CID4290,Invasive cancer + stroma,CID4290_GTCGTACCATCTCGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCGTACCATCTCGGG-1.jpg
+82,CTCGAATGGAACGTAT-1,13027,4190,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_CTCGAATGGAACGTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCGAATGGAACGTAT-1.jpg
+908,TGCATATGTCTGTCAC-1,17914,4651,ER,CID4290,Invasive cancer + stroma,CID4290_TGCATATGTCTGTCAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCATATGTCTGTCAC-1.jpg
+679,GCCTATAGTGTCAGGG-1,3454,1391,ER,CID4290,Invasive cancer + stroma,CID4290_GCCTATAGTGTCAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCTATAGTGTCAGGG-1.jpg
+2170,GGTGACTGATAGAGAG-1,9137,3134,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GGTGACTGATAGAGAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTGACTGATAGAGAG-1.jpg
+790,ACTTCGCTAGCGAGTG-1,2643,1476,ER,CID4290,Stroma,CID4290_ACTTCGCTAGCGAGTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTTCGCTAGCGAGTG-1.jpg
+2125,CGTTGTCGGCAATTGA-1,2173,1243,ER,CID4290,Invasive cancer + stroma,CID4290_CGTTGTCGGCAATTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGTTGTCGGCAATTGA-1.jpg
+1341,AAGTCAATTGTCGTCA-1,10465,3556,ER,CID4290,Invasive cancer + stroma,CID4290_AAGTCAATTGTCGTCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGTCAATTGTCGTCA-1.jpg
+696,GCATTCAAGGCAACGC-1,29722,5753,ER,CID4290,Invasive cancer + stroma,CID4290_GCATTCAAGGCAACGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCATTCAAGGCAACGC-1.jpg
+815,CCGTAAGTTGGTCCCA-1,10500,3377,ER,CID4290,Invasive cancer + stroma,CID4290_CCGTAAGTTGGTCCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCGTAAGTTGGTCCCA-1.jpg
+676,TAAAGCGTTAGGAGAA-1,2283,1263,ER,CID4290,Invasive cancer + stroma,CID4290_TAAAGCGTTAGGAGAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAAAGCGTTAGGAGAA-1.jpg
+1902,AGAGCCGCCGAGATTT-1,20248,5063,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_AGAGCCGCCGAGATTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGAGCCGCCGAGATTT-1.jpg
+1373,TACGACGCTTGCTGCG-1,22077,5668,ER,CID4290,Invasive cancer + stroma,CID4290_TACGACGCTTGCTGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TACGACGCTTGCTGCG-1.jpg
+472,AATGATGATACGCTAT-1,23923,5553,ER,CID4290,Invasive cancer + stroma,CID4290_AATGATGATACGCTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATGATGATACGCTAT-1.jpg
+1750,TCATCGATGGTCCCAA-1,1661,1040,ER,CID4290,Invasive cancer + stroma,CID4290_TCATCGATGGTCCCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCATCGATGGTCCCAA-1.jpg
+791,AAATGGTCAATGTGCC-1,2872,1598,ER,CID4290,Invasive cancer + stroma,CID4290_AAATGGTCAATGTGCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAATGGTCAATGTGCC-1.jpg
+1124,GTCTATCTGAGTTTCT-1,2929,1597,ER,CID4290,Invasive cancer + stroma,CID4290_GTCTATCTGAGTTTCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCTATCTGAGTTTCT-1.jpg
+1524,TTCCACACAGATTTGA-1,6571,2881,ER,CID4290,Invasive cancer + stroma,CID4290_TTCCACACAGATTTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCCACACAGATTTGA-1.jpg
+2115,AGGTGGTGACCTTCGC-1,1688,1081,ER,CID4290,Invasive cancer + stroma,CID4290_AGGTGGTGACCTTCGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGTGGTGACCTTCGC-1.jpg
+1655,TAAGTTGCGACGTAGG-1,4385,2042,ER,CID4290,Invasive cancer + stroma,CID4290_TAAGTTGCGACGTAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAAGTTGCGACGTAGG-1.jpg
+812,TCGGAGTACATGAGTA-1,6763,2645,ER,CID4290,Invasive cancer + stroma,CID4290_TCGGAGTACATGAGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCGGAGTACATGAGTA-1.jpg
+1799,ACGGATGGTGCGGATA-1,18553,4729,ER,CID4290,Invasive cancer + stroma,CID4290_ACGGATGGTGCGGATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACGGATGGTGCGGATA-1.jpg
+469,GCCATATTGCACACAG-1,22189,5214,ER,CID4290,Invasive cancer + stroma,CID4290_GCCATATTGCACACAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCATATTGCACACAG-1.jpg
+202,GGTTTGACAAGAAGCT-1,17656,4738,ER,CID4290,Invasive cancer + stroma,CID4290_GGTTTGACAAGAAGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTTTGACAAGAAGCT-1.jpg
+931,TCAAGAAATACTAGCT-1,5775,2379,ER,CID4290,Invasive cancer + stroma,CID4290_TCAAGAAATACTAGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCAAGAAATACTAGCT-1.jpg
+730,CTATGTCACTAGCCCA-1,15115,4567,ER,CID4290,Invasive cancer + stroma,CID4290_CTATGTCACTAGCCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTATGTCACTAGCCCA-1.jpg
+2159,TTGGCTCAATATGTGT-1,11736,3706,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TTGGCTCAATATGTGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGGCTCAATATGTGT-1.jpg
+2308,TTAACTGATCGTTTGG-1,8175,2892,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TTAACTGATCGTTTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAACTGATCGTTTGG-1.jpg
+1183,TATAGATGGTCGCAGT-1,6522,2633,ER,CID4290,Invasive cancer + stroma,CID4290_TATAGATGGTCGCAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATAGATGGTCGCAGT-1.jpg
+364,GATGACGATGATCGCG-1,15316,4073,ER,CID4290,Invasive cancer + stroma,CID4290_GATGACGATGATCGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATGACGATGATCGCG-1.jpg
+273,AGTTAAGCGGTCCCGG-1,14488,4149,ER,CID4290,Invasive cancer + stroma,CID4290_AGTTAAGCGGTCCCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGTTAAGCGGTCCCGG-1.jpg
+246,TCCGAAGTAGTCACCA-1,29636,5953,ER,CID4290,Invasive cancer + stroma,CID4290_TCCGAAGTAGTCACCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCGAAGTAGTCACCA-1.jpg
+398,CATGGGTCGGGTGTGG-1,19946,5095,ER,CID4290,Invasive cancer + stroma,CID4290_CATGGGTCGGGTGTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGGGTCGGGTGTGG-1.jpg
+552,TCGCTCGGCACCAGCG-1,19051,4591,ER,CID4290,Invasive cancer + stroma,CID4290_TCGCTCGGCACCAGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCGCTCGGCACCAGCG-1.jpg
+1360,TTCTTGAGCCGCGCTA-1,6041,2788,ER,CID4290,Invasive cancer + stroma,CID4290_TTCTTGAGCCGCGCTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCTTGAGCCGCGCTA-1.jpg
+1536,TAGCTCGCCTGATAAC-1,7392,3018,ER,CID4290,Invasive cancer + stroma,CID4290_TAGCTCGCCTGATAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGCTCGCCTGATAAC-1.jpg
+558,TCCAGATGTACGCCAA-1,19554,4376,ER,CID4290,Invasive cancer + stroma,CID4290_TCCAGATGTACGCCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCAGATGTACGCCAA-1.jpg
+1259,CGACAATTTGATCTAA-1,33929,6178,ER,CID4290,Invasive cancer + stroma,CID4290_CGACAATTTGATCTAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGACAATTTGATCTAA-1.jpg
+1086,AGTCGACGGTCTCAAG-1,22166,4943,ER,CID4290,Invasive cancer + stroma,CID4290_AGTCGACGGTCTCAAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGTCGACGGTCTCAAG-1.jpg
+388,CGCGCCCGACTTAATA-1,13574,4221,ER,CID4290,Invasive cancer + stroma,CID4290_CGCGCCCGACTTAATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCGCCCGACTTAATA-1.jpg
+559,CATTGCGGGTCAATTC-1,19639,4157,ER,CID4290,Invasive cancer + stroma,CID4290_CATTGCGGGTCAATTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATTGCGGGTCAATTC-1.jpg
+515,TAAGGCAACATAAGAT-1,14767,4332,ER,CID4290,Invasive cancer + stroma,CID4290_TAAGGCAACATAAGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAAGGCAACATAAGAT-1.jpg
+2154,ACGTTCTGTACAAGTC-1,2093,1193,ER,CID4290,Invasive cancer + stroma,CID4290_ACGTTCTGTACAAGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACGTTCTGTACAAGTC-1.jpg
+2152,CATAGTCAAATACATA-1,2502,1404,ER,CID4290,Invasive cancer + stroma,CID4290_CATAGTCAAATACATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATAGTCAAATACATA-1.jpg
+2213,GCGAAGAATCTGACGG-1,4443,2036,ER,CID4290,Invasive cancer + stroma,CID4290_GCGAAGAATCTGACGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGAAGAATCTGACGG-1.jpg
+1795,CACATCTCACCGACGA-1,7153,2715,ER,CID4290,Invasive cancer + stroma,CID4290_CACATCTCACCGACGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CACATCTCACCGACGA-1.jpg
+785,GTCGTCTGGTTGGCTA-1,1214,685,ER,CID4290,Stroma,CID4290_GTCGTCTGGTTGGCTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCGTCTGGTTGGCTA-1.jpg
+1146,GCTGAGGCGTGAGTAT-1,8104,2941,ER,CID4290,Invasive cancer + stroma,CID4290_GCTGAGGCGTGAGTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTGAGGCGTGAGTAT-1.jpg
+2116,CCCGGGTCGTTCAGGG-1,1838,1127,ER,CID4290,Invasive cancer + stroma,CID4290_CCCGGGTCGTTCAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCGGGTCGTTCAGGG-1.jpg
+1639,AAATAGGGTGCTATTG-1,18384,4846,ER,CID4290,Invasive cancer + stroma,CID4290_AAATAGGGTGCTATTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAATAGGGTGCTATTG-1.jpg
+2093,AAAGTGCCATCAATTA-1,14374,3899,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_AAAGTGCCATCAATTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAAGTGCCATCAATTA-1.jpg
+270,GTCGGATGTAGCGCGC-1,15307,4233,ER,CID4290,Invasive cancer + stroma,CID4290_GTCGGATGTAGCGCGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCGGATGTAGCGCGC-1.jpg
+120,CAATGGAATCTACATA-1,5747,2563,ER,CID4290,Invasive cancer + stroma,CID4290_CAATGGAATCTACATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAATGGAATCTACATA-1.jpg
+665,GCTTCCGTCCCTAGAC-1,19765,4647,ER,CID4290,Invasive cancer + stroma,CID4290_GCTTCCGTCCCTAGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTTCCGTCCCTAGAC-1.jpg
+1842,CTACAAGAAATAACCC-1,2790,1524,ER,CID4290,Invasive cancer + stroma,CID4290_CTACAAGAAATAACCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTACAAGAAATAACCC-1.jpg
+1379,ATTCATATACTGTCCA-1,8160,3289,ER,CID4290,Invasive cancer + stroma,CID4290_ATTCATATACTGTCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATTCATATACTGTCCA-1.jpg
+2014,TAACAGCGTTTGTGCT-1,2702,1491,ER,CID4290,Invasive cancer + stroma,CID4290_TAACAGCGTTTGTGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAACAGCGTTTGTGCT-1.jpg
+522,TTGACCATGTTCTCCG-1,5790,2369,ER,CID4290,Invasive cancer + stroma,CID4290_TTGACCATGTTCTCCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGACCATGTTCTCCG-1.jpg
+183,GCTCATTACTGCATGT-1,17898,4925,ER,CID4290,Invasive cancer + stroma,CID4290_GCTCATTACTGCATGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTCATTACTGCATGT-1.jpg
+1705,CTTTCTGTGCGGGCTT-1,5082,2397,ER,CID4290,Invasive cancer + stroma,CID4290_CTTTCTGTGCGGGCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTTTCTGTGCGGGCTT-1.jpg
+2182,AACGCGACCTTGGGCG-1,10321,3822,ER,CID4290,Invasive cancer + stroma,CID4290_AACGCGACCTTGGGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACGCGACCTTGGGCG-1.jpg
+1849,TTCGCGCGCCATACGA-1,44219,7092,ER,CID4290,Invasive cancer + stroma,CID4290_TTCGCGCGCCATACGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCGCGCGCCATACGA-1.jpg
+1148,CGCATGGTGCGATGCT-1,2719,1521,ER,CID4290,Invasive cancer + stroma,CID4290_CGCATGGTGCGATGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCATGGTGCGATGCT-1.jpg
+461,ATACGGGTTTCGATTG-1,20747,4976,ER,CID4290,Invasive cancer + stroma,CID4290_ATACGGGTTTCGATTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATACGGGTTTCGATTG-1.jpg
+1829,GCGTTCTGACTAAGCG-1,10141,3162,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GCGTTCTGACTAAGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGTTCTGACTAAGCG-1.jpg
+1489,CGGGAGCTTCAGTGTA-1,18031,4272,ER,CID4290,Invasive cancer + stroma,CID4290_CGGGAGCTTCAGTGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGGGAGCTTCAGTGTA-1.jpg
+436,CGTCAAATGGTCGCAG-1,992,607,ER,CID4290,Stroma,CID4290_CGTCAAATGGTCGCAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGTCAAATGGTCGCAG-1.jpg
+1865,TGTGAGACTAGCCCAA-1,10751,3714,ER,CID4290,Invasive cancer + stroma,CID4290_TGTGAGACTAGCCCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGTGAGACTAGCCCAA-1.jpg
+2245,TGATCACCACACTGAC-1,5959,2637,ER,CID4290,Invasive cancer + stroma,CID4290_TGATCACCACACTGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGATCACCACACTGAC-1.jpg
+661,CGAGAGATGTGAACCT-1,7225,2778,ER,CID4290,Invasive cancer + stroma,CID4290_CGAGAGATGTGAACCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGAGAGATGTGAACCT-1.jpg
+389,TGCCACCTGGCGAAAC-1,22792,5489,ER,CID4290,Invasive cancer + stroma,CID4290_TGCCACCTGGCGAAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCCACCTGGCGAAAC-1.jpg
+853,ATTATAGCTACTTTAC-1,14940,3811,ER,CID4290,Invasive cancer + stroma,CID4290_ATTATAGCTACTTTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATTATAGCTACTTTAC-1.jpg
+874,ATAAAGGCTCGGTCGT-1,4202,1903,ER,CID4290,Invasive cancer + stroma,CID4290_ATAAAGGCTCGGTCGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATAAAGGCTCGGTCGT-1.jpg
+1376,TGAGTAAATTAGCGTA-1,10489,3868,ER,CID4290,Invasive cancer + stroma,CID4290_TGAGTAAATTAGCGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGAGTAAATTAGCGTA-1.jpg
+251,ATACCGTCATCCATAA-1,6955,2286,ER,CID4290,Stroma,CID4290_ATACCGTCATCCATAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATACCGTCATCCATAA-1.jpg
+1029,CCGTGAGGCATTCATG-1,11879,3507,ER,CID4290,Invasive cancer + stroma,CID4290_CCGTGAGGCATTCATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCGTGAGGCATTCATG-1.jpg
+238,CTCAAGACATTAGCGC-1,22160,5053,ER,CID4290,Invasive cancer + stroma,CID4290_CTCAAGACATTAGCGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCAAGACATTAGCGC-1.jpg
+1982,AACTCCAGAGCGTGTT-1,4247,1965,ER,CID4290,Invasive cancer + stroma,CID4290_AACTCCAGAGCGTGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACTCCAGAGCGTGTT-1.jpg
+2167,AGGTGTTGCCGACCAC-1,16317,4362,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_AGGTGTTGCCGACCAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGTGTTGCCGACCAC-1.jpg
+928,CACCCAAATCTTATGT-1,2911,1535,ER,CID4290,Invasive cancer + stroma,CID4290_CACCCAAATCTTATGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CACCCAAATCTTATGT-1.jpg
+1431,TTAGGATGGGAGGGTA-1,8564,3364,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TTAGGATGGGAGGGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAGGATGGGAGGGTA-1.jpg
+1462,GTTTACGTTCCATCTG-1,8329,2919,ER,CID4290,Invasive cancer + stroma,CID4290_GTTTACGTTCCATCTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTTTACGTTCCATCTG-1.jpg
+1802,CATGGGTATGCCTTAT-1,24859,5535,ER,CID4290,Invasive cancer + stroma,CID4290_CATGGGTATGCCTTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGGGTATGCCTTAT-1.jpg
+1314,CATGGTAAGTAGCGTT-1,4199,1969,ER,CID4290,Invasive cancer + stroma,CID4290_CATGGTAAGTAGCGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGGTAAGTAGCGTT-1.jpg
+2256,TGGGCGATACAATAAG-1,7988,3016,ER,CID4290,Invasive cancer + stroma,CID4290_TGGGCGATACAATAAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGGGCGATACAATAAG-1.jpg
+975,CAATTTCGTATAAGGG-1,3032,1613,ER,CID4290,Invasive cancer + stroma,CID4290_CAATTTCGTATAAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAATTTCGTATAAGGG-1.jpg
+2294,AGCTTCTTCTCGAGCA-1,2504,1434,ER,CID4290,Invasive cancer + stroma,CID4290_AGCTTCTTCTCGAGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGCTTCTTCTCGAGCA-1.jpg
+2019,TACGTACTAGTGCTGA-1,2443,1406,ER,CID4290,Invasive cancer + stroma,CID4290_TACGTACTAGTGCTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TACGTACTAGTGCTGA-1.jpg
+1676,TTCGGGCGCTAGTCTT-1,11231,3876,ER,CID4290,Invasive cancer + stroma,CID4290_TTCGGGCGCTAGTCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCGGGCGCTAGTCTT-1.jpg
+2055,TTGCCGCTTTCTAGTA-1,15819,4228,ER,CID4290,Invasive cancer + stroma,CID4290_TTGCCGCTTTCTAGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGCCGCTTTCTAGTA-1.jpg
+1147,GCGCCGTTCCACGATA-1,1692,1093,ER,CID4290,Invasive cancer + stroma,CID4290_GCGCCGTTCCACGATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGCCGTTCCACGATA-1.jpg
+40,CACACGTTTCAATGGG-1,20583,5347,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_CACACGTTTCAATGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CACACGTTTCAATGGG-1.jpg
+501,CCTACTGCGGCGGCCA-1,767,515,ER,CID4290,Stroma,CID4290_CCTACTGCGGCGGCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCTACTGCGGCGGCCA-1.jpg
+856,CATTCCCATTCCGTCG-1,3158,1583,ER,CID4290,Stroma,CID4290_CATTCCCATTCCGTCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATTCCCATTCCGTCG-1.jpg
+441,CTCATTTGATGGGCGG-1,2571,1398,ER,CID4290,Invasive cancer + stroma,CID4290_CTCATTTGATGGGCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCATTTGATGGGCGG-1.jpg
+272,GTAGGTGATCCGTGTA-1,11866,3744,ER,CID4290,Invasive cancer + stroma,CID4290_GTAGGTGATCCGTGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTAGGTGATCCGTGTA-1.jpg
+2281,CATAGAGGAGATACTA-1,7507,3028,ER,CID4290,Invasive cancer + stroma,CID4290_CATAGAGGAGATACTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATAGAGGAGATACTA-1.jpg
+705,CTGCACCTAGTCCACA-1,3549,1680,ER,CID4290,Invasive cancer + stroma,CID4290_CTGCACCTAGTCCACA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTGCACCTAGTCCACA-1.jpg
+539,CCTTTCAATGAAGAAA-1,19278,4912,ER,CID4290,Invasive cancer + stroma,CID4290_CCTTTCAATGAAGAAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCTTTCAATGAAGAAA-1.jpg
+1031,TCTGGCCGTTCAAGTT-1,5728,2290,ER,CID4290,Invasive cancer + stroma,CID4290_TCTGGCCGTTCAAGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTGGCCGTTCAAGTT-1.jpg
+1773,GGTCGGTCGTCCACAG-1,4249,2077,ER,CID4290,Invasive cancer + stroma,CID4290_GGTCGGTCGTCCACAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTCGGTCGTCCACAG-1.jpg
+1559,ACTTCAGGCTGATCCC-1,5819,2472,ER,CID4290,Invasive cancer + stroma,CID4290_ACTTCAGGCTGATCCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTTCAGGCTGATCCC-1.jpg
+983,ATTAGGCGATGCTTTC-1,3192,1720,ER,CID4290,Invasive cancer + stroma,CID4290_ATTAGGCGATGCTTTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATTAGGCGATGCTTTC-1.jpg
+1729,CATGTAAGAGACATTT-1,9117,3159,ER,CID4290,Invasive cancer + stroma,CID4290_CATGTAAGAGACATTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGTAAGAGACATTT-1.jpg
+66,CTGGTCCTAACTTGGC-1,2964,1593,ER,CID4290,Stroma,CID4290_CTGGTCCTAACTTGGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTGGTCCTAACTTGGC-1.jpg
+1857,CAACTGCTCATCCGAT-1,11629,3968,ER,CID4290,Invasive cancer + stroma,CID4290_CAACTGCTCATCCGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAACTGCTCATCCGAT-1.jpg
+646,GGGCGATATGTGTGAA-1,4613,2169,ER,CID4290,Invasive cancer + stroma,CID4290_GGGCGATATGTGTGAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGCGATATGTGTGAA-1.jpg
+1594,GGTCTCTGAATGGACT-1,2250,1354,ER,CID4290,Invasive cancer + stroma,CID4290_GGTCTCTGAATGGACT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTCTCTGAATGGACT-1.jpg
+1506,CCCGAGTTTCTCCGTA-1,7195,2922,ER,CID4290,Invasive cancer + stroma,CID4290_CCCGAGTTTCTCCGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCGAGTTTCTCCGTA-1.jpg
+1526,CATTTGAGTGGTACGT-1,6264,2667,ER,CID4290,Invasive cancer + stroma,CID4290_CATTTGAGTGGTACGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATTTGAGTGGTACGT-1.jpg
+314,ACCCTTGCCTGGGTCG-1,2816,1449,ER,CID4290,Stroma,CID4290_ACCCTTGCCTGGGTCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACCCTTGCCTGGGTCG-1.jpg
+1736,GTATCAAACGTTAGCT-1,7464,2957,ER,CID4290,Invasive cancer + stroma,CID4290_GTATCAAACGTTAGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTATCAAACGTTAGCT-1.jpg
+98,CACCGCCGACCAGCGA-1,5471,2473,ER,CID4290,Stroma,CID4290_CACCGCCGACCAGCGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CACCGCCGACCAGCGA-1.jpg
+619,GCCAACCATTTCCGGA-1,18982,4863,ER,CID4290,Invasive cancer + stroma,CID4290_GCCAACCATTTCCGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCAACCATTTCCGGA-1.jpg
+2392,CTTCAGTTGGACAACG-1,7602,3077,ER,CID4290,Invasive cancer + stroma,CID4290_CTTCAGTTGGACAACG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTTCAGTTGGACAACG-1.jpg
+638,TATGGCTAGGCTAATT-1,1226,805,ER,CID4290,Stroma,CID4290_TATGGCTAGGCTAATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATGGCTAGGCTAATT-1.jpg
+1617,GAGACTTCGCGACCGA-1,12793,4014,ER,CID4290,Invasive cancer + stroma,CID4290_GAGACTTCGCGACCGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGACTTCGCGACCGA-1.jpg
+1637,TAGCGTCCGGTGTGGT-1,8222,3149,ER,CID4290,Invasive cancer + stroma,CID4290_TAGCGTCCGGTGTGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGCGTCCGGTGTGGT-1.jpg
+1487,CCTAACCCAAACAAGT-1,25548,5389,ER,CID4290,Invasive cancer + stroma,CID4290_CCTAACCCAAACAAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCTAACCCAAACAAGT-1.jpg
+1008,CATCTTACACCACCTC-1,3896,1657,ER,CID4290,Invasive cancer + stroma,CID4290_CATCTTACACCACCTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATCTTACACCACCTC-1.jpg
+2270,TGCGGACTTGACTCCG-1,2362,1406,ER,CID4290,Invasive cancer + stroma,CID4290_TGCGGACTTGACTCCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCGGACTTGACTCCG-1.jpg
+1922,TGCGACGGCCGAACGT-1,1493,970,ER,CID4290,Invasive cancer + stroma,CID4290_TGCGACGGCCGAACGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCGACGGCCGAACGT-1.jpg
+989,AAGAGGCATGGATCGC-1,12101,3758,ER,CID4290,Invasive cancer + stroma,CID4290_AAGAGGCATGGATCGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGAGGCATGGATCGC-1.jpg
+1160,TCTGCCAGAAACTGCA-1,7706,2731,ER,CID4290,Invasive cancer + stroma,CID4290_TCTGCCAGAAACTGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTGCCAGAAACTGCA-1.jpg
+1331,ATGGGCCTCGGCCTCT-1,21185,4844,ER,CID4290,Invasive cancer + stroma,CID4290_ATGGGCCTCGGCCTCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATGGGCCTCGGCCTCT-1.jpg
+2319,TGCCGTGGGACCCAAT-1,1427,934,ER,CID4290,Invasive cancer + stroma,CID4290_TGCCGTGGGACCCAAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCCGTGGGACCCAAT-1.jpg
+1575,ACAATTGTGTCTCTTT-1,5799,2540,ER,CID4290,Invasive cancer + stroma,CID4290_ACAATTGTGTCTCTTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACAATTGTGTCTCTTT-1.jpg
+1732,GATTAACCGAAAGCCC-1,10159,3470,ER,CID4290,Invasive cancer + stroma,CID4290_GATTAACCGAAAGCCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATTAACCGAAAGCCC-1.jpg
+1901,ACAGCGACATTCTCAT-1,11571,3934,ER,CID4290,Invasive cancer + stroma,CID4290_ACAGCGACATTCTCAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACAGCGACATTCTCAT-1.jpg
+477,TTAGCTAATACGATCT-1,19740,5013,ER,CID4290,Invasive cancer + stroma,CID4290_TTAGCTAATACGATCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAGCTAATACGATCT-1.jpg
+2218,CGCATGCCGAATGCGT-1,2973,1615,ER,CID4290,Invasive cancer + stroma,CID4290_CGCATGCCGAATGCGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCATGCCGAATGCGT-1.jpg
+267,AGCTATTTAATCCAAC-1,6653,2845,ER,CID4290,Invasive cancer + stroma,CID4290_AGCTATTTAATCCAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGCTATTTAATCCAAC-1.jpg
+1108,GACCGACGTGAAAGCA-1,11127,3749,ER,CID4290,Invasive cancer + stroma,CID4290_GACCGACGTGAAAGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GACCGACGTGAAAGCA-1.jpg
+2275,TACGTGGGCCCAGGGC-1,3580,1890,ER,CID4290,Invasive cancer + stroma,CID4290_TACGTGGGCCCAGGGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TACGTGGGCCCAGGGC-1.jpg
+1189,TCTTAGAGCTCCAATT-1,14717,4717,ER,CID4290,Invasive cancer + stroma,CID4290_TCTTAGAGCTCCAATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTTAGAGCTCCAATT-1.jpg
+1157,TCCTCGGGCTGGGCTT-1,1581,972,ER,CID4290,Invasive cancer + stroma,CID4290_TCCTCGGGCTGGGCTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCTCGGGCTGGGCTT-1.jpg
+2018,ATCTGACATGGAAGGA-1,2477,1424,ER,CID4290,Invasive cancer + stroma,CID4290_ATCTGACATGGAAGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCTGACATGGAAGGA-1.jpg
+1258,GGATGAAGATCGCTGA-1,16471,4625,ER,CID4290,Invasive cancer + stroma,CID4290_GGATGAAGATCGCTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGATGAAGATCGCTGA-1.jpg
+1136,GGTACAAACATGCTAT-1,31164,6046,ER,CID4290,Invasive cancer + stroma,CID4290_GGTACAAACATGCTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTACAAACATGCTAT-1.jpg
+1687,CAGAGGCGATGCATGA-1,1800,1079,ER,CID4290,Invasive cancer + stroma,CID4290_CAGAGGCGATGCATGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAGAGGCGATGCATGA-1.jpg
+2305,GAGTAAATTAAGAACC-1,11330,3662,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GAGTAAATTAAGAACC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAGTAAATTAAGAACC-1.jpg
+1704,TGAGCGGAAAGTGTTC-1,2542,1429,ER,CID4290,Invasive cancer + stroma,CID4290_TGAGCGGAAAGTGTTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGAGCGGAAAGTGTTC-1.jpg
+24,TTAATGCGAGGTAACT-1,9839,3417,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TTAATGCGAGGTAACT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAATGCGAGGTAACT-1.jpg
+1176,GCCTCATCTGGAAATA-1,27953,5732,ER,CID4290,Invasive cancer + stroma,CID4290_GCCTCATCTGGAAATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCTCATCTGGAAATA-1.jpg
+1356,GGTGAAGTACAGGGAT-1,2774,1631,ER,CID4290,Invasive cancer + stroma,CID4290_GGTGAAGTACAGGGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTGAAGTACAGGGAT-1.jpg
+59,AAACGCCCGAGATCGG-1,24833,5475,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_AAACGCCCGAGATCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACGCCCGAGATCGG-1.jpg
+2010,TATATAGGGCTTTACG-1,4434,2061,ER,CID4290,Invasive cancer + stroma,CID4290_TATATAGGGCTTTACG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATATAGGGCTTTACG-1.jpg
+128,GCGATTCTGGAAGCAG-1,13111,4500,ER,CID4290,Invasive cancer + stroma,CID4290_GCGATTCTGGAAGCAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGATTCTGGAAGCAG-1.jpg
+357,CGCGGTCACAAACCAA-1,33604,6073,ER,CID4290,Invasive cancer + stroma,CID4290_CGCGGTCACAAACCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCGGTCACAAACCAA-1.jpg
+2227,TAGCAGTATGACTAAA-1,2235,1263,ER,CID4290,Invasive cancer + stroma,CID4290_TAGCAGTATGACTAAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGCAGTATGACTAAA-1.jpg
+2111,AACATTGTGACTCGAG-1,3185,1759,ER,CID4290,Invasive cancer + stroma,CID4290_AACATTGTGACTCGAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACATTGTGACTCGAG-1.jpg
+783,AGGATTGCTTACGACA-1,1627,908,ER,CID4290,Stroma,CID4290_AGGATTGCTTACGACA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGATTGCTTACGACA-1.jpg
+325,CCTCGCCAGCAAATTA-1,21096,5129,ER,CID4290,Invasive cancer + stroma,CID4290_CCTCGCCAGCAAATTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCTCGCCAGCAAATTA-1.jpg
+1809,GCGCTTAAATAATTGG-1,12515,3993,ER,CID4290,Invasive cancer + stroma,CID4290_GCGCTTAAATAATTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGCTTAAATAATTGG-1.jpg
+976,GTACACTTACCTGAAG-1,3268,1769,ER,CID4290,Invasive cancer + stroma,CID4290_GTACACTTACCTGAAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTACACTTACCTGAAG-1.jpg
+1798,ACCAATATGCAAGTTA-1,15905,4327,ER,CID4290,Invasive cancer + stroma,CID4290_ACCAATATGCAAGTTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACCAATATGCAAGTTA-1.jpg
+2192,TTCGGTACTGTAGAGG-1,1674,978,ER,CID4290,Invasive cancer + stroma,CID4290_TTCGGTACTGTAGAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCGGTACTGTAGAGG-1.jpg
+690,CCTCACCTGAGGGAGC-1,12391,3685,ER,CID4290,Invasive cancer + stroma,CID4290_CCTCACCTGAGGGAGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCTCACCTGAGGGAGC-1.jpg
+2171,TACCCTCGGTAACCCT-1,5923,2393,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TACCCTCGGTAACCCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TACCCTCGGTAACCCT-1.jpg
+1464,TCTAGCATGCCCAGAA-1,24345,5395,ER,CID4290,Invasive cancer + stroma,CID4290_TCTAGCATGCCCAGAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCTAGCATGCCCAGAA-1.jpg
+2311,ATCCCATTTCCGTGGG-1,1284,818,ER,CID4290,Invasive cancer + stroma,CID4290_ATCCCATTTCCGTGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCCCATTTCCGTGGG-1.jpg
+1190,CCACGAATTTAACCTC-1,18011,4738,ER,CID4290,Invasive cancer + stroma,CID4290_CCACGAATTTAACCTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCACGAATTTAACCTC-1.jpg
+1416,ACCGGGCCTTTGTTGA-1,33073,6206,ER,CID4290,Invasive cancer + stroma,CID4290_ACCGGGCCTTTGTTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACCGGGCCTTTGTTGA-1.jpg
+2423,AGAACTGTACTTTGTA-1,27179,6116,ER,CID4290,Invasive cancer + stroma,CID4290_AGAACTGTACTTTGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGAACTGTACTTTGTA-1.jpg
+1310,GGCAAGGCGAAATAGC-1,19193,4854,ER,CID4290,Invasive cancer + stroma,CID4290_GGCAAGGCGAAATAGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGCAAGGCGAAATAGC-1.jpg
+123,TATCACCATGTAAAGT-1,8420,3200,ER,CID4290,Invasive cancer + stroma,CID4290_TATCACCATGTAAAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATCACCATGTAAAGT-1.jpg
+1772,GGGCTATGATCGATGG-1,26798,5605,ER,CID4290,Invasive cancer + stroma,CID4290_GGGCTATGATCGATGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGCTATGATCGATGG-1.jpg
+80,TTAAGACGAACGAACC-1,17416,4871,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_TTAAGACGAACGAACC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAAGACGAACGAACC-1.jpg
+1945,CATACACGGTTCCCAC-1,3366,1804,ER,CID4290,Invasive cancer + stroma,CID4290_CATACACGGTTCCCAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATACACGGTTCCCAC-1.jpg
+1167,TAGGTGCTCGCCTAGC-1,15126,4167,ER,CID4290,Invasive cancer + stroma,CID4290_TAGGTGCTCGCCTAGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGGTGCTCGCCTAGC-1.jpg
+1114,TTGAGCGCCACGTGAT-1,5624,2367,ER,CID4290,Invasive cancer + stroma,CID4290_TTGAGCGCCACGTGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGAGCGCCACGTGAT-1.jpg
+623,AATCTATGCCGGAGCC-1,40078,6384,ER,CID4290,Invasive cancer + stroma,CID4290_AATCTATGCCGGAGCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATCTATGCCGGAGCC-1.jpg
+600,AAGGATGAGGGACCTC-1,3088,1623,ER,CID4290,Invasive cancer + stroma,CID4290_AAGGATGAGGGACCTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGGATGAGGGACCTC-1.jpg
+1578,CAGCAGTCCAGACTAT-1,24402,5567,ER,CID4290,Invasive cancer + stroma,CID4290_CAGCAGTCCAGACTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAGCAGTCCAGACTAT-1.jpg
+434,AGTGAAGATGGTGTCC-1,976,578,ER,CID4290,Stroma,CID4290_AGTGAAGATGGTGTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGTGAAGATGGTGTCC-1.jpg
+1668,CGAGTGAAGGTACCAG-1,1034,709,ER,CID4290,Invasive cancer + stroma,CID4290_CGAGTGAAGGTACCAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGAGTGAAGGTACCAG-1.jpg
+96,ATGGTTACGAAACATG-1,3130,1691,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_ATGGTTACGAAACATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATGGTTACGAAACATG-1.jpg
+1712,GTTAACATCACTTAAA-1,15572,4258,ER,CID4290,Invasive cancer + stroma,CID4290_GTTAACATCACTTAAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTTAACATCACTTAAA-1.jpg
+573,TCCCAAAGACGAAGGA-1,3007,1698,ER,CID4290,Invasive cancer + stroma,CID4290_TCCCAAAGACGAAGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCCAAAGACGAAGGA-1.jpg
+1530,ATCCAGAGCAACAACC-1,19176,5098,ER,CID4290,Invasive cancer + stroma,CID4290_ATCCAGAGCAACAACC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCCAGAGCAACAACC-1.jpg
+752,AGGGTTCCCTTTGGTT-1,2546,1324,ER,CID4290,Invasive cancer + stroma,CID4290_AGGGTTCCCTTTGGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGGTTCCCTTTGGTT-1.jpg
+518,TGCAGGATCGGCAAAG-1,2167,1222,ER,CID4290,Invasive cancer + stroma,CID4290_TGCAGGATCGGCAAAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCAGGATCGGCAAAG-1.jpg
+1468,ACTCCCTAGAATAGTA-1,8576,3232,ER,CID4290,Invasive cancer + stroma,CID4290_ACTCCCTAGAATAGTA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTCCCTAGAATAGTA-1.jpg
+1801,AAGCTCTTTCATGGTG-1,4024,1822,ER,CID4290,Invasive cancer + stroma,CID4290_AAGCTCTTTCATGGTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGCTCTTTCATGGTG-1.jpg
+224,AAATAACCATACGGGA-1,33200,6377,ER,CID4290,Invasive cancer + stroma,CID4290_AAATAACCATACGGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAATAACCATACGGGA-1.jpg
+1128,ATCCAGGATTCGTGAA-1,3258,1774,ER,CID4290,Invasive cancer + stroma,CID4290_ATCCAGGATTCGTGAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCCAGGATTCGTGAA-1.jpg
+1747,GTGGTGATGGTTTGTG-1,6878,2506,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GTGGTGATGGTTTGTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGGTGATGGTTTGTG-1.jpg
+1117,GCTAGCACCTGGGCCA-1,5612,2336,ER,CID4290,Invasive cancer + stroma,CID4290_GCTAGCACCTGGGCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTAGCACCTGGGCCA-1.jpg
+1576,GATCGCTACCCGATTT-1,12860,4080,ER,CID4290,Invasive cancer + stroma,CID4290_GATCGCTACCCGATTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATCGCTACCCGATTT-1.jpg
+1788,GCAAACCTTGGCCATA-1,950,665,ER,CID4290,Invasive cancer + stroma,CID4290_GCAAACCTTGGCCATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCAAACCTTGGCCATA-1.jpg
+1613,GGTAGACCGTTGGGCG-1,9620,3616,ER,CID4290,Invasive cancer + stroma,CID4290_GGTAGACCGTTGGGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGTAGACCGTTGGGCG-1.jpg
+1005,TAGGGAGCTTGGGATG-1,8489,2922,ER,CID4290,Invasive cancer + stroma,CID4290_TAGGGAGCTTGGGATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGGGAGCTTGGGATG-1.jpg
+2385,CGCGGGAATTCCTTTC-1,12046,3713,ER,CID4290,Invasive cancer + stroma,CID4290_CGCGGGAATTCCTTTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCGGGAATTCCTTTC-1.jpg
+1256,GAATAGACGCGACCCA-1,17373,4437,ER,CID4290,Invasive cancer + stroma,CID4290_GAATAGACGCGACCCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAATAGACGCGACCCA-1.jpg
+1600,CCACCAACTTTACTGT-1,6905,3242,ER,CID4290,Invasive cancer + stroma,CID4290_CCACCAACTTTACTGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCACCAACTTTACTGT-1.jpg
+318,TGCATGGATCGGATCT-1,1315,844,ER,CID4290,Invasive cancer + stroma,CID4290_TGCATGGATCGGATCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCATGGATCGGATCT-1.jpg
+1402,TCCTACATCCACGGCC-1,3470,1728,ER,CID4290,Invasive cancer + stroma,CID4290_TCCTACATCCACGGCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCCTACATCCACGGCC-1.jpg
+2258,TTGGGAAGACGAGCCG-1,1669,1058,ER,CID4290,Invasive cancer + stroma,CID4290_TTGGGAAGACGAGCCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGGGAAGACGAGCCG-1.jpg
+1969,TAGGTGACGATAACCT-1,11101,3474,ER,CID4290,Invasive cancer + stroma,CID4290_TAGGTGACGATAACCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGGTGACGATAACCT-1.jpg
+1201,GCTGAACTCTCCAGGG-1,4773,2094,ER,CID4290,Invasive cancer + stroma,CID4290_GCTGAACTCTCCAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCTGAACTCTCCAGGG-1.jpg
+626,CCGCTTGCTGACATGG-1,20749,4585,ER,CID4290,Invasive cancer + stroma,CID4290_CCGCTTGCTGACATGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCGCTTGCTGACATGG-1.jpg
+1497,AGGCATTGTCGTAGGG-1,34496,6129,ER,CID4290,Invasive cancer + stroma,CID4290_AGGCATTGTCGTAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGCATTGTCGTAGGG-1.jpg
+1471,CAGGCGCCATGCTAGG-1,2242,1329,ER,CID4290,Invasive cancer + stroma,CID4290_CAGGCGCCATGCTAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAGGCGCCATGCTAGG-1.jpg
+1932,CTACTCAAGGTATAGT-1,8607,2874,ER,CID4290,Invasive cancer + stroma,CID4290_CTACTCAAGGTATAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTACTCAAGGTATAGT-1.jpg
+1930,CCCAATGAGATTTGCA-1,2075,1195,ER,CID4290,Invasive cancer + stroma,CID4290_CCCAATGAGATTTGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCAATGAGATTTGCA-1.jpg
+210,ACTATTCGTCCGTGGT-1,9522,3647,ER,CID4290,Invasive cancer + stroma,CID4290_ACTATTCGTCCGTGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACTATTCGTCCGTGGT-1.jpg
+1935,TTAGAATAAGGGTCGG-1,7571,2520,ER,CID4290,Invasive cancer + stroma,CID4290_TTAGAATAAGGGTCGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTAGAATAAGGGTCGG-1.jpg
+2274,TCGCTGCCAATGCTGT-1,1598,1008,ER,CID4290,Invasive cancer + stroma,CID4290_TCGCTGCCAATGCTGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TCGCTGCCAATGCTGT-1.jpg
+1785,GTGGACGCATTTGTCC-1,1751,1129,ER,CID4290,Invasive cancer + stroma,CID4290_GTGGACGCATTTGTCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGGACGCATTTGTCC-1.jpg
+451,TTGCTCCCATACCGGA-1,1234,842,ER,CID4290,Invasive cancer + stroma,CID4290_TTGCTCCCATACCGGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGCTCCCATACCGGA-1.jpg
+1175,CAAGTGTGGTTGCAAA-1,39487,6298,ER,CID4290,Invasive cancer + stroma,CID4290_CAAGTGTGGTTGCAAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAAGTGTGGTTGCAAA-1.jpg
+611,CATGCGACCAGTTTAA-1,9505,3184,ER,CID4290,Invasive cancer + stroma,CID4290_CATGCGACCAGTTTAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGCGACCAGTTTAA-1.jpg
+1752,ACAATGAATACGGAGA-1,2086,1274,ER,CID4290,Invasive cancer + stroma,CID4290_ACAATGAATACGGAGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACAATGAATACGGAGA-1.jpg
+709,TTCTATGCCTTTCGCA-1,1535,886,ER,CID4290,Stroma,CID4290_TTCTATGCCTTTCGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTCTATGCCTTTCGCA-1.jpg
+65,AAACGAAGAACATACC-1,3897,1978,ER,CID4290,Stroma,CID4290_AAACGAAGAACATACC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACGAAGAACATACC-1.jpg
+1012,GAAAGAACAGCGTTAT-1,2970,1549,ER,CID4290,Invasive cancer + stroma,CID4290_GAAAGAACAGCGTTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAAAGAACAGCGTTAT-1.jpg
+145,TGGTTGGAGGATCCTG-1,15214,4438,ER,CID4290,Invasive cancer + stroma,CID4290_TGGTTGGAGGATCCTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGGTTGGAGGATCCTG-1.jpg
+1956,GTCTCAAGGCCCGGCT-1,6181,2496,ER,CID4290,Invasive cancer + stroma,CID4290_GTCTCAAGGCCCGGCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCTCAAGGCCCGGCT-1.jpg
+503,AATGCAACCGGGTACC-1,2631,1523,ER,CID4290,Invasive cancer + stroma,CID4290_AATGCAACCGGGTACC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATGCAACCGGGTACC-1.jpg
+383,TGCCTGATCAAACGAT-1,1860,1086,ER,CID4290,Invasive cancer + stroma,CID4290_TGCCTGATCAAACGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCCTGATCAAACGAT-1.jpg
+520,AACGATATGTCAACTG-1,2415,1405,ER,CID4290,Invasive cancer + stroma,CID4290_AACGATATGTCAACTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACGATATGTCAACTG-1.jpg
+321,CACCTCGATGGTGGAC-1,3051,1661,ER,CID4290,Invasive cancer + stroma,CID4290_CACCTCGATGGTGGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CACCTCGATGGTGGAC-1.jpg
+670,ACAATTTGAGCAGTGG-1,18001,4689,ER,CID4290,Invasive cancer + stroma,CID4290_ACAATTTGAGCAGTGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACAATTTGAGCAGTGG-1.jpg
+1266,ACATCCTGGTAACTGT-1,2168,1160,ER,CID4290,Invasive cancer + stroma,CID4290_ACATCCTGGTAACTGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACATCCTGGTAACTGT-1.jpg
+1319,AATGACGTAGGATGTC-1,9928,3818,ER,CID4290,Invasive cancer + stroma,CID4290_AATGACGTAGGATGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AATGACGTAGGATGTC-1.jpg
+102,GATGTCGGTCAACTGC-1,14425,4660,ER,CID4290,Invasive cancer + stroma,CID4290_GATGTCGGTCAACTGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATGTCGGTCAACTGC-1.jpg
+2128,GAAGCCACTGATTATG-1,2151,1309,ER,CID4290,Invasive cancer + stroma,CID4290_GAAGCCACTGATTATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAAGCCACTGATTATG-1.jpg
+258,TTGGGTTTATTCAGCG-1,2768,1552,ER,CID4290,Stroma,CID4290_TTGGGTTTATTCAGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGGGTTTATTCAGCG-1.jpg
+1151,ACGTTAATGTCGAAGA-1,2427,1437,ER,CID4290,Invasive cancer + stroma,CID4290_ACGTTAATGTCGAAGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACGTTAATGTCGAAGA-1.jpg
+49,GTGTCCGATAAGGCAT-1,2125,1176,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_GTGTCCGATAAGGCAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGTCCGATAAGGCAT-1.jpg
+1443,GGGCGGCAAATGAATT-1,12487,4171,ER,CID4290,Invasive cancer + stroma,CID4290_GGGCGGCAAATGAATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGGCGGCAAATGAATT-1.jpg
+490,ATCGCTGCGTGCAGCA-1,28855,5302,ER,CID4290,Invasive cancer + stroma,CID4290_ATCGCTGCGTGCAGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCGCTGCGTGCAGCA-1.jpg
+1726,TTGAGAAGTTTAGCAT-1,2857,1592,ER,CID4290,Invasive cancer + stroma,CID4290_TTGAGAAGTTTAGCAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGAGAAGTTTAGCAT-1.jpg
+1428,CGGCTCTAAAGCTGCA-1,10522,3707,ER,CID4290,Invasive cancer + stroma,CID4290_CGGCTCTAAAGCTGCA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGGCTCTAAAGCTGCA-1.jpg
+214,ATTTCATTATTTCGCG-1,15931,4785,ER,CID4290,Invasive cancer + stroma,CID4290_ATTTCATTATTTCGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATTTCATTATTTCGCG-1.jpg
+1329,CAAGATATTATAACGT-1,25948,5451,ER,CID4290,Invasive cancer + stroma,CID4290_CAAGATATTATAACGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAAGATATTATAACGT-1.jpg
+2189,GAAGGAGTCGAGTGCG-1,1810,1086,ER,CID4290,Invasive cancer + stroma,CID4290_GAAGGAGTCGAGTGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAAGGAGTCGAGTGCG-1.jpg
+1944,AAGACCCAACTGAACA-1,8514,3249,ER,CID4290,Invasive cancer + stroma,CID4290_AAGACCCAACTGAACA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGACCCAACTGAACA-1.jpg
+1483,CATGTCTCATTTATGG-1,3297,1693,ER,CID4290,Invasive cancer + stroma,CID4290_CATGTCTCATTTATGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATGTCTCATTTATGG-1.jpg
+831,TTACGGATGGTTCGAG-1,6346,2536,ER,CID4290,Invasive cancer + stroma,CID4290_TTACGGATGGTTCGAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTACGGATGGTTCGAG-1.jpg
+2366,CATAGTGGGCACGCCT-1,6349,2750,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_CATAGTGGGCACGCCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CATAGTGGGCACGCCT-1.jpg
+2338,CCCTACTTGAACAATG-1,29324,6249,ER,CID4290,Invasive cancer + stroma,CID4290_CCCTACTTGAACAATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCTACTTGAACAATG-1.jpg
+1784,TGCCGTGGATCGTCCT-1,1985,1212,ER,CID4290,Invasive cancer + stroma,CID4290_TGCCGTGGATCGTCCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCCGTGGATCGTCCT-1.jpg
+1001,ACCGATGGTAGCATCG-1,35045,6204,ER,CID4290,Invasive cancer + stroma,CID4290_ACCGATGGTAGCATCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACCGATGGTAGCATCG-1.jpg
+1657,TGTGCCGGTGCCGGAA-1,11472,3662,ER,CID4290,Invasive cancer + stroma,CID4290_TGTGCCGGTGCCGGAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGTGCCGGTGCCGGAA-1.jpg
+1977,ACAAGGATGCTTTAGG-1,11599,3849,ER,CID4290,Invasive cancer + stroma,CID4290_ACAAGGATGCTTTAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACAAGGATGCTTTAGG-1.jpg
+1241,CGTGCCCTCCCGAAGA-1,5988,2525,ER,CID4290,Invasive cancer + stroma,CID4290_CGTGCCCTCCCGAAGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGTGCCCTCCCGAAGA-1.jpg
+906,TGAAAGGACCTGACTC-1,11868,3661,ER,CID4290,Invasive cancer + stroma,CID4290_TGAAAGGACCTGACTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGAAAGGACCTGACTC-1.jpg
+2419,CCCTACCCACACCCAG-1,18300,4984,ER,CID4290,Invasive cancer + stroma,CID4290_CCCTACCCACACCCAG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCCTACCCACACCCAG-1.jpg
+2020,ATGACTATCAGCTGTG-1,2484,1494,ER,CID4290,Invasive cancer + stroma,CID4290_ATGACTATCAGCTGTG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATGACTATCAGCTGTG-1.jpg
+916,AACTCTCAATAGAGCG-1,20731,4981,ER,CID4290,Invasive cancer + stroma,CID4290_AACTCTCAATAGAGCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AACTCTCAATAGAGCG-1.jpg
+345,GCAGGTAGAGTATGGT-1,5775,2439,ER,CID4290,Invasive cancer + stroma,CID4290_GCAGGTAGAGTATGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCAGGTAGAGTATGGT-1.jpg
+746,TATGTCTCATTGTGCC-1,25403,5346,ER,CID4290,Invasive cancer + stroma,CID4290_TATGTCTCATTGTGCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATGTCTCATTGTGCC-1.jpg
+179,AGGGAAACGAGGTACT-1,20077,5011,ER,CID4290,Invasive cancer + stroma,CID4290_AGGGAAACGAGGTACT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGGAAACGAGGTACT-1.jpg
+83,CTAAGTACAGGGCTAC-1,7289,2956,ER,CID4290,Invasive cancer + stroma + lymphocytes,CID4290_CTAAGTACAGGGCTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTAAGTACAGGGCTAC-1.jpg
+888,TATTCGTGCCAGAATA-1,4637,2111,ER,CID4290,Invasive cancer + stroma,CID4290_TATTCGTGCCAGAATA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATTCGTGCCAGAATA-1.jpg
+381,TGGAAGGATAAAGATG-1,1751,1073,ER,CID4290,Invasive cancer + stroma,CID4290_TGGAAGGATAAAGATG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGGAAGGATAAAGATG-1.jpg
+2022,AGACTGTTACCGGGTC-1,3338,1744,ER,CID4290,Invasive cancer + stroma,CID4290_AGACTGTTACCGGGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGACTGTTACCGGGTC-1.jpg
+1116,ATGGAACCTTTGCACA-1,4858,2153,ER,CID4290,Invasive cancer + stroma,CID4290_ATGGAACCTTTGCACA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATGGAACCTTTGCACA-1.jpg
+1162,CTCGGTACCACTGCTC-1,5242,2125,ER,CID4290,Invasive cancer + stroma,CID4290_CTCGGTACCACTGCTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CTCGGTACCACTGCTC-1.jpg
+160,GTACGTCACGTATTAA-1,9269,3360,ER,CID4290,Invasive cancer + stroma,CID4290_GTACGTCACGTATTAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTACGTCACGTATTAA-1.jpg
+2344,GTGGCTGTTTCTGTTC-1,31548,6389,ER,CID4290,Invasive cancer + stroma,CID4290_GTGGCTGTTTCTGTTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGGCTGTTTCTGTTC-1.jpg
+639,AGGAGAGTCTGGCTAC-1,1750,1101,ER,CID4290,Stroma,CID4290_AGGAGAGTCTGGCTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGGAGAGTCTGGCTAC-1.jpg
+2421,GACTTCAACGCATCAA-1,4180,2161,ER,CID4290,Invasive cancer + stroma,CID4290_GACTTCAACGCATCAA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GACTTCAACGCATCAA-1.jpg
+2011,TGCCGGATGTACGAGC-1,2506,1473,ER,CID4290,Invasive cancer + stroma,CID4290_TGCCGGATGTACGAGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TGCCGGATGTACGAGC-1.jpg
+456,CAGCCTCCTGCAGAGG-1,12384,3920,ER,CID4290,Invasive cancer + stroma,CID4290_CAGCCTCCTGCAGAGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CAGCCTCCTGCAGAGG-1.jpg
+698,GTCGTGTCTGGTCATC-1,6018,1888,ER,CID4290,Invasive cancer + stroma,CID4290_GTCGTGTCTGGTCATC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCGTGTCTGGTCATC-1.jpg
+186,GTGATGCACAACATCT-1,16693,4307,ER,CID4290,Invasive cancer + stroma,CID4290_GTGATGCACAACATCT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGATGCACAACATCT-1.jpg
+2150,AAACGGGCGTACGGGT-1,1835,1093,ER,CID4290,Invasive cancer + stroma,CID4290_AAACGGGCGTACGGGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAACGGGCGTACGGGT-1.jpg
+315,GGCGAACCGTTCTGAT-1,3051,1603,ER,CID4290,Stroma,CID4290_GGCGAACCGTTCTGAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGCGAACCGTTCTGAT-1.jpg
+1330,ACACACCAGGACCAGT-1,9259,3112,ER,CID4290,Invasive cancer + stroma,CID4290_ACACACCAGGACCAGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ACACACCAGGACCAGT-1.jpg
+1345,ATCGCCAGTCAACATT-1,13887,3993,ER,CID4290,Invasive cancer + stroma,CID4290_ATCGCCAGTCAACATT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_ATCGCCAGTCAACATT-1.jpg
+2283,GTGCCTGAGACCAAAC-1,15695,4602,ER,CID4290,Invasive cancer + stroma,CID4290_GTGCCTGAGACCAAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGCCTGAGACCAAAC-1.jpg
+615,GTACTCCTGGGTATGC-1,13725,4223,ER,CID4290,Invasive cancer + stroma,CID4290_GTACTCCTGGGTATGC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTACTCCTGGGTATGC-1.jpg
+893,GCGCTAATTGAATAGA-1,5510,2464,ER,CID4290,Invasive cancer + stroma,CID4290_GCGCTAATTGAATAGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCGCTAATTGAATAGA-1.jpg
+437,AAGTCTAGTAGCTGCC-1,1077,682,ER,CID4290,Stroma,CID4290_AAGTCTAGTAGCTGCC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AAGTCTAGTAGCTGCC-1.jpg
+2292,GGATGGCTTGAAGTAT-1,3542,1805,ER,CID4290,Invasive cancer + stroma,CID4290_GGATGGCTTGAAGTAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GGATGGCTTGAAGTAT-1.jpg
+136,GTCCTTCTAGTGGGTT-1,8890,3381,ER,CID4290,Invasive cancer + stroma,CID4290_GTCCTTCTAGTGGGTT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTCCTTCTAGTGGGTT-1.jpg
+1836,AGAGAAGGAGTACAAT-1,1546,1014,ER,CID4290,Invasive cancer + stroma,CID4290_AGAGAAGGAGTACAAT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_AGAGAAGGAGTACAAT-1.jpg
+1831,GAAGAAACGATATTGT-1,3607,1822,ER,CID4290,Invasive cancer + stroma,CID4290_GAAGAAACGATATTGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GAAGAAACGATATTGT-1.jpg
+1978,TTGAACGACGTGCTGA-1,20892,5234,ER,CID4290,Invasive cancer + stroma,CID4290_TTGAACGACGTGCTGA-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TTGAACGACGTGCTGA-1.jpg
+876,GTGCTCAAGTACTGTC-1,3600,1902,ER,CID4290,Invasive cancer + stroma,CID4290_GTGCTCAAGTACTGTC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GTGCTCAAGTACTGTC-1.jpg
+505,TATGCTCCCTACTTAC-1,2634,1542,ER,CID4290,Invasive cancer + stroma,CID4290_TATGCTCCCTACTTAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TATGCTCCCTACTTAC-1.jpg
+187,CCGACGTAAACACAAC-1,21843,5126,ER,CID4290,Invasive cancer + stroma,CID4290_CCGACGTAAACACAAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CCGACGTAAACACAAC-1.jpg
+1458,GATAGGTAACGTTGAC-1,13680,4417,ER,CID4290,Invasive cancer + stroma,CID4290_GATAGGTAACGTTGAC-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GATAGGTAACGTTGAC-1.jpg
+1111,GCCGTGGAAGAAATGT-1,4749,2163,ER,CID4290,Invasive cancer + stroma,CID4290_GCCGTGGAAGAAATGT-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_GCCGTGGAAGAAATGT-1.jpg
+1118,CGCCGTCTACCCATCG-1,3456,1658,ER,CID4290,Invasive cancer + stroma,CID4290_CGCCGTCTACCCATCG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_CGCCGTCTACCCATCG-1.jpg
+2394,TAGCAGATACTTAGGG-1,4339,2347,ER,CID4290,Invasive cancer + stroma,CID4290_TAGCAGATACTTAGGG-1,/Users/zhiningsui/GitHub/st2image_data/Wu_2021/output/patch_jpg/CID4290_TAGCAGATACTTAGGG-1.jpg

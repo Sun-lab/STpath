@@ -1,0 +1,15 @@
+The classification report:
+                               precision    recall  f1-score   support
+
+              Invasive cancer       0.36      1.00      0.53        55
+Invasive cancer + lymphocytes       0.00      0.00      0.00        63
+                  Lymphocytes       0.00      0.00      0.00        13
+                       Stroma       0.00      0.00      0.00        22
+
+                     accuracy                           0.36       153
+                    macro avg       0.09      0.25      0.13       153
+                 weighted avg       0.13      0.36      0.19       153
+
+The confusion matrix:
+[[55,  0],
+ [62,  0]]

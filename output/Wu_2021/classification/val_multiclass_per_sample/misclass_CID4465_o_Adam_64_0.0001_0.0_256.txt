@@ -1,0 +1,10 @@
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_TCTTAGAGTGAACTCT-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_CACACACGCTAACGAG-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_CAGCAGTCCAGACTAT-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_CGAGAGGGTAGCCGCG-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_CGCCGTTCAGCATAGT-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_GTTATAATACGGTGAA-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_AGAGGCTTCGGAAACC-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_ATTCAACCATTTAAGG-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_GCTCGCTCATGTCCAA-1.jpg
+ fh scratch delete90 sun_w zsui st2image_data Wu_2021 output patch_jpg CID4465_TTAAGATAGGATTGAC-1.jpg

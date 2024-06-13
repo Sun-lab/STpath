@@ -1,0 +1,17 @@
+The classification report:
+                               precision    recall  f1-score   support
+
+                         DCIS       0.23      0.76      0.35        37
+Invasive cancer + lymphocytes       0.42      0.39      0.40        54
+                  Lymphocytes       0.00      0.00      0.00         9
+Normal + stroma + lymphocytes       0.00      0.00      0.00        39
+                       Stroma       0.00      0.00      0.00        15
+      Stroma + adipose tissue       0.00      0.00      0.00        20
+
+                     accuracy                           0.28       174
+                    macro avg       0.11      0.19      0.13       174
+                 weighted avg       0.18      0.28      0.20       174
+
+The confusion matrix:
+[[28,  9],
+ [33, 21]]
