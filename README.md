@@ -3,7 +3,6 @@
 Before running the pipeline, ensure that the following software and libraries are installed:
    - Python 3.11
    - TensorFlow 2.7.1
-   - Required Python libraries: numpy, pandas, argparse, ast, matplotlib, cv2, scikit-learn
    - Shell access with Slurm workload manager
 
 ## Scripts
