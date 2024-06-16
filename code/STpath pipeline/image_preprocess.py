@@ -10,7 +10,7 @@ Input:
 - dir_to_transform: A directory of images to be processed and normalized.
 - output_format: The format to save normalized images (e.g., 'tiff', 'jpeg', 'jpg', 'png').
 - output_path: The directory to save normalized images.
-- method: The stain normalization method ('macenko', 'vahadane', 'reinhard', 'modified_reinhard').
+- method: The stain normalization method ('macenko', 'vahadane', 'reinhard').
 - tissue_check_threshold: (Optional) The minimum tissue area ratio to consider the patch as valid.
 - save_tissue_check_dir: (Optional) Directory to save the tissue check plots.
 
@@ -30,12 +30,15 @@ import re
 import cv2
 import numpy as np
 import torch
-from torchvision import transforms
-import torchstain
+from torchvision.transforms import ToTensor
+from torchvision.transforms.functional import convert_image_dtype
+from torch_staintools.normalizer import NormalizerBuilder
+from torch_staintools.augmentor import AugmentorBuilder
 from PIL import Image
 import tifffile as tiff
 import matplotlib.pyplot as plt
 from skimage import filters, exposure, morphology
+
 
 def save_image(image, output_format, output_path, image_id):
     """
@@ -65,46 +68,54 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
         dir_to_transform (str): The directory of images to normalize.
         output_format (str): The format to save normalized images.
         output_path (str): The path to save normalized images.
-        method (str): The normalization method ('macenko', 'vahadane', 'reinhard', 'modified_reinhard').
+        method (str): The normalization method ('macenko', 'vahadane', 'reinhard').
         tissue_check_threshold (float): The minimum tissue area ratio to consider the patch as valid.
         save_tissue_check_dir (str): Directory to save the tissue check plots.
     """
+    
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     img_format = '.' + dir_img_target.split("/")[-1].split(".")[-1]
-    target = cv2.cvtColor(cv2.imread(dir_img_target), cv2.COLOR_BGR2RGB)
-     
-    T = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Lambda(lambda x: x * 255)
-    ])
+    
+    seed = 0
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
 
+    # cpu or gpu
+    device = torch.device("cpu")
+    
+    # shape: Height (H) x Width (W) x Channel (C, for RGB C=3)
+    target = cv2.cvtColor(cv2.imread(dir_img_target), cv2.COLOR_BGR2RGB)
+    # shape: Batch x Channel x Height x Width (BCHW)
+    target_tensor = ToTensor()(target).unsqueeze(0).to(device)
+    
+    # ######## Normalization
+    # Create the normalizer
     if method.lower() == 'macenko':
-        normalizer = torchstain.normalizers.MacenkoNormalizer(backend='torch')
+        normalizer = NormalizerBuilder.build('macenko', concentration_method='ista')
     elif method.lower() == 'vahadane':
-        normalizer = torchstain.normalizers.VahadaneNormalizer(backend='torch')
+        normalizer = NormalizerBuilder.build('vahadane', concentration_method='ista')
     elif method.lower() == 'reinhard':
-        normalizer = torchstain.normalizers.ReinhardNormalizer(backend='torch')
-    elif method.lower() == 'modified_reinhard':
-        normalizer = torchstain.normalizers.ModifiedReinhardNormalizer(backend='torch')
+        normalizer = NormalizerBuilder.build('reinhard', concentration_method='ista')
     else:
         raise ValueError(f"Unsupported normalization method: {method}")
 
-    normalizer.fit(T(target))
+    # Move the normalizer to the device (CPU or GPU)
+    normalizer = normalizer.to(device)
+    # Fit. For macenko and vahadane this step will compute the stain matrix and concentration
+    normalizer.fit(target_tensor)
 
     if os.path.isdir(dir_to_transform):
         for img in os.listdir(dir_to_transform):
             if img.endswith(img_format) and not os.path.isfile(output_path + img):
                 to_transform_id = re.sub(img_format, '', img)
+                # shape: Height (H) x Width (W) x Channel (C, for RGB C=3)
                 to_transform = cv2.cvtColor(cv2.imread(os.path.join(dir_to_transform, img)), cv2.COLOR_BGR2RGB)
-            
                 if is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold):
-                    t_to_transform = T(to_transform)
-                    if method.lower() == 'macenko':
-                        norm, H, E = normalizer.normalize(I=t_to_transform, stains=True)
-                    elif method.lower() == 'reinhard':
-                        norm = normalizer.normalize(I=t_to_transform)
-                    
-                    norm_np = norm.numpy().astype(np.uint8)  # Convert tensor to NumPy array
+                    # transform
+                    to_transform_tensor = ToTensor()(to_transform).unsqueeze(0).to(device)
+                    # BCHW - scaled to [0, 1] torch.float32
+                    norm = normalizer(to_transform_tensor)
+                    norm_np = convert_image_dtype(norm, torch.uint8).squeeze().detach().cpu().permute(1, 2, 0).numpy()                    
                     save_image(norm_np, output_format, output_path, to_transform_id)
                     print(f"The image {img} has been normalized and saved in the destination directory.")
             else:
@@ -114,9 +125,11 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
         if not os.path.isfile(output_path + to_transform_id + ".jpg"):
             to_transform = cv2.cvtColor(cv2.imread(dir_to_transform), cv2.COLOR_BGR2RGB)
             if is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold):
-                t_to_transform = T(to_transform)
-                norm, H, E = normalizer.normalize(I=t_to_transform, stains=True)
-                norm_np = norm.numpy().astype(np.uint8)  # Convert tensor to NumPy array
+                # transform
+                to_transform_tensor = ToTensor()(to_transform).unsqueeze(0).to(device)
+                # BCHW - scaled to [0, 1] torch.float32
+                norm = normalizer(to_transform_tensor)
+                norm_np = convert_image_dtype(norm, torch.uint8).squeeze().detach().cpu().permute(1, 2, 0).numpy()                    
                 save_image(norm_np, output_format, output_path, to_transform_id)
         print(f"The image {os.path.basename(dir_to_transform)} has been normalized and saved in the destination directory.")
 
@@ -244,14 +257,17 @@ def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', thr
 
 
 # Example usage
-ORIGINAL_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch/'
-NORMALIZED_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch_normalized/'
-TISSUE_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch_tissue_detected/'
+ORIGINAL_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch/'
+NORMALIZED_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch_normalized/'
+TISSUE_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch_tissue_detected/'
 
-stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + 'BC23895_D1_4x8.jpg',
-                dir_to_transform=ORIGINAL_IMG_DIR,
-                output_format='jpg', output_path=NORMALIZED_IMG_DIR + 'reinhard/', 
-                method='reinhard', tissue_check_threshold = 0.2, save_tissue_check_dir = TISSUE_IMG_DIR)
+for method in ['macenko', 'vahadane', 'reinhard']:
+    stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + '10X_FFPE_GGAACCGTGTAAATTG-1.jpg',
+                    dir_to_transform=ORIGINAL_IMG_DIR,
+                    output_format='jpg', output_path=NORMALIZED_IMG_DIR + method +' /', 
+                    method=method, tissue_check_threshold = 0.2, save_tissue_check_dir = TISSUE_IMG_DIR)
 
 
-'vahadane', 'reinhard', 'modified_reinhard'
+
+
+
