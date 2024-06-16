@@ -1,7 +1,7 @@
 # STpath
 ## Prerequisites
 Before running the pipeline, ensure that the following software and libraries are installed:
-   - Python 3.9.6
+   - Python 3.11
    - TensorFlow 2.7.1
    - Required Python libraries: numpy, pandas, argparse, ast, matplotlib, cv2, scikit-learn
    - Shell access with Slurm workload manager
@@ -64,6 +64,8 @@ sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${
 ```
 ### `create_patches.py`
 This script creates patches from the full-resolution WSIs based on the ST data such that there is one spot in each patch. 
+### `image_preprocess.py`
+This script evaluates the quality of patches by calculating the proportion of tissue in the patch and performs stain normalization.
 ### `clustering_preprocess.R`
 This script handles the preprocessing of the ST count matrices to prepare for clustering. It performs filtering and creates Seurat objects from the count matrices of all samples, which are ready for clustering (`clustering.R`)
 ### `clustering.R`
