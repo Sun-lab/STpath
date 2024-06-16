@@ -241,7 +241,6 @@ visualize_clusters_comparison_heatmap(annotation_df = merged_ann_clusters,
                               name.2 = "SCTransform",
                               fn_suffix = "lognorm_vs_sct_filt_zeros_all")
 
-
 visualize_clusters_comparison_spotplot(annotation_df_list = list(annotations_cluster_unfilt, 
                                                                  annotations_cluster),
                                        colnameList = list(cluster_methods,
@@ -251,60 +250,5 @@ visualize_clusters_comparison_spotplot(annotation_df_list = list(annotations_clu
                                        pdf_height=10,
                                        fn_names = cluster_methods,
                                        fn_suffix = "unfilt_vs_filt_zeros_all")
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-p_list <- visualize_umap(cluster_methods = "integrated.cca.lognorm_clusters_0.1",
-                         seurat_obj = seurat_integrated,
-                         fn_suffix = "integrated.cca.lognorm_clusters_0.1",
-                         split.by.1 = "label",
-                         n_col.1 = 1,
-                         strip.text.size = 14,
-                         axis.text.size = 12,
-                         legend.text.size = 12,
-                         axis.title.size = 14,
-                         legend.point.size = 4,
-                         tag.size = 14,
-                         pdf_height = 6,
-                         pdf_width = 7, 
-                         plot_titles = "",
-                         includes_number = T,
-                         returns_plot = 1)
-
-p_umap <- p_list[[1]]
-
-scatterplot_AUC <- scatterplot_AUC + 
-  theme(legend.text = element_text(size = 15),
-        legend.title = element_text(size = 16),
-        axis.text.x = element_text(size = 14),
-        axis.text.y = element_text(size = 16),
-        axis.title = element_text(size = 16)) 
-p_AUC_He
-
-fig6 <- free(scatterplot_AUC) / ((p_umap | free(p_AUC_He)) & 
-                                   theme(axis.text = element_text(size = 14),
-                                         axis.title = element_text(size = 16),
-                                         legend.text = element_text(size = 14),
-                                         legend.title = element_text(size = 16)))+ 
-  plot_annotation(tag_levels = 'A',
-                  tag_prefix = "(",
-                  tag_suffix = ")") & 
-  theme(plot.tag = element_text(size = 16, face = "bold")) 
-
-ggsave(paste0("Fig6.png"), fig6, width = 11.5, height = 10.5)
-
-
-
 
 
