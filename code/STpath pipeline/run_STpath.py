@@ -467,7 +467,7 @@ def run_hyperparams(base_model, classification, fine_tuning, train_df, val_df, t
         plot_learning_curves(classification, fine_history, fine_name, fine_tuning)
 
 
-def run(project, task, data_file, outcome_list, patch_id, image_path, result_path, base_model, image, optimizer, batch_size, learning_rate, dropout_rate, dense_layer_size, test_split, val_split, seed, image_resize, num_epoch, patience):
+def run(project, task, data_file, outcome_list, patch_id, prefix_patch_id, image_path, result_path, base_model, image, optimizer, batch_size, learning_rate, dropout_rate, dense_layer_size, test_split, val_split, seed, image_resize, num_epoch, patience):
     """
     Main function to run the training process with specified parameters.
     
@@ -498,32 +498,42 @@ def run(project, task, data_file, outcome_list, patch_id, image_path, result_pat
     NUM_EPOCHS = num_epoch
     EARLY_STOP_PATIENCE = patience
     IMAGE_PATH = image_path
-
-    model_name = f"{base_model}_{image}_{optimizer}_{batch_size}_{learning_rate}_{dropout_rate}_{dense_layer_size}"    
-
     
+    model_name = f"{base_model}_{image}_{optimizer}_{batch_size}_{learning_rate}_{dropout_rate}_{dense_layer_size}"   
+    if prefix_patch_id is not None:
+        model_name = f"{prefix_patch_id}_{model_name}"  
+
     if len(outcome_list) == 1 and task == "classification":
         outcome_list = outcome_list[0]
         
     setup_paths(result_path, project, outcome_list, task)
-    
     if os.path.isfile(os.path.join(EVAL_PATH, f"test_pred_{model_name}.csv")):
         sys.exit()
     
     df = pd.read_csv(data_file)
+    
+    if task == "classification":
+        number = pd.value_counts(df[outcome_list])
+        classes = number[number > 50].index
+        classes = [c for c in classes if c not in ["nan", "Artefact", "Uncertain"]]
+        df = df.loc[df[outcome_list].isin(classes), ]
+            
     if patch_id not in df.columns:
         if 'Unnamed: 0' in df.columns:
             df.rename(columns={'Unnamed: 0': patch_id}, inplace=True)
         else:
             raise ValueError(f"Column {patch_id} does not exist in the dataframe. Available columns are: {df.columns.tolist()}")
+
     # Ensure 'Unnamed: 0' is not in columns
     if 'Unnamed: 0' in df.columns:
         df.drop(columns=['Unnamed: 0'], inplace=True)
-    
+        
     # Ensure patch_id column exists after renaming
     if patch_id not in df.columns:
         raise ValueError(f"Column {patch_id} does not exist in the dataframe after renaming. Available columns are: {df.columns.tolist()}")
-
+    
+    if prefix_patch_id is not None:
+        df[patch_id] = prefix_patch_id + '_' + df[patch_id].astype(str)
 
     if task == "classification":
         df[outcome_list] = df[outcome_list].apply(str)
@@ -531,6 +541,10 @@ def run(project, task, data_file, outcome_list, patch_id, image_path, result_pat
     else:
         df[outcome_list] = df[outcome_list].apply(pd.to_numeric)
         is_classification = False
+        
+    print(df)
+    
+    
     
     df, train_df, val_df, test_df = prepare_dataframe(df, patch_id, image_path, 1 - test_split - val_split, val_split, test_split)
     outcome_str = '_'.join(outcome_list) if isinstance(outcome_list, list) else outcome_list
@@ -543,11 +557,11 @@ def run(project, task, data_file, outcome_list, patch_id, image_path, result_pat
    
 def parse_args():
     parser = argparse.ArgumentParser(description='Take inputs')
-    parser.add_argument('--project', default="unfilt", type=str, help='a string of project name')
+    parser.add_argument('--project', default="", type=str, help='a string of project name')
     parser.add_argument('--task', default="classification", type=str, help='a string of task type (classification, regression)')
-    parser.add_argument('--data_file', default="BRCA_clusters_for_STpath.csv", type=str, help='a string of the name of the csv file containing the predictor and response variables')
-    parser.add_argument('--result_path', default="../output/BRCA/Classification/", type=str, help='a string of the directory saving all results of the project')
-    parser.add_argument('--image_path', default="../../st2image_data/BRCA/output/patch_jpg_2/", type=str, help='a string of the path to the image patches')
+    parser.add_argument('--data_file', default="", type=str, help='a string of the name of the csv file containing the predictor and response variables')
+    parser.add_argument('--result_path', default="", type=str, help='a string of the directory saving all results of the project')
+    parser.add_argument('--image_path', default="", type=str, help='a string of the path to the image patches')
     parser.add_argument('-n', '--outcome_list', default=[], nargs='+', help='a list of column names for the response variable')
     parser.add_argument('--patch_id', default="X", type=str, help='a string of the column name of the ID of image patches')
     parser.add_argument('--base_model', default="ResNet50", type=str, help='a string of base model used for transfer learning (efficientnet.EfficientNetB0 to efficientnet.EfficientNetB7, VGG16, ResNet101, MobileNet, MobileNetV2)')
@@ -563,6 +577,7 @@ def parse_args():
     parser.add_argument('--image_resize', default=224, type=int, help='an integer of the size of image input to the model')
     parser.add_argument('--num_epoch', default=500, type=int, help='an integer of the maximum number of epochs')
     parser.add_argument('--patience', default=20, type=int, help='an integer of the early stopping patience')
+    parser.add_argument('--prefix_patch_id', default=None, type=str, help="a string of prefix to be added to the patch_id")
     
     args = parser.parse_args()
 

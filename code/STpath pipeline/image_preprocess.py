@@ -96,11 +96,14 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
             if img.endswith(img_format) and not os.path.isfile(output_path + img):
                 to_transform_id = re.sub(img_format, '', img)
                 to_transform = cv2.cvtColor(cv2.imread(os.path.join(dir_to_transform, img)), cv2.COLOR_BGR2RGB)
-                is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold, clean_params = {'min_size': 100})
-                
+            
                 if is_valid_patch(to_transform, save_dir=save_tissue_check_dir, patch_id=to_transform_id, tissue_threshold=tissue_check_threshold):
                     t_to_transform = T(to_transform)
-                    norm, H, E = normalizer.normalize(I=t_to_transform, stains=True)
+                    if method.lower() == 'macenko':
+                        norm, H, E = normalizer.normalize(I=t_to_transform, stains=True)
+                    elif method.lower() == 'reinhard':
+                        norm = normalizer.normalize(I=t_to_transform)
+                    
                     norm_np = norm.numpy().astype(np.uint8)  # Convert tensor to NumPy array
                     save_image(norm_np, output_format, output_path, to_transform_id)
                     print(f"The image {img} has been normalized and saved in the destination directory.")
@@ -242,12 +245,13 @@ def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', thr
 
 # Example usage
 ORIGINAL_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch/'
-NORMALIZED_IMG_DIR = '../../output/He_2020/patch_normalized/'
-TISSUE_IMG_DIR = '../../output/He_2020/patch_tissue_detected/'
+NORMALIZED_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch_normalized/'
+TISSUE_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/He_2020/patch_tissue_detected/'
 
-stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + 'CID4535_AAGCTCGTGCCAAGTC-1.jpg',
+stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + 'BC23895_D1_4x8.jpg',
                 dir_to_transform=ORIGINAL_IMG_DIR,
-                output_format='jpg', output_path=NORMALIZED_IMG_DIR + 'macenko/', 
-                method='macenko', tissue_check_threshold = 0.3, save_tissue_check_dir = TISSUE_IMG_DIR)
+                output_format='jpg', output_path=NORMALIZED_IMG_DIR + 'reinhard/', 
+                method='reinhard', tissue_check_threshold = 0.2, save_tissue_check_dir = TISSUE_IMG_DIR)
 
 
+'vahadane', 'reinhard', 'modified_reinhard'

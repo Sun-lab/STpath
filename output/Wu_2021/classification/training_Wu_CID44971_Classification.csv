@@ -1,0 +1,812 @@
+,X,nCount_RNA,nFeature_RNA,subtype,patientid,Classification,img_path
+984,CID44971_GTGGAGTCGGCGGTTG-1,5627,2675,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGAGTCGGCGGTTG-1.jpg
+49,CID44971_TTACGGTGTCACCGAG-1,22824,6271,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACGGTGTCACCGAG-1.jpg
+800,CID44971_GACTCACCCACGTGAG-1,11883,4432,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACTCACCCACGTGAG-1.jpg
+892,CID44971_TGATTCTGTCGCCGGT-1,7614,3297,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGATTCTGTCGCCGGT-1.jpg
+544,CID44971_AGTACGGGCACCTGGC-1,29984,6502,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTACGGGCACCTGGC-1.jpg
+431,CID44971_TTACCCATTGCCGGGT-1,16228,4729,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACCCATTGCCGGGT-1.jpg
+1035,CID44971_CTTCCGCTCCGTGAAG-1,6256,3033,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTCCGCTCCGTGAAG-1.jpg
+893,CID44971_GGGCGGCAAATGAATT-1,8298,3520,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGCGGCAAATGAATT-1.jpg
+471,CID44971_GTCGTATTGGCGTACA-1,13617,4806,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCGTATTGGCGTACA-1.jpg
+727,CID44971_CGTCGGATAGTGTTGA-1,8356,3347,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTCGGATAGTGTTGA-1.jpg
+45,CID44971_GTGCGCAGCTTGCTCC-1,11999,4212,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGCGCAGCTTGCTCC-1.jpg
+972,CID44971_CCGACGGGCATGAGGT-1,19300,5683,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGACGGGCATGAGGT-1.jpg
+736,CID44971_CACCCAAATCTTATGT-1,12226,4383,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCCAAATCTTATGT-1.jpg
+266,CID44971_GGTAACTATGTATCTG-1,7514,2824,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTAACTATGTATCTG-1.jpg
+140,CID44971_CGGTTCCGGCTTCTTG-1,8391,3236,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGTTCCGGCTTCTTG-1.jpg
+515,CID44971_ATACGGGTTTCGATTG-1,2887,1628,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATACGGGTTTCGATTG-1.jpg
+353,CID44971_GTGCAACAAATGTGGC-1,1580,1027,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGCAACAAATGTGGC-1.jpg
+42,CID44971_CAGTAGCGAGGTAGTA-1,9959,3777,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGTAGCGAGGTAGTA-1.jpg
+1006,CID44971_CTCTCTAACTGCCTAG-1,5042,2582,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCTCTAACTGCCTAG-1.jpg
+65,CID44971_GAACCATCTGGGAGAC-1,1180,845,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAACCATCTGGGAGAC-1.jpg
+785,CID44971_GTGACCGCACACTACG-1,10812,3989,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGACCGCACACTACG-1.jpg
+667,CID44971_GTAATAAAGGGCTCCC-1,11453,4405,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAATAAAGGGCTCCC-1.jpg
+1018,CID44971_GATGACAAGTAGGGCA-1,9314,3451,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATGACAAGTAGGGCA-1.jpg
+130,CID44971_CGTGCTGGCCTAGTCG-1,16734,4710,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTGCTGGCCTAGTCG-1.jpg
+1132,CID44971_AAGCCGCCGTGAAATC-1,14423,4648,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGCCGCCGTGAAATC-1.jpg
+977,CID44971_AAATTGATAGTCCTTT-1,3166,1844,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAATTGATAGTCCTTT-1.jpg
+467,CID44971_GATATGCGGTAGCCAA-1,23035,5783,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATATGCGGTAGCCAA-1.jpg
+114,CID44971_GGATCAAAGGACGAGG-1,2948,1581,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGATCAAAGGACGAGG-1.jpg
+975,CID44971_CGAGTGAAGGTACCAG-1,3430,2009,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGTGAAGGTACCAG-1.jpg
+245,CID44971_TCTCGGCTCCAGGACT-1,29012,6638,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTCGGCTCCAGGACT-1.jpg
+722,CID44971_GGATGTCCTTACCGCA-1,19786,5352,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGATGTCCTTACCGCA-1.jpg
+316,CID44971_CAATCCTGCCGTGGAG-1,11896,4284,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAATCCTGCCGTGGAG-1.jpg
+902,CID44971_AGTTAAGTCAACCGCT-1,9493,3961,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTTAAGTCAACCGCT-1.jpg
+703,CID44971_GTTCATCGTTTGGCTG-1,14042,4543,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTCATCGTTTGGCTG-1.jpg
+443,CID44971_TAAAGCTGCAATAGGG-1,28565,7165,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAAGCTGCAATAGGG-1.jpg
+602,CID44971_AGGTCGCGGAGTTACT-1,14705,5042,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGTCGCGGAGTTACT-1.jpg
+911,CID44971_TTGACCGTGTTAATGA-1,8039,3475,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGACCGTGTTAATGA-1.jpg
+1000,CID44971_GACGCCGTAAAGGCTA-1,26751,6750,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACGCCGTAAAGGCTA-1.jpg
+79,CID44971_TGGAAACGGAGTGAAC-1,5616,2430,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGAAACGGAGTGAAC-1.jpg
+680,CID44971_GGAATGCGCTAGCGTG-1,21594,5561,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAATGCGCTAGCGTG-1.jpg
+1090,CID44971_TATATATCGAGAAATG-1,22743,6055,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATATATCGAGAAATG-1.jpg
+154,CID44971_ACTCAGACCTGCTTCT-1,20767,5378,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTCAGACCTGCTTCT-1.jpg
+53,CID44971_GTGTATGACTTTAAAG-1,39890,8083,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGTATGACTTTAAAG-1.jpg
+720,CID44971_GCTTATGAAGCAGGAA-1,9596,3614,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTTATGAAGCAGGAA-1.jpg
+495,CID44971_TATGTCAAGACCGACT-1,23248,6023,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATGTCAAGACCGACT-1.jpg
+719,CID44971_CCCAAACATGCTGCTC-1,19841,5153,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCAAACATGCTGCTC-1.jpg
+716,CID44971_TGCATATGTCTGTCAC-1,14063,4946,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCATATGTCTGTCAC-1.jpg
+95,CID44971_TATGGAGTTTCTCGTT-1,14227,4508,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATGGAGTTTCTCGTT-1.jpg
+215,CID44971_CTATGTCTATTGAAAC-1,1612,1001,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTATGTCTATTGAAAC-1.jpg
+860,CID44971_CCGCTTACCTCACTCT-1,12961,4623,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGCTTACCTCACTCT-1.jpg
+904,CID44971_AAAGTAGCATTGCTCA-1,18010,5485,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAAGTAGCATTGCTCA-1.jpg
+1137,CID44971_CTGCCTTTAATACCTT-1,10078,3886,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGCCTTTAATACCTT-1.jpg
+672,CID44971_ATCTTGACTTGTCCAA-1,9431,3860,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCTTGACTTGTCCAA-1.jpg
+513,CID44971_ACGATACATAGAACTA-1,4141,2161,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGATACATAGAACTA-1.jpg
+793,CID44971_CGCACGTGCGCTATCA-1,18968,5395,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCACGTGCGCTATCA-1.jpg
+46,CID44971_TCACTATCGTGCAATC-1,18145,5388,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCACTATCGTGCAATC-1.jpg
+475,CID44971_GGCTAAAGGGCGGGTC-1,16749,5003,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCTAAAGGGCGGGTC-1.jpg
+401,CID44971_TCGCTGTGCGTAAATC-1,4241,2162,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCTGTGCGTAAATC-1.jpg
+835,CID44971_GGATGAAGATCGCTGA-1,7971,3586,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGATGAAGATCGCTGA-1.jpg
+572,CID44971_CAATAAACCTTGGCCC-1,20199,5527,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAATAAACCTTGGCCC-1.jpg
+794,CID44971_ACCCGGATGACGCATC-1,8844,3719,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCGGATGACGCATC-1.jpg
+783,CID44971_GATAACTCGCACTGTG-1,16211,4864,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATAACTCGCACTGTG-1.jpg
+1058,CID44971_GGACCTCTAGGCCGCC-1,3905,2159,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGACCTCTAGGCCGCC-1.jpg
+306,CID44971_TCCTGCCAACTGGAGA-1,23193,5951,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCTGCCAACTGGAGA-1.jpg
+262,CID44971_GAGCATCATCCCTGGG-1,19322,5312,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGCATCATCCCTGGG-1.jpg
+444,CID44971_AGTAGGAAGGAAGTTG-1,17439,5168,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTAGGAAGGAAGTTG-1.jpg
+738,CID44971_CCACGGTGCCCGGTAG-1,18675,5559,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACGGTGCCCGGTAG-1.jpg
+143,CID44971_GGTGAACGGGCTAGCC-1,17094,4678,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTGAACGGGCTAGCC-1.jpg
+840,CID44971_CGAGTACTAAAGAGGA-1,24218,6546,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGTACTAAAGAGGA-1.jpg
+772,CID44971_GCGAGCGCATGCTCCC-1,22858,6308,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGAGCGCATGCTCCC-1.jpg
+908,CID44971_GTAGAGGGAGACAAGT-1,16294,5267,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAGAGGGAGACAAGT-1.jpg
+193,CID44971_GAGGGCATCGCGTATC-1,31939,6825,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGGGCATCGCGTATC-1.jpg
+646,CID44971_TATGTCTCATTGTGCC-1,21812,5418,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATGTCTCATTGTGCC-1.jpg
+1092,CID44971_TTGTTTCATTAGTCTA-1,12424,4278,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGTTTCATTAGTCTA-1.jpg
+1140,CID44971_GGGAACGGTTTCAGAT-1,17789,5341,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGAACGGTTTCAGAT-1.jpg
+669,CID44971_GTGGTTACTTCTTTCG-1,8770,3693,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGTTACTTCTTTCG-1.jpg
+554,CID44971_GGGCTCATCGAACCCA-1,3172,1780,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGCTCATCGAACCCA-1.jpg
+726,CID44971_GCGTGGTACTGGGTTA-1,2732,1574,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGTGGTACTGGGTTA-1.jpg
+999,CID44971_AGGGACTCTACGCGAC-1,7624,3460,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGACTCTACGCGAC-1.jpg
+568,CID44971_GCCAATAGGGCATCTC-1,13532,4811,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCAATAGGGCATCTC-1.jpg
+939,CID44971_ATGACGCGTTCTATCC-1,17245,5230,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGACGCGTTCTATCC-1.jpg
+775,CID44971_GCTTACGTAGTTAGTA-1,31712,7581,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTTACGTAGTTAGTA-1.jpg
+964,CID44971_CTTCAGTGGTCGCCTA-1,9440,3713,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTCAGTGGTCGCCTA-1.jpg
+108,CID44971_TTATGCGTCCCGGTCC-1,9176,3529,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTATGCGTCCCGGTCC-1.jpg
+829,CID44971_CTGGTAACACATAGAA-1,6305,2917,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGTAACACATAGAA-1.jpg
+826,CID44971_CATGACTTCGCTGAAT-1,22859,6099,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATGACTTCGCTGAAT-1.jpg
+1016,CID44971_ACAATGAATACGGAGA-1,14025,4831,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACAATGAATACGGAGA-1.jpg
+472,CID44971_GAAATTAGCACGGATA-1,18292,5884,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAATTAGCACGGATA-1.jpg
+127,CID44971_CATGCATGGAGACCCT-1,1284,859,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATGCATGGAGACCCT-1.jpg
+170,CID44971_CACCGCCGACCAGCGA-1,712,524,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCGCCGACCAGCGA-1.jpg
+791,CID44971_TTGAATTCACGTGAGG-1,10842,3923,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGAATTCACGTGAGG-1.jpg
+514,CID44971_AGCCACTCCCGTGCTT-1,2671,1673,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCCACTCCCGTGCTT-1.jpg
+567,CID44971_TGGAACCACTGACACA-1,10595,4247,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGAACCACTGACACA-1.jpg
+643,CID44971_TCCACTTTATCTAGGT-1,12179,4358,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCACTTTATCTAGGT-1.jpg
+115,CID44971_CGTAGCGCCGACGTTG-1,2121,1112,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTAGCGCCGACGTTG-1.jpg
+718,CID44971_AGTGAGACTTCCAGTA-1,16741,5149,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTGAGACTTCCAGTA-1.jpg
+653,CID44971_GTAGCTTCCTCTTGTT-1,11879,3948,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAGCTTCCTCTTGTT-1.jpg
+105,CID44971_TCCGAGAAGGCTAAGC-1,39699,7817,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCGAGAAGGCTAAGC-1.jpg
+18,CID44971_GTTACGGCCCGACTGC-1,5411,2297,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTACGGCCCGACTGC-1.jpg
+694,CID44971_TCTTCCCATGGGCACA-1,4643,2375,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTTCCCATGGGCACA-1.jpg
+594,CID44971_TTACAGACCTAAATGA-1,14218,4582,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACAGACCTAAATGA-1.jpg
+983,CID44971_TTCGGGCGCTAGTCTT-1,2011,1324,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCGGGCGCTAGTCTT-1.jpg
+644,CID44971_GGTCTGAGAATCTGGA-1,16246,5211,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTCTGAGAATCTGGA-1.jpg
+275,CID44971_TAGAGCTACGAAGAAC-1,2610,1349,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGAGCTACGAAGAAC-1.jpg
+289,CID44971_TCATCCCAGAGGGTGG-1,2801,1519,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCATCCCAGAGGGTGG-1.jpg
+311,CID44971_TCACTACGACCAATGC-1,32062,7067,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCACTACGACCAATGC-1.jpg
+1076,CID44971_GCTGGTTTAGGCCATA-1,19032,5611,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTGGTTTAGGCCATA-1.jpg
+68,CID44971_TATTCCGGCAGTCCTA-1,897,653,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATTCCGGCAGTCCTA-1.jpg
+26,CID44971_GACCAGGTCATTCATA-1,1307,881,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACCAGGTCATTCATA-1.jpg
+190,CID44971_CCTCATGCAGCTACGA-1,9283,3585,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCATGCAGCTACGA-1.jpg
+466,CID44971_CACATTCTTTCGATGG-1,23846,6108,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACATTCTTTCGATGG-1.jpg
+771,CID44971_ATAAGTAGGGCGACTC-1,13135,4838,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAAGTAGGGCGACTC-1.jpg
+741,CID44971_CAAGGTCCTATAGGCT-1,9142,3998,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAGGTCCTATAGGCT-1.jpg
+1119,CID44971_GAGGGTAGTAACAAAG-1,18150,5633,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGGGTAGTAACAAAG-1.jpg
+338,CID44971_TGGAAGACGAACACCA-1,10720,3882,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGAAGACGAACACCA-1.jpg
+813,CID44971_GAAACAGATGACCACC-1,16286,4908,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAACAGATGACCACC-1.jpg
+100,CID44971_GATGTCCGGATCACAT-1,10409,3948,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATGTCCGGATCACAT-1.jpg
+494,CID44971_TCTTACCGGAACTCGT-1,12747,4262,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTTACCGGAACTCGT-1.jpg
+342,CID44971_CGCTTTCATACCGGTG-1,11605,3303,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCTTTCATACCGGTG-1.jpg
+116,CID44971_CAAGTGAACTTTGGTT-1,2315,1229,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAGTGAACTTTGGTT-1.jpg
+853,CID44971_CTTCTATGTTGAAGTA-1,20725,5762,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTCTATGTTGAAGTA-1.jpg
+1095,CID44971_AGCTAACAAGCAATGT-1,12725,4667,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTAACAAGCAATGT-1.jpg
+429,CID44971_GGCATATCGGTTCTGC-1,6991,2880,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCATATCGGTTCTGC-1.jpg
+881,CID44971_ATCAAACGAAGGTTTG-1,22568,6099,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCAAACGAAGGTTTG-1.jpg
+630,CID44971_TCTAGGTGGCGACGCT-1,12255,4168,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTAGGTGGCGACGCT-1.jpg
+751,CID44971_CCTAGGCGTAGCGATC-1,6281,2899,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTAGGCGTAGCGATC-1.jpg
+1024,CID44971_CCCGTAGCTGGGAAGA-1,4146,2210,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCGTAGCTGGGAAGA-1.jpg
+292,CID44971_AGGTACGATATTGCCA-1,5101,2424,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGTACGATATTGCCA-1.jpg
+423,CID44971_GTCGGATGTAGCGCGC-1,2725,1607,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCGGATGTAGCGCGC-1.jpg
+433,CID44971_GCGCTGATCCAGACTC-1,13885,4244,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGCTGATCCAGACTC-1.jpg
+811,CID44971_TGCAGTTTCCTCCCAT-1,11237,3857,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCAGTTTCCTCCCAT-1.jpg
+15,CID44971_CCCTTCTCGTACGCGA-1,1470,930,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCTTCTCGTACGCGA-1.jpg
+992,CID44971_TCGTTGCTATCCGGTC-1,4368,2011,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGTTGCTATCCGGTC-1.jpg
+313,CID44971_AATGAGTTCGCATATG-1,8994,3712,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATGAGTTCGCATATG-1.jpg
+77,CID44971_TTAATGCGAGGTAACT-1,1236,814,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAATGCGAGGTAACT-1.jpg
+29,CID44971_CATACGGGTGCATGAT-1,4535,2037,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATACGGGTGCATGAT-1.jpg
+201,CID44971_GAATCGCCGGACACGG-1,7798,2998,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAATCGCCGGACACGG-1.jpg
+806,CID44971_CCTCGGACCGGGATAG-1,7902,3494,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCGGACCGGGATAG-1.jpg
+1103,CID44971_CTTAGGTATAGACCAG-1,17048,5605,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTAGGTATAGACCAG-1.jpg
+910,CID44971_CCTACATTCACAGACG-1,3171,1879,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTACATTCACAGACG-1.jpg
+398,CID44971_AGGACATCGCACGTCG-1,6970,3031,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGACATCGCACGTCG-1.jpg
+485,CID44971_ATCACATTAGAATATC-1,3562,1978,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCACATTAGAATATC-1.jpg
+172,CID44971_CAGAGTGATTTAACGT-1,869,606,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGAGTGATTTAACGT-1.jpg
+1149,CID44971_GCTAGCGATAGGTCTT-1,5813,2767,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTAGCGATAGGTCTT-1.jpg
+482,CID44971_TTCTTGGAGTAATGAG-1,4080,2030,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCTTGGAGTAATGAG-1.jpg
+865,CID44971_TAAGTAACATCTTGAC-1,10594,3813,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAGTAACATCTTGAC-1.jpg
+773,CID44971_AGGGACCGGCTGCGTT-1,17056,5436,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGACCGGCTGCGTT-1.jpg
+879,CID44971_TCAACGCAGGAAATAA-1,30539,6844,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCAACGCAGGAAATAA-1.jpg
+995,CID44971_TCACAGGAGAATAAGA-1,10136,4020,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCACAGGAGAATAAGA-1.jpg
+505,CID44971_CAGTACATTCTCTAAA-1,10175,3735,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGTACATTCTCTAAA-1.jpg
+208,CID44971_AAAGACCCAAGTCGCG-1,8666,2760,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAAGACCCAAGTCGCG-1.jpg
+543,CID44971_TTGACCATGTTCTCCG-1,13656,4516,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGACCATGTTCTCCG-1.jpg
+859,CID44971_AAGTTCGGCCAACAGG-1,22816,6272,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGTTCGGCCAACAGG-1.jpg
+996,CID44971_GGGTTAACATTTGAGT-1,5830,2806,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGTTAACATTTGAGT-1.jpg
+383,CID44971_CCGCCTGCGAATTGGT-1,17633,5469,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGCCTGCGAATTGGT-1.jpg
+619,CID44971_TAAAGCGTTAGGAGAA-1,4274,2075,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAAGCGTTAGGAGAA-1.jpg
+645,CID44971_TAGAAAGGTGGCGCTA-1,20413,5394,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGAAAGGTGGCGCTA-1.jpg
+400,CID44971_TAAGGAACTTGTGGGA-1,8775,3453,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAGGAACTTGTGGGA-1.jpg
+613,CID44971_ACAATTTGAGCAGTGG-1,32263,6649,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACAATTTGAGCAGTGG-1.jpg
+481,CID44971_TCTCCAACGTAGGTTA-1,1812,1167,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTCCAACGTAGGTTA-1.jpg
+1084,CID44971_CACCAGTCAGCATGCA-1,22295,6068,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCAGTCAGCATGCA-1.jpg
+880,CID44971_TATTCCTCCGCCCACT-1,18999,5440,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATTCCTCCGCCCACT-1.jpg
+674,CID44971_GTTAGCCGTAAATCAA-1,22525,6230,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTAGCCGTAAATCAA-1.jpg
+823,CID44971_TATAGATGGTCGCAGT-1,15589,5164,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATAGATGGTCGCAGT-1.jpg
+921,CID44971_GTAATCTGATTCTTCG-1,8622,3343,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAATCTGATTCTTCG-1.jpg
+856,CID44971_AGTTTGGCCAGACCTA-1,14497,5096,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTTTGGCCAGACCTA-1.jpg
+755,CID44971_ACCGATGGTAGCATCG-1,16748,4819,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCGATGGTAGCATCG-1.jpg
+1122,CID44971_TGCCGGATGTACGAGC-1,15077,4919,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCCGGATGTACGAGC-1.jpg
+112,CID44971_GTAGCGCTGTTGTAGT-1,2610,1361,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAGCGCTGTTGTAGT-1.jpg
+817,CID44971_AACCCTACTGTCAATA-1,14401,4690,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACCCTACTGTCAATA-1.jpg
+14,CID44971_GCGTCCAGCTCGTGGC-1,16701,5429,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGTCCAGCTCGTGGC-1.jpg
+242,CID44971_ACCCTATAGGACTGAG-1,13402,4456,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCTATAGGACTGAG-1.jpg
+460,CID44971_TCATGCAGGTTCTCAT-1,9313,3378,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCATGCAGGTTCTCAT-1.jpg
+1098,CID44971_GAATAGTGCTCGATTA-1,16000,5149,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAATAGTGCTCGATTA-1.jpg
+297,CID44971_GACCGTCAGGTCGTGA-1,2970,1605,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACCGTCAGGTCGTGA-1.jpg
+70,CID44971_AAGTTTACTAATGGCA-1,912,663,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGTTTACTAATGGCA-1.jpg
+961,CID44971_CCAAGAAAGTGGGCGA-1,18357,5605,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAAGAAAGTGGGCGA-1.jpg
+833,CID44971_GAATAGACGCGACCCA-1,5702,2717,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAATAGACGCGACCCA-1.jpg
+990,CID44971_TTCCGGCCTTGAGGCT-1,9392,3491,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCCGGCCTTGAGGCT-1.jpg
+1002,CID44971_TATTATGTTTGCCTGC-1,5942,2894,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATTATGTTTGCCTGC-1.jpg
+987,CID44971_CGTTTGTGTAGAGGGT-1,3189,1756,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTTTGTGTAGAGGGT-1.jpg
+205,CID44971_GTCGTCAATTATAAGG-1,8909,2802,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCGTCAATTATAAGG-1.jpg
+1156,CID44971_CTACGATCCTATCCTA-1,5724,2692,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTACGATCCTATCCTA-1.jpg
+1077,CID44971_TGTCGTTATCACATAT-1,11810,4524,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTCGTTATCACATAT-1.jpg
+588,CID44971_AAGATTGGCGGAACGT-1,3579,1815,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGATTGGCGGAACGT-1.jpg
+424,CID44971_TATTTATACCGAGTAG-1,2142,1271,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATTTATACCGAGTAG-1.jpg
+752,CID44971_CTGGCGCACAGGTCTG-1,11031,4287,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGCGCACAGGTCTG-1.jpg
+173,CID44971_AACCCTGGTGGAACCA-1,1195,785,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACCCTGGTGGAACCA-1.jpg
+394,CID44971_TGATTTCCTCCTGACG-1,4183,2043,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGATTTCCTCCTGACG-1.jpg
+638,CID44971_TAACTATTACGCCAAA-1,15206,5124,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAACTATTACGCCAAA-1.jpg
+254,CID44971_GTTTGGCCGCTCAGCG-1,20907,5962,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTTGGCCGCTCAGCG-1.jpg
+204,CID44971_TCTGTCATACAAGAGC-1,9568,3516,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGTCATACAAGAGC-1.jpg
+1001,CID44971_AAAGGCTCTCGCGCCG-1,39828,8027,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAAGGCTCTCGCGCCG-1.jpg
+980,CID44971_GGCAAAGGCGCCAATA-1,4147,1882,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCAAAGGCGCCAATA-1.jpg
+900,CID44971_CTCCCTCCTTTCGATC-1,7382,3274,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCCCTCCTTTCGATC-1.jpg
+99,CID44971_AGCGTCTGAACCCGCA-1,14200,4719,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCGTCTGAACCCGCA-1.jpg
+1030,CID44971_TATTAACCTGACCGCG-1,5066,2531,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATTAACCTGACCGCG-1.jpg
+225,CID44971_ACGATGGATCCGATGC-1,1142,789,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGATGGATCCGATGC-1.jpg
+301,CID44971_CAGGAAGACTTTATAT-1,3884,1957,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGGAAGACTTTATAT-1.jpg
+34,CID44971_CTAAAGTCCGAAGCTA-1,23298,5906,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAAAGTCCGAAGCTA-1.jpg
+770,CID44971_GCGACATGTAAACATC-1,18388,5626,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGACATGTAAACATC-1.jpg
+403,CID44971_CACCCACACGTCACCC-1,9312,3692,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCCACACGTCACCC-1.jpg
+635,CID44971_ACGAGTACGGATGCCC-1,16522,5131,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGAGTACGGATGCCC-1.jpg
+428,CID44971_TTGGCCTAGAATTTCG-1,6888,2938,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGGCCTAGAATTTCG-1.jpg
+626,CID44971_GCGCATCCAGTCAGCA-1,8591,3103,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGCATCCAGTCAGCA-1.jpg
+909,CID44971_GATCCTCGACACTGGC-1,20662,5789,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATCCTCGACACTGGC-1.jpg
+678,CID44971_TCTGTGCCATCATAGT-1,7779,3287,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGTGCCATCATAGT-1.jpg
+1144,CID44971_CAGATATGAAGATGAC-1,4328,2370,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGATATGAAGATGAC-1.jpg
+929,CID44971_CGCGAGTCTGCCGGGT-1,28840,6593,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCGAGTCTGCCGGGT-1.jpg
+855,CID44971_TCTAGCAATCTCCGCC-1,19550,5747,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTAGCAATCTCCGCC-1.jpg
+492,CID44971_GCCAGGAGTAACCGAT-1,32829,6675,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCAGGAGTAACCGAT-1.jpg
+589,CID44971_CCAGTAGTCTGATCCA-1,4964,2214,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAGTAGTCTGATCCA-1.jpg
+375,CID44971_AGTTACTCTATCGTGG-1,7893,3349,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTTACTCTATCGTGG-1.jpg
+126,CID44971_GGGTGGTCCAGCCTGT-1,885,621,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGTGGTCCAGCCTGT-1.jpg
+58,CID44971_AGGGACAGCACGGCGG-1,3582,1772,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGACAGCACGGCGG-1.jpg
+978,CID44971_TAAGTCGCCGAGTATC-1,6958,2919,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAGTCGCCGAGTATC-1.jpg
+228,CID44971_GGAAGCTCGCTTACAG-1,2546,1423,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAAGCTCGCTTACAG-1.jpg
+507,CID44971_AGGTTGAGGCACGCTT-1,2550,1575,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGTTGAGGCACGCTT-1.jpg
+388,CID44971_AGTCAGCCACCGCCTG-1,7929,3061,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTCAGCCACCGCCTG-1.jpg
+749,CID44971_CCGGGCTGCTCCATAC-1,19235,5683,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGGGCTGCTCCATAC-1.jpg
+177,CID44971_ATGGCTGGAAATGGCC-1,39596,7155,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGGCTGGAAATGGCC-1.jpg
+249,CID44971_CTTATGTTGACTACCA-1,16059,4929,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTATGTTGACTACCA-1.jpg
+777,CID44971_CGCCGCCCATGCCTGT-1,12923,4638,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCCGCCCATGCCTGT-1.jpg
+1108,CID44971_CGAATGAAGTCATTGC-1,17447,5143,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAATGAAGTCATTGC-1.jpg
+446,CID44971_ATAATAGTGTAGGGAC-1,10956,3774,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAATAGTGTAGGGAC-1.jpg
+737,CID44971_AGATGATGGAGTCTGG-1,16683,5168,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGATGATGGAGTCTGG-1.jpg
+971,CID44971_TAACATACACGCGATC-1,17617,5248,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAACATACACGCGATC-1.jpg
+328,CID44971_CGCTATACCGCCCACT-1,10836,3980,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCTATACCGCCCACT-1.jpg
+524,CID44971_AATTCATAAGGGATCT-1,3482,1963,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATTCATAAGGGATCT-1.jpg
+107,CID44971_ATCCTGCTGCAGATAG-1,46927,7572,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCCTGCTGCAGATAG-1.jpg
+493,CID44971_GGAAAGTGCCCATGCC-1,28973,6535,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAAAGTGCCCATGCC-1.jpg
+340,CID44971_CCAAGGAACAGAGAGG-1,8718,3296,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAAGGAACAGAGAGG-1.jpg
+430,CID44971_GGGCGTCCACTGGCTC-1,6134,2676,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGCGTCCACTGGCTC-1.jpg
+930,CID44971_TGCGTCATGACTGAGC-1,14917,4758,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCGTCATGACTGAGC-1.jpg
+566,CID44971_AATGATGCGACTCCTG-1,9447,3896,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATGATGCGACTCCTG-1.jpg
+152,CID44971_CAACTTGTAGTGGGCA-1,10041,3706,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAACTTGTAGTGGGCA-1.jpg
+1078,CID44971_ACACATGATCAAATCT-1,17449,5307,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACATGATCAAATCT-1.jpg
+372,CID44971_AAATTACACGACTCTG-1,5027,2417,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAATTACACGACTCTG-1.jpg
+547,CID44971_TGTTGTCAAGAAGTCT-1,2199,1441,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTTGTCAAGAAGTCT-1.jpg
+1066,CID44971_TTAGGTCATAACCGAC-1,3953,2134,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAGGTCATAACCGAC-1.jpg
+192,CID44971_TAATTAGATGGATATG-1,22697,5707,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAATTAGATGGATATG-1.jpg
+351,CID44971_CTTCTTACGTCGTATA-1,801,563,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTCTTACGTCGTATA-1.jpg
+327,CID44971_AGATACGACTTCATAT-1,5157,2209,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGATACGACTTCATAT-1.jpg
+191,CID44971_GACGCCTGTTGCAGGG-1,18163,5089,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACGCCTGTTGCAGGG-1.jpg
+696,CID44971_AGAATTATGGATTCGA-1,5018,2555,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGAATTATGGATTCGA-1.jpg
+1049,CID44971_GGAACCTTGACTCTGC-1,8830,3719,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAACCTTGACTCTGC-1.jpg
+1015,CID44971_CAAAGATTATTGGGCC-1,11044,4117,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAAGATTATTGGGCC-1.jpg
+592,CID44971_AAATTACCTATCGATG-1,12795,4163,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAATTACCTATCGATG-1.jpg
+1083,CID44971_TAATAGGTCACCAGAA-1,25318,6537,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAATAGGTCACCAGAA-1.jpg
+355,CID44971_ACACACTTTCTACACG-1,1240,812,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACACTTTCTACACG-1.jpg
+459,CID44971_ATGCCGGTTGATGGGA-1,4565,2305,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGCCGGTTGATGGGA-1.jpg
+903,CID44971_CTCATGGTAATTTGCG-1,5877,2993,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCATGGTAATTTGCG-1.jpg
+386,CID44971_CATTTCTAGCAGACTA-1,3651,1956,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATTTCTAGCAGACTA-1.jpg
+106,CID44971_TGGCGGTGTGCGATTG-1,14632,4979,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGCGGTGTGCGATTG-1.jpg
+590,CID44971_AAGGGACAGATTCTGT-1,9084,3305,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGGGACAGATTCTGT-1.jpg
+649,CID44971_CGCTTTCTTGCATTCG-1,13870,4445,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCTTTCTTGCATTCG-1.jpg
+217,CID44971_ATATTCCCACAGGTCA-1,997,721,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATATTCCCACAGGTCA-1.jpg
+124,CID44971_AAACGAAGAACATACC-1,803,610,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAACGAAGAACATACC-1.jpg
+1148,CID44971_AACATTGAAGTTGATC-1,3970,2148,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACATTGAAGTTGATC-1.jpg
+882,CID44971_TTGATTAGCTGTTTCT-1,16911,5383,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGATTAGCTGTTTCT-1.jpg
+687,CID44971_CACACGCGCTGTCTTA-1,10313,3736,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACACGCGCTGTCTTA-1.jpg
+778,CID44971_CTGGGATAAATAATGG-1,15869,5480,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGGATAAATAATGG-1.jpg
+211,CID44971_ATTCTCGTCTCTTTAG-1,1922,1045,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTCTCGTCTCTTTAG-1.jpg
+415,CID44971_TTGGATTGGGTACCAC-1,2098,1331,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGGATTGGGTACCAC-1.jpg
+944,CID44971_GCTCAATCCGTTTATT-1,3509,1733,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTCAATCCGTTTATT-1.jpg
+497,CID44971_GCGGTGAACTGCGCTC-1,28439,6394,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGGTGAACTGCGCTC-1.jpg
+427,CID44971_CTGGCGACATAAGTCC-1,5405,2601,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGCGACATAAGTCC-1.jpg
+13,CID44971_CTTGTCGTACGTGTCA-1,3047,1600,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTGTCGTACGTGTCA-1.jpg
+104,CID44971_CCATCTTGTTCACAAT-1,10490,3978,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCATCTTGTTCACAAT-1.jpg
+584,CID44971_AGGCAGATGCGTAAAC-1,14494,4654,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGCAGATGCGTAAAC-1.jpg
+360,CID44971_ACTATTCGTCCGTGGT-1,5736,2811,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTATTCGTCCGTGGT-1.jpg
+704,CID44971_ACTTTACCCTCATGAA-1,13048,4385,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTTTACCCTCATGAA-1.jpg
+702,CID44971_ACTCCCGAATTCGTTT-1,10176,3818,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTCCCGAATTCGTTT-1.jpg
+998,CID44971_TGCCAATGGGTACTCT-1,1980,1401,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCCAATGGGTACTCT-1.jpg
+326,CID44971_TCTATTACGCTGGCGA-1,5129,2449,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTATTACGCTGGCGA-1.jpg
+281,CID44971_GAAACAGCCATGCAGT-1,1341,903,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAACAGCCATGCAGT-1.jpg
+55,CID44971_TGTACTGTGCCAAAGT-1,57645,8864,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTACTGTGCCAAAGT-1.jpg
+659,CID44971_TTAAACTCGAATTCAT-1,6450,2936,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAAACTCGAATTCAT-1.jpg
+641,CID44971_TTGTTGTGTGTCAAGA-1,12859,4475,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGTTGTGTGTCAAGA-1.jpg
+508,CID44971_TCCCGTCAGTCCCGCA-1,2845,1684,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCCGTCAGTCCCGCA-1.jpg
+72,CID44971_TATCACAGCACGGGCA-1,925,717,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATCACAGCACGGGCA-1.jpg
+876,CID44971_AGAAGTGATTCGTGAT-1,10219,4326,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGAAGTGATTCGTGAT-1.jpg
+1094,CID44971_TGCGACGGCCGAACGT-1,21785,5809,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCGACGGCCGAACGT-1.jpg
+821,CID44971_GCGCAAGAGCGCGCTG-1,9804,3812,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGCAAGAGCGCGCTG-1.jpg
+642,CID44971_ACTGTACGATACACAT-1,17493,5442,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTGTACGATACACAT-1.jpg
+863,CID44971_GCTGTATTACTGGCCC-1,6059,2855,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTGTATTACTGGCCC-1.jpg
+323,CID44971_TCGCATCCCTAAGTGT-1,11209,3735,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCATCCCTAAGTGT-1.jpg
+169,CID44971_CCCAACCACACTAACA-1,804,598,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCAACCACACTAACA-1.jpg
+236,CID44971_TGGTTGGAGGATCCTG-1,17730,5244,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGTTGGAGGATCCTG-1.jpg
+697,CID44971_ATTGATGAGTCCTAAC-1,12942,4614,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTGATGAGTCCTAAC-1.jpg
+1129,CID44971_CACAGAGACGAGGACG-1,16565,5005,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACAGAGACGAGGACG-1.jpg
+47,CID44971_TATGATTCTGCTTGGT-1,13245,4544,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATGATTCTGCTTGGT-1.jpg
+277,CID44971_TAGTTTATTCTTGCTT-1,1446,816,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGTTTATTCTTGCTT-1.jpg
+364,CID44971_ATTTCATTATTTCGCG-1,2328,1384,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTCATTATTTCGCG-1.jpg
+418,CID44971_AGTAATGTCTTGCCGC-1,1804,1037,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTAATGTCTTGCCGC-1.jpg
+603,CID44971_CTAATTCTCAGATATT-1,21467,5979,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAATTCTCAGATATT-1.jpg
+967,CID44971_GAAGCTCGGACCCGTC-1,4575,2444,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAGCTCGGACCCGTC-1.jpg
+1085,CID44971_GAGCGCTGTTAGGTAA-1,25914,6488,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGCGCTGTTAGGTAA-1.jpg
+528,CID44971_TTCCAATCAGAGCTAG-1,3220,1651,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCCAATCAGAGCTAG-1.jpg
+7,CID44971_AGGTCGCCACTTCGGT-1,5764,2772,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGTCGCCACTTCGGT-1.jpg
+711,CID44971_GCTAAGTAGTTTCTCT-1,8508,3764,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTAAGTAGTTTCTCT-1.jpg
+550,CID44971_CATTTAGCGGACCATG-1,7108,2886,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATTTAGCGGACCATG-1.jpg
+261,CID44971_GTAGACGTCGTTACAT-1,18475,4636,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAGACGTCGTTACAT-1.jpg
+212,CID44971_AAAGTCACTGATGTAA-1,2355,1275,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAAGTCACTGATGTAA-1.jpg
+533,CID44971_ATTACTTACTGGGCAT-1,18963,5393,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTACTTACTGGGCAT-1.jpg
+1011,CID44971_CTCGGTTGTCGGCCCT-1,17428,5166,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCGGTTGTCGGCCCT-1.jpg
+981,CID44971_ATTTCCGGGTTCTGCG-1,1798,1036,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTCCGGGTTCTGCG-1.jpg
+937,CID44971_TCACGATGTCCGTGGA-1,12703,4565,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCACGATGTCCGTGGA-1.jpg
+121,CID44971_GGAATAACCTCAAGAA-1,1030,758,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAATAACCTCAAGAA-1.jpg
+35,CID44971_AATCAGACTGCAGGAC-1,22465,5644,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATCAGACTGCAGGAC-1.jpg
+59,CID44971_AGCTTATAGAGACCTG-1,4793,2159,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTTATAGAGACCTG-1.jpg
+991,CID44971_CCTATACCGTCCTGTC-1,4964,2136,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTATACCGTCCTGTC-1.jpg
+1135,CID44971_AGCCCGGCATTAGAGG-1,12495,4350,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCCCGGCATTAGAGG-1.jpg
+798,CID44971_TAGACTACCTAGCGTT-1,17695,5498,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGACTACCTAGCGTT-1.jpg
+1091,CID44971_ACCCGAGCGAAATTAC-1,23142,6130,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCGAGCGAAATTAC-1.jpg
+746,CID44971_GTACAGAGGCAAGGGT-1,13346,4944,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTACAGAGGCAAGGGT-1.jpg
+21,CID44971_AAACAATCTACTAGCA-1,3516,1871,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAACAATCTACTAGCA-1.jpg
+596,CID44971_CATGCGACCAGTTTAA-1,13043,4397,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATGCGACCAGTTTAA-1.jpg
+451,CID44971_TTCATGGCGCAACAGG-1,1549,1071,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCATGGCGCAACAGG-1.jpg
+474,CID44971_AGGACGCTCGATGTTG-1,10782,4053,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGACGCTCGATGTTG-1.jpg
+137,CID44971_AATCCATGCAAGGGTG-1,13465,4259,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATCCATGCAAGGGTG-1.jpg
+36,CID44971_AGTATCCATAATAACG-1,18346,5142,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTATCCATAATAACG-1.jpg
+1050,CID44971_GTATCTCAGTCTTGAC-1,7015,3173,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATCTCAGTCTTGAC-1.jpg
+698,CID44971_TAGGTCGCCGGAACTG-1,10740,4175,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGGTCGCCGGAACTG-1.jpg
+218,CID44971_CACCATCGGAGGAGAC-1,698,553,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCATCGGAGGAGAC-1.jpg
+368,CID44971_CCTAAAGGCTGACGCT-1,3857,2017,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTAAAGGCTGACGCT-1.jpg
+670,CID44971_TCAGAACCTCCACAGG-1,10091,4053,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCAGAACCTCCACAGG-1.jpg
+37,CID44971_CTGGCTGCTAACGTAA-1,25652,6088,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGCTGCTAACGTAA-1.jpg
+344,CID44971_ATTTAACTCGTATTAC-1,4437,1876,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTAACTCGTATTAC-1.jpg
+582,CID44971_CTAAATCCTATTCCGG-1,5265,2456,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAAATCCTATTCCGG-1.jpg
+539,CID44971_TGCAGGATCGGCAAAG-1,9173,3545,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCAGGATCGGCAAAG-1.jpg
+709,CID44971_GCATTTCCAAGGCTCC-1,39437,7695,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCATTTCCAAGGCTCC-1.jpg
+410,CID44971_GCCTTCAGCCCTACCG-1,15520,4124,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCTTCAGCCCTACCG-1.jpg
+988,CID44971_CATAGCGTTGCCCACC-1,5913,2588,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATAGCGTTGCCCACC-1.jpg
+816,CID44971_GCCTCATCTGGAAATA-1,16207,4819,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCTCATCTGGAAATA-1.jpg
+479,CID44971_TGCCACCTGGCGAAAC-1,1661,1084,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCCACCTGGCGAAAC-1.jpg
+1096,CID44971_CGTGTCTCGTTACGAC-1,9419,3754,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTGTCTCGTTACGAC-1.jpg
+684,CID44971_CGGGTGTACCCATTTA-1,5647,2607,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGGTGTACCCATTTA-1.jpg
+933,CID44971_ACAGAACTGAGAACAA-1,16774,5442,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACAGAACTGAGAACAA-1.jpg
+496,CID44971_CCTAACTAAGGCTCTA-1,23259,5822,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTAACTAAGGCTCTA-1.jpg
+955,CID44971_AATAGAACAGAGTGGC-1,6212,2652,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATAGAACAGAGTGGC-1.jpg
+151,CID44971_CACCCTTTCCTCGCTC-1,8603,3361,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCCTTTCCTCGCTC-1.jpg
+934,CID44971_CTACTATCATAGGTTT-1,5054,2519,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTACTATCATAGGTTT-1.jpg
+577,CID44971_GCCCGTAATACCTTCT-1,18073,5056,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCCGTAATACCTTCT-1.jpg
+735,CID44971_TACGCTATAGAAACCT-1,13789,4605,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACGCTATAGAAACCT-1.jpg
+764,CID44971_CCGATCTCAACCTTAT-1,15524,5078,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGATCTCAACCTTAT-1.jpg
+611,CID44971_CGCGGGAATTAGGCAG-1,20767,5487,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCGGGAATTAGGCAG-1.jpg
+303,CID44971_GTGAGGAGCGGTTGAG-1,5423,2537,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGAGGAGCGGTTGAG-1.jpg
+758,CID44971_TGACGATGCACTAGAA-1,13465,4411,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGACGATGCACTAGAA-1.jpg
+1009,CID44971_CGCGCAAATGTCCAGA-1,14398,4790,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCGCAAATGTCCAGA-1.jpg
+448,CID44971_TATACACGCAAAGTAT-1,13022,4351,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATACACGCAAAGTAT-1.jpg
+721,CID44971_TTCTAACCGAAGCTTA-1,11909,4015,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCTAACCGAAGCTTA-1.jpg
+525,CID44971_CGGTAGAGGTGCAGGT-1,8437,3373,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGTAGAGGTGCAGGT-1.jpg
+1150,CID44971_ATTGCCTATTAGACCG-1,6891,3092,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTGCCTATTAGACCG-1.jpg
+347,CID44971_AGGCCCATTGTACAGG-1,4202,1672,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGCCCATTGTACAGG-1.jpg
+562,CID44971_ATAGGCTAGCTTCGCA-1,4855,2537,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAGGCTAGCTTCGCA-1.jpg
+974,CID44971_AGCTGTAACCTCAATC-1,8482,3578,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTGTAACCTCAATC-1.jpg
+82,CID44971_TGGACCACGGCGTTGA-1,15352,4780,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGACCACGGCGTTGA-1.jpg
+148,CID44971_TCGCATTCAATGACTT-1,17765,4741,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCATTCAATGACTT-1.jpg
+286,CID44971_TGCGGTGAAATTTCAT-1,1602,1024,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCGGTGAAATTTCAT-1.jpg
+348,CID44971_ATCTGTAATTGTACCC-1,1876,1098,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCTGTAATTGTACCC-1.jpg
+213,CID44971_TGTCTACAGTTTCTGT-1,1406,848,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTCTACAGTTTCTGT-1.jpg
+1107,CID44971_TAAGAGGGACAGGGAC-1,11456,4378,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAGAGGGACAGGGAC-1.jpg
+189,CID44971_GGCTGGCTAGCTTAAA-1,12902,4181,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCTGGCTAGCTTAAA-1.jpg
+453,CID44971_CCTATCTATATCGGAA-1,1567,1001,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTATCTATATCGGAA-1.jpg
+632,CID44971_ATCTGCACCTCTGCGA-1,10732,4001,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCTGCACCTCTGCGA-1.jpg
+600,CID44971_GTACTCCTGGGTATGC-1,11050,4309,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTACTCCTGGGTATGC-1.jpg
+250,CID44971_CGGCACTCAAGAAAGT-1,14357,4728,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGCACTCAAGAAAGT-1.jpg
+957,CID44971_ACACTGATCAAGGTGT-1,6048,2684,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACTGATCAAGGTGT-1.jpg
+166,CID44971_CTTGACCCGAAAGATA-1,1338,875,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTGACCCGAAAGATA-1.jpg
+1141,CID44971_CACCGGTAGAGACATT-1,2817,1710,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCGGTAGAGACATT-1.jpg
+1071,CID44971_CGCTGTGTGGATGTTG-1,6865,3082,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCTGTGTGGATGTTG-1.jpg
+1073,CID44971_TACTCTTTCGTCTTCA-1,5383,2555,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACTCTTTCGTCTTCA-1.jpg
+232,CID44971_ATTACAACTACCGGCC-1,7519,3013,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTACAACTACCGGCC-1.jpg
+928,CID44971_TAGCTAGAAGGCATGA-1,8036,3473,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGCTAGAAGGCATGA-1.jpg
+639,CID44971_GCATTCAAGGCAACGC-1,16782,5188,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCATTCAAGGCAACGC-1.jpg
+628,CID44971_CTGGTAACGAGCTCTT-1,9490,3462,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGTAACGAGCTCTT-1.jpg
+537,CID44971_CTCGTTTCTAATGTTT-1,20296,5569,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCGTTTCTAATGTTT-1.jpg
+200,CID44971_GTAACTTGCGGCAGTC-1,9927,3403,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAACTTGCGGCAGTC-1.jpg
+57,CID44971_GTCAATTGTACTGAAG-1,46152,7846,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCAATTGTACTGAAG-1.jpg
+1079,CID44971_TATCCATCTCGGTTAG-1,14496,4700,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATCCATCTCGGTTAG-1.jpg
+334,CID44971_CAGCTCGTGCTTGTGT-1,11485,3797,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGCTCGTGCTTGTGT-1.jpg
+113,CID44971_TTGTTTGTGTAAATTC-1,1830,1015,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGTTTGTGTAAATTC-1.jpg
+1121,CID44971_TATATAGGGCTTTACG-1,13841,4688,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATATAGGGCTTTACG-1.jpg
+63,CID44971_ATGCATTCCGTGATGG-1,1391,935,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGCATTCCGTGATGG-1.jpg
+745,CID44971_CTATTTGGTTACGGAT-1,7815,3461,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTATTTGGTTACGGAT-1.jpg
+683,CID44971_TAGCCGGCGGTCAGCG-1,18836,5256,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGCCGGCGGTCAGCG-1.jpg
+585,CID44971_AAGGATGAGGGACCTC-1,3323,1799,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGGATGAGGGACCTC-1.jpg
+142,CID44971_TCGTTGGCTCGTCAAT-1,12160,4009,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGTTGGCTCGTCAAT-1.jpg
+1146,CID44971_CTGTTGTTCAGTCGTA-1,5871,2788,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGTTGTTCAGTCGTA-1.jpg
+371,CID44971_ATTGTCGCAATACCTT-1,4633,2280,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTGTCGCAATACCTT-1.jpg
+750,CID44971_TACTTGTTAGTAGTCC-1,18467,5424,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACTTGTTAGTAGTCC-1.jpg
+931,CID44971_GTATGAAATTTCACTC-1,11087,4541,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATGAAATTTCACTC-1.jpg
+956,CID44971_GCCATCGAGCTGCGTG-1,10441,3584,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCATCGAGCTGCGTG-1.jpg
+203,CID44971_CATGAACCGACATTTG-1,6128,2460,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATGAACCGACATTTG-1.jpg
+869,CID44971_GTCTGGGCGGTCGAGA-1,10931,4201,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCTGGGCGGTCGAGA-1.jpg
+501,CID44971_ATTCAGGACCTATTTC-1,16891,5167,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTCAGGACCTATTTC-1.jpg
+520,CID44971_ATCAGTAGGCAGGGAT-1,4743,2381,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCAGTAGGCAGGGAT-1.jpg
+891,CID44971_GAGTATGCCCGCCTTG-1,8351,3398,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGTATGCCCGCCTTG-1.jpg
+850,CID44971_TCTTACTTATGCCTCT-1,19096,5758,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTTACTTATGCCTCT-1.jpg
+526,CID44971_AATGATGATACGCTAT-1,3234,1848,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATGATGATACGCTAT-1.jpg
+870,CID44971_CGGAACGTAAACATAG-1,13471,4855,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGAACGTAAACATAG-1.jpg
+337,CID44971_TCTTACAGAGGTACCG-1,11780,3678,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTTACAGAGGTACCG-1.jpg
+373,CID44971_CACTCCTCTCGGTCGG-1,6431,2845,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACTCCTCTCGGTCGG-1.jpg
+285,CID44971_ACCCTTCATCTGCGAA-1,1499,998,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCTTCATCTGCGAA-1.jpg
+765,CID44971_ACGATCATCTTGTAAA-1,29703,6970,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGATCATCTTGTAAA-1.jpg
+363,CID44971_CATAGTACATTGAGAG-1,2435,1499,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATAGTACATTGAGAG-1.jpg
+291,CID44971_TTCAAGCCGAGCTGAG-1,4089,2133,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCAAGCCGAGCTGAG-1.jpg
+616,CID44971_CCACAATGTACGTCTT-1,2848,1497,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACAATGTACGTCTT-1.jpg
+945,CID44971_CCAGAAAGCAACTCAT-1,3464,1888,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAGAAAGCAACTCAT-1.jpg
+766,CID44971_GAAAGAACAGCGTTAT-1,23708,6219,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAAGAACAGCGTTAT-1.jpg
+419,CID44971_ACGCCAGATGATTTCT-1,1829,1235,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGCCAGATGATTTCT-1.jpg
+742,CID44971_CCGGCACGACCGTTTC-1,23837,6504,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGGCACGACCGTTTC-1.jpg
+676,CID44971_GGAGGGCTTGGTTGGC-1,13081,4658,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGAGGGCTTGGTTGGC-1.jpg
+947,CID44971_AATAACACTAGAACAA-1,4636,2476,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATAACACTAGAACAA-1.jpg
+1068,CID44971_CTACAAGAAATAACCC-1,3424,1901,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTACAAGAAATAACCC-1.jpg
+135,CID44971_AGCGTACGAGAGCTAG-1,25609,5932,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCGTACGAGAGCTAG-1.jpg
+237,CID44971_CTGCGGTAGTCACGTG-1,23552,5820,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGCGGTAGTCACGTG-1.jpg
+788,CID44971_TTAGCTGATTTGCCGT-1,14553,4504,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAGCTGATTTGCCGT-1.jpg
+595,CID44971_CCTCACCTTAGCATCG-1,13486,4188,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCACCTTAGCATCG-1.jpg
+54,CID44971_CTAAACGGGTGTAATC-1,28358,6385,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAAACGGGTGTAATC-1.jpg
+315,CID44971_TCTGCGTCCGGTTTCT-1,3360,1898,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGCGTCCGGTTTCT-1.jpg
+734,CID44971_ATTGTACAACTCGGCT-1,13538,4861,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTGTACAACTCGGCT-1.jpg
+440,CID44971_TGAGATTAGGCCCTAA-1,19464,5765,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGATTAGGCCCTAA-1.jpg
+918,CID44971_TTGCGTCGGCCAACCG-1,2861,1494,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGCGTCGGCCAACCG-1.jpg
+982,CID44971_TAAACCCAGGAGGGCA-1,3909,1877,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAACCCAGGAGGGCA-1.jpg
+447,CID44971_ATATTGCTGTCAAAGT-1,13010,4331,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATATTGCTGTCAAAGT-1.jpg
+158,CID44971_GAGCCACGGTAGTAGG-1,5212,2015,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGCCACGGTAGTAGG-1.jpg
+818,CID44971_ACGTATTACTCCGATC-1,8322,3557,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGTATTACTCCGATC-1.jpg
+571,CID44971_GGGTCGTGGCAAGTGT-1,18065,5018,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGTCGTGGCAAGTGT-1.jpg
+3,CID44971_CCTAAGTGTCTAACCG-1,889,621,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTAAGTGTCTAACCG-1.jpg
+2,CID44971_CGGGTTGTAGCTTTGG-1,15428,4496,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGGTTGTAGCTTTGG-1.jpg
+1074,CID44971_ACCCGTGTCATCAGTA-1,17000,5614,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCGTGTCATCAGTA-1.jpg
+60,CID44971_AACTTTAGCTGCTGAG-1,2502,1384,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACTTTAGCTGCTGAG-1.jpg
+916,CID44971_ACAGGTGGAGGTGAGG-1,3985,1698,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACAGGTGGAGGTGAGG-1.jpg
+294,CID44971_GTCTTAGTACAGCCGG-1,4236,2055,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCTTAGTACAGCCGG-1.jpg
+227,CID44971_GGTAAATGTGCGTTAC-1,2791,1563,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTAAATGTGCGTTAC-1.jpg
+844,CID44971_TGAGTGCCTCTTAAAT-1,12118,4313,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGTGCCTCTTAAAT-1.jpg
+599,CID44971_AATATCGAGGGTTCTC-1,10430,4020,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATATCGAGGGTTCTC-1.jpg
+511,CID44971_CTTAGCCTTCCACATG-1,2773,1571,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTAGCCTTCCACATG-1.jpg
+265,CID44971_GCACTAGTCGCGCTAT-1,5729,2570,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCACTAGTCGCGCTAT-1.jpg
+145,CID44971_ACGAGAACCCATCACG-1,22514,5321,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGAGAACCCATCACG-1.jpg
+17,CID44971_CCGCTTCGCGGTTAAC-1,3793,1805,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGCTTCGCGGTTAAC-1.jpg
+233,CID44971_TCCTCTGGCCCATTAG-1,13422,4225,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCTCTGGCCCATTAG-1.jpg
+346,CID44971_TATCCTGCATGGGAAT-1,3609,1654,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATCCTGCATGGGAAT-1.jpg
+141,CID44971_GACGTGAGACTCCATG-1,16945,4823,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACGTGAGACTCCATG-1.jpg
+365,CID44971_CAACTATATCGAATGC-1,3087,1693,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAACTATATCGAATGC-1.jpg
+651,CID44971_GAACGTCTCATGGTCG-1,7720,3296,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAACGTCTCATGGTCG-1.jpg
+767,CID44971_CTAGGTCTGAAGGAAT-1,23967,6340,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAGGTCTGAAGGAAT-1.jpg
+243,CID44971_TTAGATAGGTCGATAC-1,24497,6442,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAGATAGGTCGATAC-1.jpg
+787,CID44971_CTTGAGTTAGGGTAAT-1,8429,3547,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTGAGTTAGGGTAAT-1.jpg
+959,CID44971_GACATCGATTTATAAC-1,6271,2954,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACATCGATTTATAAC-1.jpg
+846,CID44971_CAAGATATTATAACGT-1,19321,5338,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAGATATTATAACGT-1.jpg
+28,CID44971_CCTGTGCATAGGAGAC-1,1416,884,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTGTGCATAGGAGAC-1.jpg
+1115,CID44971_GATTGCTCCAGTTGCA-1,14204,4625,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATTGCTCCAGTTGCA-1.jpg
+319,CID44971_ACGGAATTTAGCAAAT-1,15533,4534,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGGAATTTAGCAAAT-1.jpg
+69,CID44971_GACGGACCGCGTTCCT-1,646,504,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACGGACCGCGTTCCT-1.jpg
+631,CID44971_ACGCTAGTGATACACT-1,11213,4202,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGCTAGTGATACACT-1.jpg
+1032,CID44971_TACTATGGTTCCTCAG-1,6625,3160,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACTATGGTTCCTCAG-1.jpg
+1056,CID44971_GCGCAAATATATTCAA-1,13037,4671,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGCAAATATATTCAA-1.jpg
+966,CID44971_GACCCAATTATGATAC-1,5735,2727,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACCCAATTATGATAC-1.jpg
+405,CID44971_AGGGCGTGATCGGCTA-1,8883,3301,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGCGTGATCGGCTA-1.jpg
+558,CID44971_TAATCGATCCGTACGT-1,4322,2203,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAATCGATCCGTACGT-1.jpg
+691,CID44971_TTACGGATGGTTCGAG-1,17277,4795,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACGGATGGTTCGAG-1.jpg
+1114,CID44971_TGCTTAGAGAGAATGC-1,18277,5277,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCTTAGAGAGAATGC-1.jpg
+382,CID44971_TTGCGTGAACGCTTAG-1,19418,5682,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGCGTGAACGCTTAG-1.jpg
+168,CID44971_GACCCGTCGCCGGCTA-1,814,544,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACCCGTCGCCGGCTA-1.jpg
+782,CID44971_AGAAGAGCGCCGTTCC-1,1198,709,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGAAGAGCGCCGTTCC-1.jpg
+657,CID44971_GGCTCGCGTTGAGGTA-1,7321,2999,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCTCGCGTTGAGGTA-1.jpg
+622,CID44971_GCCTATAGTGTCAGGG-1,4028,2109,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCTATAGTGTCAGGG-1.jpg
+1143,CID44971_CATCCAATATAGTTTG-1,4408,2354,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATCCAATATAGTTTG-1.jpg
+182,CID44971_CCAGTCCATTATTCGA-1,17112,4900,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAGTCCATTATTCGA-1.jpg
+1161,CID44971_CTCTGCAGGCATTCTT-1,3009,1675,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCTGCAGGCATTCTT-1.jpg
+118,CID44971_ACAGATTAGGTTAGTG-1,944,654,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACAGATTAGGTTAGTG-1.jpg
+949,CID44971_CCACCAACTTTACTGT-1,2141,1347,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACCAACTTTACTGT-1.jpg
+436,CID44971_CTGCGTTACGATATAA-1,21158,5614,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGCGTTACGATATAA-1.jpg
+701,CID44971_CTAGATGTGAGTGTAA-1,10757,4148,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAGATGTGAGTGTAA-1.jpg
+802,CID44971_ACTATCCAGGGCATGG-1,17083,5434,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTATCCAGGGCATGG-1.jpg
+359,CID44971_TGGGCACGTTCTATGG-1,2083,1351,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGGCACGTTCTATGG-1.jpg
+380,CID44971_AAACAGAGCGACTCCT-1,18188,5335,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAACAGAGCGACTCCT-1.jpg
+648,CID44971_TGAGTGGTCCGTGACG-1,6040,2688,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGTGGTCCGTGACG-1.jpg
+623,CID44971_ATAGACAACGGGACCT-1,4896,2385,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAGACAACGGGACCT-1.jpg
+133,CID44971_AACGCGAACGGCAACA-1,14152,4556,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACGCGAACGGCAACA-1.jpg
+395,CID44971_CCTCACCAATCTTGAC-1,7528,3175,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCACCAATCTTGAC-1.jpg
+812,CID44971_TGAGAGATTTACCACG-1,5485,2309,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGAGATTTACCACG-1.jpg
+1064,CID44971_TCAGTGTATACGTCAT-1,4556,2269,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCAGTGTATACGTCAT-1.jpg
+565,CID44971_TATCACCCAACCGACC-1,6602,3124,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATCACCCAACCGACC-1.jpg
+1060,CID44971_TCGAATATCCCGCAGG-1,8707,3596,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGAATATCCCGCAGG-1.jpg
+500,CID44971_AGATCGTGCATAAGAT-1,20538,5902,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGATCGTGCATAAGAT-1.jpg
+769,CID44971_AAATAGCTTAGACTTT-1,13271,4700,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAATAGCTTAGACTTT-1.jpg
+848,CID44971_ATGGGCCTCGGCCTCT-1,21611,6099,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGGGCCTCGGCCTCT-1.jpg
+609,CID44971_CAGCAGCCCGTTCCTT-1,16681,4923,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGCAGCCCGTTCCTT-1.jpg
+341,CID44971_CTGCACCTGGAACCGC-1,8137,3092,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGCACCTGGAACCGC-1.jpg
+997,CID44971_GCGGGCGAGCCTTACC-1,3221,1946,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGGGCGAGCCTTACC-1.jpg
+19,CID44971_CCCGCTTGCCCTCGTC-1,1889,1178,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCGCTTGCCCTCGTC-1.jpg
+181,CID44971_TTACCGCCTTAGGGAA-1,14844,4732,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACCGCCTTAGGGAA-1.jpg
+940,CID44971_ATTTGCGCGAGTAGCT-1,12055,4209,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTGCGCGAGTAGCT-1.jpg
+825,CID44971_ACATGGCGCCAAAGTA-1,25607,6826,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACATGGCGCCAAAGTA-1.jpg
+278,CID44971_GATATCTCATGCAATA-1,1550,1040,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATATCTCATGCAATA-1.jpg
+295,CID44971_TGGGTAAGGTTCCCGC-1,3009,1729,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGGTAAGGTTCCCGC-1.jpg
+483,CID44971_GTCTCGATCTGCTTTC-1,2141,1310,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCTCGATCTGCTTTC-1.jpg
+634,CID44971_AGTGAGCCTCGCCGCC-1,14416,4623,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTGAGCCTCGCCGCC-1.jpg
+810,CID44971_AGTGCTTGCACGAATA-1,4819,2392,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTGCTTGCACGAATA-1.jpg
+1160,CID44971_GATCGCTGTGGTGCGT-1,4655,2386,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATCGCTGTGGTGCGT-1.jpg
+452,CID44971_TTAATCAGTACGTCAG-1,1688,1094,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAATCAGTACGTCAG-1.jpg
+180,CID44971_CCCTAGTGTCAGGTGT-1,15490,4908,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCTAGTGTCAGGTGT-1.jpg
+852,CID44971_CCACGGAGCCATAAGA-1,25394,6106,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACGGAGCCATAAGA-1.jpg
+724,CID44971_AACTCTCAATAGAGCG-1,6975,2964,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACTCTCAATAGAGCG-1.jpg
+914,CID44971_AGCGACAGGAACGGTC-1,3737,1945,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCGACAGGAACGGTC-1.jpg
+202,CID44971_GGGAGTAATGGCTGGC-1,7085,2878,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGAGTAATGGCTGGC-1.jpg
+1126,CID44971_ACACCGGTCTGACCGC-1,6950,3188,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACCGGTCTGACCGC-1.jpg
+854,CID44971_CACCGTTGCGCGATAT-1,11032,4418,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCGTTGCGCGATAT-1.jpg
+1080,CID44971_CTCGTCGAGGGCTCAT-1,6281,3160,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCGTCGAGGGCTCAT-1.jpg
+1017,CID44971_GCTCCTGACATACTGG-1,7794,3189,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTCCTGACATACTGG-1.jpg
+756,CID44971_CGAGTTTATCGGACTG-1,17275,4886,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGTTTATCGGACTG-1.jpg
+1039,CID44971_GAAAGCAGTGCACTTT-1,11644,4696,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAAGCAGTGCACTTT-1.jpg
+287,CID44971_CAAATTGTCAGCAAGC-1,4717,2121,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAATTGTCAGCAAGC-1.jpg
+1087,CID44971_GATCGCTATATCTCAG-1,15420,4031,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATCGCTATATCTCAG-1.jpg
+723,CID44971_AGGGTGCTCTCGAGGG-1,13952,4120,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGTGCTCTCGAGGG-1.jpg
+62,CID44971_GGCATCAACGAGCACG-1,2114,1240,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCATCAACGAGCACG-1.jpg
+463,CID44971_ATATCTCCCTCGTTAA-1,24105,5904,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATATCTCCCTCGTTAA-1.jpg
+581,CID44971_TAATAGTGACGACCAG-1,10641,3604,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAATAGTGACGACCAG-1.jpg
+668,CID44971_GTGAACTCCCATTCGA-1,9966,3903,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGAACTCCCATTCGA-1.jpg
+650,CID44971_ACCCAACGCCCGTGGC-1,5840,2472,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCAACGCCCGTGGC-1.jpg
+885,CID44971_CACGTCGGCAACCTCT-1,6422,2501,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACGTCGGCAACCTCT-1.jpg
+621,CID44971_CAGCTCGACAAGTTAA-1,2483,1471,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGCTCGACAAGTTAA-1.jpg
+409,CID44971_ACCAAGAACGCGTGTC-1,5169,2306,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCAAGAACGCGTGTC-1.jpg
+504,CID44971_TTCCGCAGAGAAATAT-1,22886,5977,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCCGCAGAGAAATAT-1.jpg
+774,CID44971_CCTATGAAGTGGTGCC-1,17733,5681,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTATGAAGTGGTGCC-1.jpg
+805,CID44971_ATTTGTCTTGGGAGCT-1,7713,3291,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTGTCTTGGGAGCT-1.jpg
+828,CID44971_GGCGAAATCTAACTTG-1,10507,4115,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCGAAATCTAACTTG-1.jpg
+809,CID44971_TCGGGCCGTCGTGGTA-1,11358,4176,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGGGCCGTCGTGGTA-1.jpg
+841,CID44971_GCAAGAATTCCTTGGC-1,13506,4748,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCAAGAATTCCTTGGC-1.jpg
+136,CID44971_ATACTCTCGCCACTCT-1,15917,4862,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATACTCTCGCCACTCT-1.jpg
+251,CID44971_GTCAAAGTTTACATAG-1,9988,3744,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCAAAGTTTACATAG-1.jpg
+744,CID44971_AAGAGGCATGGATCGC-1,27870,6494,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGAGGCATGGATCGC-1.jpg
+946,CID44971_CACCGTTAGGGATCAC-1,1688,1108,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCGTTAGGGATCAC-1.jpg
+887,CID44971_CGGTGCGCGTTGGTCC-1,5202,2178,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGTGCGCGTTGGTCC-1.jpg
+206,CID44971_TAAAGAGCCCGAAACC-1,7539,2737,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAAAGAGCCCGAAACC-1.jpg
+953,CID44971_GCTAGCTTGAATAGCT-1,8263,3327,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTAGCTTGAATAGCT-1.jpg
+807,CID44971_TAGGTGCTCGCCTAGC-1,9787,4044,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGGTGCTCGCCTAGC-1.jpg
+239,CID44971_ATCGTTCACTTTCGCC-1,28330,6505,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCGTTCACTTTCGCC-1.jpg
+399,CID44971_GTGGACGTGCTGAGAC-1,5091,2525,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGACGTGCTGAGAC-1.jpg
+210,CID44971_TGTATCCTTATTCCAT-1,2763,1327,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTATCCTTATTCCAT-1.jpg
+197,CID44971_GTGAAACGTGCTCCAC-1,28800,6153,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGAAACGTGCTCCAC-1.jpg
+1019,CID44971_TACGCCGAGGGTACCC-1,4980,2136,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACGCCGAGGGTACCC-1.jpg
+1123,CID44971_TCCATCAATACTAATC-1,2833,1641,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCATCAATACTAATC-1.jpg
+9,CID44971_GCCGGTTTGGGCGGAT-1,765,583,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCGGTTTGGGCGGAT-1.jpg
+792,CID44971_CCATCTCACCAGTGAA-1,12172,4335,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCATCTCACCAGTGAA-1.jpg
+421,CID44971_CCACGAGAAGAGAATC-1,2107,1410,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACGAGAAGAGAATC-1.jpg
+1041,CID44971_GCTGCTAAGTAGTCGA-1,41914,7928,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTGCTAAGTAGTCGA-1.jpg
+801,CID44971_AGCTCTTCGTAACCTT-1,26912,6683,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTCTTCGTAACCTT-1.jpg
+231,CID44971_CGGAGCTTATAACACC-1,11885,4025,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGAGCTTATAACACC-1.jpg
+830,CID44971_TAGCCATTTCAAAGTC-1,10547,4074,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGCCATTTCAAAGTC-1.jpg
+1025,CID44971_ACCCTATGCCATATCG-1,5897,2560,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCCTATGCCATATCG-1.jpg
+67,CID44971_ACTTGCCATATTGTAC-1,769,581,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTTGCCATATTGTAC-1.jpg
+392,CID44971_CCTACGGCTCAGTCGA-1,5248,2341,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTACGGCTCAGTCGA-1.jpg
+465,CID44971_TCGCTAAACCGCTATC-1,30463,6515,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCTAAACCGCTATC-1.jpg
+5,CID44971_TTATCATACTCGCAAA-1,1237,830,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTATCATACTCGCAAA-1.jpg
+224,CID44971_CATCATCTACCCGGAC-1,1261,811,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATCATCTACCCGGAC-1.jpg
+739,CID44971_TCAAGAAATACTAGCT-1,16359,5410,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCAAGAAATACTAGCT-1.jpg
+449,CID44971_CCTTCTTGATCCAGTG-1,2469,1565,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTTCTTGATCCAGTG-1.jpg
+760,CID44971_AGGGTCGATGCGAACT-1,8208,3308,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGTCGATGCGAACT-1.jpg
+1127,CID44971_ATGGCAGCATTACGAT-1,12817,4653,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGGCAGCATTACGAT-1.jpg
+1133,CID44971_ATGGGTGTATACCTCC-1,22408,6025,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGGGTGTATACCTCC-1.jpg
+679,CID44971_GTACTGGAGTTAGACC-1,21754,5727,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTACTGGAGTTAGACC-1.jpg
+725,CID44971_TCTGAATTCCGTACAA-1,21697,5513,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGAATTCCGTACAA-1.jpg
+1051,CID44971_GCTGAATCTTCCAATC-1,16553,5232,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTGAATCTTCCAATC-1.jpg
+157,CID44971_TGGGCACAAACAGAAC-1,7528,2915,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGGCACAAACAGAAC-1.jpg
+390,CID44971_CTCAGGACTCACCTGT-1,5396,2478,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCAGGACTCACCTGT-1.jpg
+384,CID44971_AGATGAGGGTTGCGAT-1,12049,3853,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGATGAGGGTTGCGAT-1.jpg
+822,CID44971_TTGACGCTCCATGAGC-1,8767,3675,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGACGCTCCATGAGC-1.jpg
+123,CID44971_TGAGATCAAATACTCA-1,839,634,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGATCAAATACTCA-1.jpg
+969,CID44971_GAGGCCCGACTCCGCA-1,5852,2849,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGGCCCGACTCCGCA-1.jpg
+404,CID44971_CCCTCATTCTGGAATT-1,9786,3675,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCTCATTCTGGAATT-1.jpg
+349,CID44971_GAGCGAGGGAGTACCG-1,1407,879,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGCGAGGGAGTACCG-1.jpg
+6,CID44971_AGCGTAGCGCTAGACC-1,7862,3377,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCGTAGCGCTAGACC-1.jpg
+761,CID44971_TATATCCCTGGGAGGA-1,5781,2838,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATATCCCTGGGAGGA-1.jpg
+814,CID44971_AGCAACATATCTTATT-1,11102,3979,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCAACATATCTTATT-1.jpg
+71,CID44971_GATTGACACTCTGCTC-1,734,577,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATTGACACTCTGCTC-1.jpg
+729,CID44971_TCTTTAAGACTATGAA-1,20032,5591,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTTTAAGACTATGAA-1.jpg
+122,CID44971_CCGAGGGATGTTAGGC-1,737,538,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGAGGGATGTTAGGC-1.jpg
+586,CID44971_AGAGAACCGTCTAGGA-1,3571,1894,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGAGAACCGTCTAGGA-1.jpg
+194,CID44971_CTTGTGAGTCTTTGAC-1,25094,6047,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTGTGAGTCTTTGAC-1.jpg
+214,CID44971_TTAACGTCGCAAGACC-1,1664,1016,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAACGTCGCAAGACC-1.jpg
+868,CID44971_GGGATGGTCGTAACCG-1,3402,1938,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGATGGTCGTAACCG-1.jpg
+604,CID44971_GCCAACCATTTCCGGA-1,12595,4425,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCAACCATTTCCGGA-1.jpg
+94,CID44971_GCAGCGGTGGGCATTA-1,10539,3662,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCAGCGGTGGGCATTA-1.jpg
+705,CID44971_GCGAGAGTTGCGTCCA-1,11635,4441,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGAGAGTTGCGTCCA-1.jpg
+993,CID44971_TGGCGACTGCTCCAAA-1,8170,3210,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGCGACTGCTCCAAA-1.jpg
+377,CID44971_GAATGTATGGCAGGTC-1,23148,5951,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAATGTATGGCAGGTC-1.jpg
+1055,CID44971_GCGGCAAAGTATTGCC-1,17041,5358,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGGCAAAGTATTGCC-1.jpg
+293,CID44971_TTAAGCCGACAACTTC-1,3288,1826,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAAGCCGACAACTTC-1.jpg
+147,CID44971_TCCCGGTCAGGAATTT-1,20920,5047,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCCGGTCAGGAATTT-1.jpg
+412,CID44971_CCGGGACCCGCAGAGA-1,33245,5515,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGGGACCCGCAGAGA-1.jpg
+535,CID44971_TACTGCAATCAATTAC-1,22381,5954,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACTGCAATCAATTAC-1.jpg
+229,CID44971_CACCGATACACCGAGC-1,5283,2318,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCGATACACCGAGC-1.jpg
+161,CID44971_TTGACGATTCAGCACG-1,2731,1343,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGACGATTCAGCACG-1.jpg
+273,CID44971_AGTAGGTAACATACAT-1,3433,1663,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTAGGTAACATACAT-1.jpg
+523,CID44971_GCCATATTGCACACAG-1,6086,2894,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCATATTGCACACAG-1.jpg
+652,CID44971_AGGGTTCCCTTTGGTT-1,3338,1847,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGGTTCCCTTTGGTT-1.jpg
+450,CID44971_CCTCGCCAGCAAATTA-1,1882,1275,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCGCCAGCAAATTA-1.jpg
+438,CID44971_AACCTTTACGACGTCT-1,16138,5160,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACCTTTACGACGTCT-1.jpg
+81,CID44971_CGCCACCCGCATTAAC-1,8500,3261,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCCACCCGCATTAAC-1.jpg
+43,CID44971_ACGGCGGGTTGCCCTG-1,15762,4867,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACGGCGGGTTGCCCTG-1.jpg
+1029,CID44971_TACTGAACAGATTTAG-1,4697,2268,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACTGAACAGATTTAG-1.jpg
+665,CID44971_CTGACTGCGCAGCTCG-1,24062,5995,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGACTGCGCAGCTCG-1.jpg
+248,CID44971_GTACGACGGCGCTGCG-1,22920,5904,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTACGACGGCGCTGCG-1.jpg
+1046,CID44971_TCCCTGGCGTATTAAC-1,5318,2629,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCCTGGCGTATTAAC-1.jpg
+473,CID44971_AATGCACCAAGCAATG-1,18276,5495,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AATGCACCAAGCAATG-1.jpg
+1033,CID44971_GAGTCAGACCAGAATC-1,8523,3641,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGTCAGACCAGAATC-1.jpg
+1128,CID44971_CTGGTGAATGGGCCTA-1,8988,3812,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGTGAATGGGCCTA-1.jpg
+1081,CID44971_ATCAATGCCGTGGCTG-1,13539,4841,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCAATGCCGTGGCTG-1.jpg
+1153,CID44971_GACCGATTAAATATGT-1,3900,2237,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACCGATTAAATATGT-1.jpg
+608,CID44971_GCTTCCGTCCCTAGAC-1,12294,4436,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCTTCCGTCCCTAGAC-1.jpg
+1113,CID44971_CGTCGCTTGGTTATAC-1,17398,5027,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGTCGCTTGGTTATAC-1.jpg
+531,CID44971_TTAGCTAATACGATCT-1,10205,4092,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAGCTAATACGATCT-1.jpg
+1003,CID44971_GTCAAAGAAGTGGTGT-1,3720,2256,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCAAAGAAGTGGTGT-1.jpg
+343,CID44971_GTTCTTCCCTCGATGT-1,18579,4358,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTCTTCCCTCGATGT-1.jpg
+597,CID44971_AACATATCAACTGGTG-1,19238,5524,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACATATCAACTGGTG-1.jpg
+712,CID44971_ATAACGCCGGAGGGTC-1,15247,4843,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAACGCCGGAGGGTC-1.jpg
+339,CID44971_GTTGTCGTGTTAGTTG-1,5916,2500,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTGTCGTGTTAGTTG-1.jpg
+965,CID44971_GGGCAACCGCACGTGC-1,6606,3105,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGGCAACCGCACGTGC-1.jpg
+345,CID44971_AACGATAGAAGGGCCG-1,7109,2389,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACGATAGAAGGGCCG-1.jpg
+834,CID44971_TGTATGGCGCAGACAG-1,2975,1738,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTATGGCGCAGACAG-1.jpg
+240,CID44971_ACTTACCGGGCGCGCA-1,43280,7908,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTTACCGGGCGCGCA-1.jpg
+139,CID44971_CCACAGCTGAAATCAT-1,10727,3817,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACAGCTGAAATCAT-1.jpg
+636,CID44971_GGTACCATTAAGACGG-1,7928,3489,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTACCATTAAGACGG-1.jpg
+333,CID44971_GATAAATCGGTGGATG-1,7689,3254,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATAAATCGGTGGATG-1.jpg
+160,CID44971_GCCTATTTGCTACACA-1,3072,1504,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCCTATTTGCTACACA-1.jpg
+255,CID44971_TTATCCAATCGAACTC-1,8699,3666,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTATCCAATCGAACTC-1.jpg
+134,CID44971_TGTCGGCATGGTGGAA-1,13654,4373,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTCGGCATGGTGGAA-1.jpg
+381,CID44971_CAGCCTCTCCTCAAGA-1,5033,2642,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGCCTCTCCTCAAGA-1.jpg
+1130,CID44971_GCACAAACCCTAGATG-1,24769,6063,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCACAAACCCTAGATG-1.jpg
+936,CID44971_CCGTATCTCGTCGTAG-1,10237,4057,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGTATCTCGTCGTAG-1.jpg
+1053,CID44971_TTAAGGCCCGTACTTT-1,17770,5330,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTAAGGCCCGTACTTT-1.jpg
+864,CID44971_AACGGCCATCTCCGGT-1,7230,2847,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACGGCCATCTCCGGT-1.jpg
+689,CID44971_GGTTTCAATCGGTCAG-1,15983,4415,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTTTCAATCGGTCAG-1.jpg
+1020,CID44971_AAGCGTCCCTCATCGA-1,4665,2178,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGCGTCCCTCATCGA-1.jpg
+12,CID44971_GTTACGAAATCCACGC-1,14735,4961,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTTACGAAATCCACGC-1.jpg
+312,CID44971_AACTTGCGTTCTCGCG-1,23106,6271,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACTTGCGTTCTCGCG-1.jpg
+502,CID44971_AGCTAGAAGCAGAAGT-1,24762,6338,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTAGAAGCAGAAGT-1.jpg
+549,CID44971_CACCTTGCGAAACTCG-1,3181,1737,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACCTTGCGAAACTCG-1.jpg
+1110,CID44971_CGAATCTGCTCGACGC-1,26815,6518,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAATCTGCTCGACGC-1.jpg
+917,CID44971_TGCGAGAATATTACCC-1,4116,2045,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCGAGAATATTACCC-1.jpg
+385,CID44971_AAATGCTCGTTACGTT-1,2448,1449,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAATGCTCGTTACGTT-1.jpg
+740,CID44971_AGGTATAATTGATAGT-1,14258,4898,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGTATAATTGATAGT-1.jpg
+545,CID44971_CGCCATCCGATTATGA-1,3554,2009,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCCATCCGATTATGA-1.jpg
+509,CID44971_TCCGATGACTGAGCTC-1,2372,1464,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCGATGACTGAGCTC-1.jpg
+730,CID44971_TCATTTAAGTCTCCGA-1,4467,2349,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCATTTAAGTCTCCGA-1.jpg
+469,CID44971_CCAATTACGGGTCGAG-1,14152,4592,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAATTACGGGTCGAG-1.jpg
+1099,CID44971_AACAATACATTGTCGA-1,13426,4645,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACAATACATTGTCGA-1.jpg
+579,CID44971_TTGTAAGGCCAGTTGG-1,15214,4533,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGTAAGGCCAGTTGG-1.jpg
+786,CID44971_GTATGTGGGTCTAGTT-1,16854,4955,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATGTGGGTCTAGTT-1.jpg
+1106,CID44971_TTGCCGCAGACCTACA-1,9674,3817,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGCCGCAGACCTACA-1.jpg
+1040,CID44971_AGCGCATAATGAATCG-1,13979,5069,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCGCATAATGAATCG-1.jpg
+314,CID44971_CGAGGCCAGGCATTGG-1,29573,7006,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGGCCAGGCATTGG-1.jpg
+901,CID44971_TTGGAAGAATACAGTC-1,17728,5573,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGGAAGAATACAGTC-1.jpg
+486,CID44971_TACGGGATGCTAGCAG-1,5975,2728,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACGGGATGCTAGCAG-1.jpg
+838,CID44971_CACGCGGAACTGTTGC-1,7603,3405,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACGCGGAACTGTTGC-1.jpg
+960,CID44971_CAGACACCGATCGCTG-1,7273,3276,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGACACCGATCGCTG-1.jpg
+174,CID44971_GTCAGTTGTGCTCGTT-1,1225,777,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTCAGTTGTGCTCGTT-1.jpg
+1117,CID44971_ACTCCAATATCATCAT-1,13300,4610,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTCCAATATCATCAT-1.jpg
+367,CID44971_GTGGAACCTACATGCG-1,1762,1058,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGAACCTACATGCG-1.jpg
+576,CID44971_GTGTACCTTGGCTACG-1,27516,6238,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGTACCTTGGCTACG-1.jpg
+51,CID44971_TGAGCAGTCGTGAAGT-1,13595,4722,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGCAGTCGTGAAGT-1.jpg
+276,CID44971_TGCGGCATAGTTCAAC-1,1630,966,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGCGGCATAGTTCAAC-1.jpg
+976,CID44971_AGTCTCACAAGACTAC-1,3766,2048,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTCTCACAAGACTAC-1.jpg
+606,CID44971_GAAACCATGGTGCGCT-1,27088,6319,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAACCATGGTGCGCT-1.jpg
+915,CID44971_TAATAGAACAGAGTTA-1,2424,1406,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAATAGAACAGAGTTA-1.jpg
+675,CID44971_ATTTACTAAGTCCATT-1,15804,4932,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTTACTAAGTCCATT-1.jpg
+498,CID44971_CCTCGCGCGATATAGG-1,27037,6275,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCGCGCGATATAGG-1.jpg
+924,CID44971_CTTCTATTAATGCTAG-1,5677,2563,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTCTATTAATGCTAG-1.jpg
+715,CID44971_TCCGCGGCAGCATCTG-1,17141,5303,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCCGCGGCAGCATCTG-1.jpg
+464,CID44971_AGCTCTTCCCAGTGCA-1,15546,4717,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTCTTCCCAGTGCA-1.jpg
+555,CID44971_TTGATGTGTAGTCCCG-1,4353,2038,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGATGTGTAGTCCCG-1.jpg
+799,CID44971_GGTTCTACTCGTCTGA-1,19285,5743,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTTCTACTCGTCTGA-1.jpg
+845,CID44971_GAGTGTGCGGTACCCA-1,18658,5469,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGTGTGCGGTACCCA-1.jpg
+97,CID44971_AACACGCGGCCGCGAA-1,20981,5603,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AACACGCGGCCGCGAA-1.jpg
+302,CID44971_TTCGTAATCCCAGCGG-1,7107,2973,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCGTAATCCCAGCGG-1.jpg
+300,CID44971_CAAACTACGATAGAGA-1,5742,2600,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAACTACGATAGAGA-1.jpg
+695,CID44971_TACCGCGGACTTGCAG-1,18773,5191,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACCGCGGACTTGCAG-1.jpg
+871,CID44971_CAAACGAGTATCGCAG-1,19669,5656,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAAACGAGTATCGCAG-1.jpg
+425,CID44971_GTAGGTGATCCGTGTA-1,1827,1106,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTAGGTGATCCGTGTA-1.jpg
+241,CID44971_AGTTCTGCGTTGTATC-1,13608,4516,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTTCTGCGTTGTATC-1.jpg
+25,CID44971_ACCAAACTAGAAATCC-1,1006,673,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCAAACTAGAAATCC-1.jpg
+150,CID44971_GGTGATTTCATCTTGT-1,7527,2894,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTGATTTCATCTTGT-1.jpg
+487,CID44971_AGCTGAAGTAAACCAA-1,18162,5090,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTGAAGTAAACCAA-1.jpg
+332,CID44971_GAAGAACGGTGCAGGT-1,5409,2471,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAGAACGGTGCAGGT-1.jpg
+74,CID44971_CCGCCACCACAATCCA-1,890,669,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGCCACCACAATCCA-1.jpg
+416,CID44971_TACCTCACGCTTGTAC-1,1871,1029,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACCTCACGCTTGTAC-1.jpg
+573,CID44971_ACTTCGCCATACGCAC-1,14977,4806,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTTCGCCATACGCAC-1.jpg
+1045,CID44971_AGGCGGTTTGTCCCGC-1,5576,2769,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGGCGGTTTGTCCCGC-1.jpg
+178,CID44971_CACATGTTTGGACATG-1,9769,3679,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACATGTTTGGACATG-1.jpg
+362,CID44971_CCATAAACAACCCGAC-1,4967,2518,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCATAAACAACCCGAC-1.jpg
+677,CID44971_TCGGACGCCCAGCCCA-1,12012,4255,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGGACGCCCAGCCCA-1.jpg
+1044,CID44971_GTGGAGCGTTTACCGA-1,2851,1831,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGAGCGTTTACCGA-1.jpg
+898,CID44971_TACCAGAAGTAGGTTC-1,18168,5263,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACCAGAAGTAGGTTC-1.jpg
+149,CID44971_CTGGTTCAACGCATCA-1,8839,3256,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGTTCAACGCATCA-1.jpg
+184,CID44971_ATTCCTTCCAGGCGGT-1,14276,4503,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTCCTTCCAGGCGGT-1.jpg
+861,CID44971_ATCACGTGCTAATTAA-1,14472,4930,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATCACGTGCTAATTAA-1.jpg
+985,CID44971_GCACGCCTACTTAGAT-1,1969,1186,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCACGCCTACTTAGAT-1.jpg
+220,CID44971_TACCAGCTAGGTTTAA-1,740,581,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TACCAGCTAGGTTTAA-1.jpg
+527,CID44971_CTTGTGCTCACCGATT-1,7046,3257,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTTGTGCTCACCGATT-1.jpg
+717,CID44971_TGTAGGAGAAATTTCC-1,21270,5779,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGTAGGAGAAATTTCC-1.jpg
+40,CID44971_GATTAATCCTGGCTCA-1,15283,4896,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATTAATCCTGGCTCA-1.jpg
+1097,CID44971_CTAAATCCGGTGTACA-1,15119,5093,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAAATCCGGTGTACA-1.jpg
+970,CID44971_TTGCCATAGCCCGCTC-1,10931,4111,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGCCATAGCCCGCTC-1.jpg
+110,CID44971_AGACATAGATCCTTCC-1,4340,2022,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGACATAGATCCTTCC-1.jpg
+155,CID44971_TTGGAGTCTCCCTTCT-1,11870,3924,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGGAGTCTCCCTTCT-1.jpg
+98,CID44971_CGATATTAGCCGCAGG-1,22891,5273,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGATATTAGCCGCAGG-1.jpg
+298,CID44971_TAGTTAAGATAGGATA-1,3038,1659,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGTTAAGATAGGATA-1.jpg
+506,CID44971_GTGAAGATTTCAAGTG-1,21331,5646,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGAAGATTTCAAGTG-1.jpg
+50,CID44971_CTACACTAGCTTGTTC-1,8385,3261,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTACACTAGCTTGTTC-1.jpg
+30,CID44971_CCACTAAACTGAATCG-1,5965,2278,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCACTAAACTGAATCG-1.jpg
+1088,CID44971_AAGGGACTATGCATTC-1,16769,5161,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGGGACTATGCATTC-1.jpg
+1159,CID44971_CAGTGTTAATCTCTCA-1,2634,1680,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGTGTTAATCTCTCA-1.jpg
+587,CID44971_GAGGGCGCAGCTCTGC-1,1917,1161,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAGGGCGCAGCTCTGC-1.jpg
+92,CID44971_GTATGACGTGGGAAAC-1,12714,4319,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATGACGTGGGAAAC-1.jpg
+11,CID44971_CGAGATGTTGCCTATA-1,2578,1569,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGATGTTGCCTATA-1.jpg
+743,CID44971_ACCTCCGTTATTCACC-1,41724,7867,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCTCCGTTATTCACC-1.jpg
+874,CID44971_CTGGCATCCGAATGAG-1,22580,6060,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTGGCATCCGAATGAG-1.jpg
+658,CID44971_CTAACGAAACTTGCTG-1,23401,5464,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAACGAAACTTGCTG-1.jpg
+963,CID44971_CAGATCCTGGTTTGAA-1,10838,4062,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGATCCTGGTTTGAA-1.jpg
+866,CID44971_TTCTTGAGCCGCGCTA-1,7251,2732,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCTTGAGCCGCGCTA-1.jpg
+61,CID44971_CCCAAGACAGAGTATG-1,1616,1020,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCAAGACAGAGTATG-1.jpg
+796,CID44971_ATAGTTCCACCCACTC-1,18432,5643,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATAGTTCCACCCACTC-1.jpg
+824,CID44971_TTACATGCCACAACTA-1,21952,5921,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTACATGCCACAACTA-1.jpg
+358,CID44971_CTCTGTTTGAGGATTC-1,3990,2200,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCTGTTTGAGGATTC-1.jpg
+1101,CID44971_CCCAATGAGATTTGCA-1,12332,4490,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCAATGAGATTTGCA-1.jpg
+128,CID44971_ACACGGCACTATGCAT-1,1036,703,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACGGCACTATGCAT-1.jpg
+886,CID44971_GTATTCTGAGAAACGA-1,8436,3055,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATTCTGAGAAACGA-1.jpg
+252,CID44971_CTCCTAAGTTATGTCT-1,18193,5333,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTCCTAAGTTATGTCT-1.jpg
+1147,CID44971_AAAGGCCCTATAATAC-1,11666,4207,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAAGGCCCTATAATAC-1.jpg
+1063,CID44971_GGCTCCTCCACCTGTT-1,7577,3329,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGCTCCTCCACCTGTT-1.jpg
+615,CID44971_CCAGATAGTTGAGTGA-1,2523,1473,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAGATAGTTGAGTGA-1.jpg
+299,CID44971_GAATATTCGGAGTCCC-1,3561,1877,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAATATTCGGAGTCCC-1.jpg
+290,CID44971_GAAACTCTAATGAAGG-1,3300,1828,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAACTCTAATGAAGG-1.jpg
+356,CID44971_ATTAATTCGGTCACTC-1,1846,1150,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTAATTCGGTCACTC-1.jpg
+20,CID44971_TAGTGAGAAGTGGTTG-1,9579,3708,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGTGAGAAGTGGTTG-1.jpg
+4,CID44971_TCTGTGACTGACCGTT-1,7637,3009,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGTGACTGACCGTT-1.jpg
+324,CID44971_ACTTAGTACGACAAGA-1,8014,3318,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTTAGTACGACAAGA-1.jpg
+103,CID44971_GTGCGGGACCATCGGC-1,13354,4789,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGCGGGACCATCGGC-1.jpg
+226,CID44971_CACTCAGCTCTTGAGG-1,1701,1027,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CACTCAGCTCTTGAGG-1.jpg
+954,CID44971_TTGCGGCATCAGAAAG-1,10716,3850,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGCGGCATCAGAAAG-1.jpg
+534,CID44971_CTAGCCGATGTTATGA-1,8786,3794,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAGCCGATGTTATGA-1.jpg
+270,CID44971_CCGTGCCCATGACGGC-1,6916,2651,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGTGCCCATGACGGC-1.jpg
+1065,CID44971_ATTATTATGTCCGTCA-1,7651,3214,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTATTATGTCCGTCA-1.jpg
+109,CID44971_CATAATGAGCGGGCGA-1,15127,4874,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATAATGAGCGGGCGA-1.jpg
+757,CID44971_CATAACGGACAGTCGT-1,15817,4588,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CATAACGGACAGTCGT-1.jpg
+552,CID44971_TCGCTTTAAACGTTTG-1,15598,4896,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCTTTAAACGTTTG-1.jpg
+556,CID44971_CAGTAGCCCACGCGGT-1,2545,1488,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGTAGCCCACGCGGT-1.jpg
+352,CID44971_GAAGTGCTGGATAGCT-1,1695,996,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GAAGTGCTGGATAGCT-1.jpg
+1145,CID44971_GCAAAGGGCGTTAGCC-1,9780,3896,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCAAAGGGCGTTAGCC-1.jpg
+195,CID44971_TCAACACATTGGGTAA-1,30873,7106,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCAACACATTGGGTAA-1.jpg
+962,CID44971_GGTAGACCGTTGGGCG-1,14915,5050,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTAGACCGTTGGGCG-1.jpg
+896,CID44971_TTGGTCACACTCGTAA-1,11750,4410,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGGTCACACTCGTAA-1.jpg
+131,CID44971_CCTGCGATAGAACTGT-1,15836,4896,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTGCGATAGAACTGT-1.jpg
+728,CID44971_ATATGTCTCCCTAGCC-1,4122,2014,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATATGTCTCCCTAGCC-1.jpg
+564,CID44971_CAGTCGAGGATGCAAT-1,7971,3325,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAGTCGAGGATGCAAT-1.jpg
+1093,CID44971_ATGGGACCTGCTGAAC-1,18343,5428,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATGGGACCTGCTGAAC-1.jpg
+96,CID44971_ACTCAACGAATGTATT-1,17136,4748,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTCAACGAATGTATT-1.jpg
+530,CID44971_GGTCGGATAAACGGCG-1,8615,3631,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTCGGATAAACGGCG-1.jpg
+836,CID44971_CGACAATTTGATCTAA-1,5004,2556,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGACAATTTGATCTAA-1.jpg
+605,CID44971_TGATCCCAGCATTAGT-1,13219,4445,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGATCCCAGCATTAGT-1.jpg
+186,CID44971_AGTTGACATCGGCTGG-1,25188,6237,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTTGACATCGGCTGG-1.jpg
+637,CID44971_TTCTGCTAGACTCCAA-1,8740,3552,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCTGCTAGACTCCAA-1.jpg
+420,CID44971_AGCTATTTAATCCAAC-1,2027,1341,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGCTATTTAATCCAAC-1.jpg
+1124,CID44971_ACCTCGAACTTATGCT-1,3115,1824,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCTCGAACTTATGCT-1.jpg
+39,CID44971_AAGACTAACCCGTTGT-1,15243,4383,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAGACTAACCCGTTGT-1.jpg
+1026,CID44971_GTGGTATAGTCTGCCG-1,6629,2992,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGGTATAGTCTGCCG-1.jpg
+688,CID44971_TAGACGCCCGTACCGG-1,13093,3969,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TAGACGCCCGTACCGG-1.jpg
+422,CID44971_GATTCCGCGTTTCCGT-1,1676,1089,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATTCCGCGTTTCCGT-1.jpg
+304,CID44971_CAATCCCTATACCAGC-1,16069,4852,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CAATCCCTATACCAGC-1.jpg
+905,CID44971_TTGTGGTAGGAGGGAT-1,20224,5821,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTGTGGTAGGAGGGAT-1.jpg
+512,CID44971_ATTAATGAACCAGTCG-1,3838,2028,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTAATGAACCAGTCG-1.jpg
+979,CID44971_GCGGAGAAACTTCGCA-1,3674,1838,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCGGAGAAACTTCGCA-1.jpg
+52,CID44971_CGCTGAGGACGTCCAA-1,11227,4144,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGCTGAGGACGTCCAA-1.jpg
+361,CID44971_CCTCTGGCCTAGACGG-1,4388,2369,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCTCTGGCCTAGACGG-1.jpg
+454,CID44971_ATTATACTTTGCTCGT-1,5501,2554,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATTATACTTTGCTCGT-1.jpg
+951,CID44971_AAACCGTTCGTCCAGG-1,9106,3582,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AAACCGTTCGTCCAGG-1.jpg
+768,CID44971_ATATCAACCTACAGAG-1,16098,5365,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ATATCAACCTACAGAG-1.jpg
+1037,CID44971_GGTCGGTCGTCCACAG-1,7770,3519,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGTCGGTCGTCCACAG-1.jpg
+647,CID44971_GGATTTCACTTCTATA-1,15218,4780,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GGATTTCACTTCTATA-1.jpg
+519,CID44971_TGGCAACTCGCGCGCC-1,3695,2070,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGCAACTCGCGCGCC-1.jpg
+1086,CID44971_CCCTATGTAGAGCAGA-1,17854,5316,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCTATGTAGAGCAGA-1.jpg
+83,CID44971_GTATATGTTACGGCGG-1,28746,5931,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTATATGTTACGGCGG-1.jpg
+88,CID44971_CTAGATAAACTCCTCG-1,13757,4467,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CTAGATAAACTCCTCG-1.jpg
+1131,CID44971_ACTATGTCCAGCTGCC-1,15717,4821,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACTATGTCCAGCTGCC-1.jpg
+627,CID44971_GACTCGCGGGAATGAC-1,10659,3640,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACTCGCGGGAATGAC-1.jpg
+16,CID44971_CCAAAGTCCCGCTAAC-1,4207,2123,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCAAAGTCCCGCTAAC-1.jpg
+912,CID44971_TCTGTTACCCAGCATA-1,3338,1927,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCTGTTACCCAGCATA-1.jpg
+522,CID44971_CGACTCAGGATGTTAT-1,6710,2945,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGACTCAGGATGTTAT-1.jpg
+402,CID44971_GCATCCCTAACTTTGA-1,8185,3330,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GCATCCCTAACTTTGA-1.jpg
+491,CID44971_CCGTTACGTTAGAACA-1,27235,6321,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCGTTACGTTAGAACA-1.jpg
+842,CID44971_TCGCCGAAGTTGCGTC-1,6093,2829,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGCCGAAGTTGCGTC-1.jpg
+942,CID44971_AGACGACGATGCCGCT-1,5449,2495,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGACGACGATGCCGCT-1.jpg
+578,CID44971_CGGTCAAGTGGGAACC-1,17563,5027,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGGTCAAGTGGGAACC-1.jpg
+73,CID44971_ACCGTTCCCGCTCTGA-1,980,730,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACCGTTCCCGCTCTGA-1.jpg
+521,CID44971_TATCGATCTATGCATA-1,7422,3280,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TATCGATCTATGCATA-1.jpg
+477,CID44971_CCCGACCATAGTCCGC-1,1897,1270,TNBC,CID44971,Stroma,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CCCGACCATAGTCCGC-1.jpg
+198,CID44971_CGAGTGCTATAGTTCG-1,17300,4815,TNBC,CID44971,Normal + stroma + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_CGAGTGCTATAGTTCG-1.jpg
+1023,CID44971_TCGTCAAGTACGCGCA-1,2378,1444,TNBC,CID44971,Lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TCGTCAAGTACGCGCA-1.jpg
+125,CID44971_TGGAGCTAAAGTTCCC-1,965,669,TNBC,CID44971,Stroma + adipose tissue,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGGAGCTAAAGTTCCC-1.jpg
+434,CID44971_TTCGGCAACCCGCTGA-1,7831,3105,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TTCGGCAACCCGCTGA-1.jpg
+593,CID44971_GATCCTAAATCGGGAC-1,17244,4934,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GATCCTAAATCGGGAC-1.jpg
+461,CID44971_TGAGCTTTAATGACGC-1,11360,3755,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_TGAGCTTTAATGACGC-1.jpg
+542,CID44971_GACAACGACCATTGAA-1,22132,5683,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GACAACGACCATTGAA-1.jpg
+681,CID44971_GTGTGAATAACTTAGG-1,18577,5734,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_GTGTGAATAACTTAGG-1.jpg
+441,CID44971_AGTGTATTGCGCATTG-1,15694,5358,TNBC,CID44971,DCIS,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_AGTGTATTGCGCATTG-1.jpg
+847,CID44971_ACACACCAGGACCAGT-1,5496,2864,TNBC,CID44971,Invasive cancer + lymphocytes,/fh/scratch/delete90/sun_w/zsui/st2image_data/Wu_2021/output/patch_jpg/CID44971_ACACACCAGGACCAGT-1.jpg
