@@ -35,6 +35,8 @@ To run the script, use the provided shell script `submit_run_STpath.sh`. This sh
    - `image_resize`: Size of image input to the model (default: 224).
    - `num_epoch`: Maximum number of epochs (default: 500).
    - `patience`: Early stopping patience (default: 20).
+   - `prefix_patch_id`: Prefix to be added to the patch_id (default: None).
+     
 - Example command for job submission:
 ```
 sbatch --gpus=rtx2080ti:1 -t 10-10:00:00 -o "submit_run_STpath_log/${project}_${base_model}_${outcome_list}_${image}_${optimizer}_${batch_size}_${learning_rate}_${dropout_rate}_${dense_layer_size}.log" \
@@ -63,13 +65,15 @@ This script evaluates the quality of patches by calculating the proportion of ti
 This script handles the preprocessing of the ST count matrices to prepare for clustering. It performs filtering and creates Seurat objects from the count matrices of all samples, which are ready for clustering (`clustering.R`)
 ### `clustering.R`
 This script handles the normalization, integration, clustering, and identifying markers for a pre-processed Seurat object obtained by `clustering_preprocess.R`.
+### `run_deconvolution.R`
+This script performs cell type deconvolution for spatial transcriptomics using CARD. 
 ## Step-by-Step Guide
 ### Setup Environment
 1. Load Required Modules: Ensure that the necessary modules are loaded. This can be done via the shell script.
 2. Activate Conda Environment: Activate the conda environment where TensorFlow is installed.
 ### Prepare Data
 1. Generate response variables. Save the response variable to the `data_file` CSV file. 
-  - Run CARD (`.R`) to obtain the cell type proportions for regression tasks.
+  - Run CARD (`run_deconvolution.R`) to obtain the cell type proportions for regression tasks.
   - Run Seurat (`clustering_preprocess.R` and `clustering.R`) to obtain the clusters for classification tasks.
   - Use other types of response variables of interest.
 2. Create image patches. Save the filename of each patch in the `data_file` CSV file if the filenames are not the same as the patch IDs. 
