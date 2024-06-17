@@ -1,0 +1,2 @@
+load("/Users/zhiningsui/GitHub/STpath/output/10X/deconvolution/CARD_obj_Visium_FFPE_Human_Breast_Cancer_celltype_major.rds")
+load("/Users/zhiningsui/GitHub/STpath/output/10X/deconvolution/CARD_obj_Visium_Human_Breast_celltype_major.rds")

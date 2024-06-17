@@ -96,7 +96,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     }, error = function(e) {
       # If an error occurs, try to read the matrix using read.csv
       tryCatch({
-        read.csv(file = st_meta[i, "count_matrix_dir"], sep = "\t") %>% 
+        read.csv(file = st_meta[i, "count_matrix_dir"], sep = "\t") %>%
           remove_rownames %>% column_to_rownames(var="X")
       }, error = function(e) {
         # If both attempts fail, print an error message
@@ -109,17 +109,17 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     } else {
       cat("Count matrix successfully read.\n")
     }
-    
+
     # Check if the rowname and colname exist
     if(is.null(colnames(stdata_s)) || is.null(rownames(stdata_s))){
-      barcode <- read.table(file = gzfile(st_meta[i, "barcode_dir"]), 
+      barcode <- read.table(file = gzfile(st_meta[i, "barcode_dir"]),
                                  sep = '\t', header = FALSE)
-      feature <- read.table(file = gzfile(st_meta[i, "feature_dir"]), 
+      feature <- read.table(file = gzfile(st_meta[i, "feature_dir"]),
                             sep = '\t', header = FALSE)
       barcode_names <- barcode$V1
       feature_names <- feature[, sapply(feature, function(column) !("Gene Expression" %in% column) && !any(grepl("^ENSG", column)))]
-      
-      # Assign to the dimension with same length. 
+
+      # Assign to the dimension with same length.
       if (ncol(stdata_s) == length(barcode_names) && nrow(stdata_s) == length(feature_names)) {
         colnames(stdata_s) <- barcode_names
         rownames(stdata_s) <- feature_names
@@ -142,7 +142,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     if(any(rownames(stdata_s) %in% spatial_location[,"spot_id"])){
       stdata_s <- t(stdata_s)
     }
-    
+
     st_count <- stdata_s[!startsWith(rownames(stdata_s), "X__ambiguous"), ]
 
     # Check if gene ID of ST data need to be converted to gene symbol to match with the reference
@@ -150,19 +150,19 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
       # Retrieve the gene symbols for ST data
       symbols_st <- get_gene_symbols(rownames(st_count))
       colnames(symbols_st) <- c("id.st", "symbol.st")
-      
+
       # Match symbols between scRNA-seq and ST data
       symbols_matched <- symbols_st[symbols_st$symbol.st %in% sc_gene$symbol.sc, ]
       colnames(symbols_matched) <- c("id.st", "symbol.sc")
       # ST genes matched with more than one reference gene
-      id_multi <- symbols_matched$id.st[duplicated(symbols_matched$id.st)] 
+      id_multi <- symbols_matched$id.st[duplicated(symbols_matched$id.st)]
       # Reference genes matched with more than one gene in ST
       symbol_multi <- symbols_matched$symbol.sc[duplicated(symbols_matched$symbol.sc)]
       # Extract ST genes that match with a common reference gene
       id_common_match <- unlist(symbols_matched[symbols_matched$symbol.sc %in% symbol_multi, "id.st"])
       # Remove ST genes that share the same gene symbol in reference and ST genes that match with more than one reference gene
       genes_bijective <- symbols_matched[!symbols_matched$id.st %in% unique(c(id_multi, id_common_match)), ]
-      
+
       # Convert ST gene ID to gene symbol
       st_count <- st_count[genes_bijective$id.st, ]
       rownames(st_count) <- genes_bijective$symbol.sc
@@ -176,13 +176,13 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     }
     sc_count_i <- sc_count[, cells2use]
     sc_meta_i <- sc_meta[cells2use, ]
-    
-    # Prepare spatial location 
+
+    # Prepare spatial location
     spatial_location_i <- spatial_location %>%
       dplyr::filter(spot_id %in% colnames(st_count) & sid == s1) %>%
       column_to_rownames("spot_id") %>%
-      dplyr::select(x,y) 
-    
+      dplyr::select(x,y)
+
     if(nrow(spatial_location_i) > ncol(st_count)){
       spatial_location_i <- spatial_location_i[colnames(st_count), ]
     }else{
@@ -194,7 +194,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     cat(sprintf("dim(sc_count) for subtype %s:", type1), dim(sc_count_i), "\n")
     cat("dim(st_count): ", dim(st_count), "\n")
     cell_type_res <- "celltype_major"
-    
+
     CARD_obj <- createCARDObject(
       sc_count = sc_count_i,
       sc_meta = sc_meta_i,
@@ -207,21 +207,22 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
       minCountSpot = 5
     )
     gc()
-    
+
     # Run deconvolution
     cat("start CARD deconvolution.\n")
     CARD_obj <- CARD_deconvolution(CARD_object = CARD_obj)
     cat("finish CARD deconvolution.\n")
-    
+
     dir.create(output_dir, showWarnings = FALSE)
-    
+
     # Save CARD object and results
     saveRDS(CARD_obj, file = file.path(output_dir, sprintf("/CARD_obj_%s_%s.rds", s1, cell_type_res)))
     amat <- CARD_obj@algorithm_matrix
     saveRDS(amat, file = file.path(output_dir, sprintf("/CARD_alg_matrix_%s_%s.rds", s1, cell_type_res)))
-    
+
     # Get proportions of each spot and save results
     prop <- as.data.frame(CARD_obj@Proportion_CARD)
+    prop$sid <- s1
     write.csv(prop, file.path(output_dir, sprintf("/Proportion_%s_%s.csv", s1, cell_type_res)))
   }
 }
@@ -396,46 +397,35 @@ for (i in 1:nrow(st_meta)) {
 st_meta_all[["He"]] <- st_meta
 spatial_all[["He"]] <- spatial
 
-# 
-# # Load reference scRNA-seq data
-# sc_count <- readMM(file.path(sc_dir, "count_matrix_sparse.mtx"))
-# sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
-# rownames(sc_meta) <- sc_meta$X
-# sc_gene <- read.csv(file = file.path(sc_dir, "count_matrix_genes.tsv"), sep = "\t", header = FALSE)
-# colnames(sc_gene) <- "symbol.sc"
-# sc_barcode <- read.csv(file = file.path(sc_dir, "count_matrix_barcodes.tsv"), sep = "\t", header = FALSE)
-# colnames(sc_count) <- sc_barcode$V1
-# rownames(sc_count) <- sc_gene$symbol.sc
-# sc_count <- as(sc_count, "sparseMatrix")
-# sc_count <- as(sc_count, "CsparseMatrix")
-# 
-# 
-# # Run deconvolution for all datasets
-# for (dataset in names(st_dirs)) {
-#   run_deconvolution(st_meta = st_meta_all[[dataset]], 
-#                     spatial_location = spatial_all[[dataset]], 
-#                     output_dir = output_dirs[[dataset]])
-# }
 
-widths <- list(He = 9,
-                `10x` = 9,
-                Wu = 9)
-pie_radii <- list(He = 0.5,
-                  `10x` = 0.7,
-                  Wu = 0.7)
-point_sizes <- list(He = 3.5,
-                    `10x` = 1,
-                    Wu = 1)
-y_reverse_bool <- list(He = T,
-                       `10x` = F,
-                       Wu = F)
-x_reverse_bool <- list(He = F,
-                       `10x` = T,
-                       Wu = T)
-xy_flip_bool <- list(He = F,
-                     `10x` = T,
-                     Wu = T)
+# Load reference scRNA-seq data
+sc_count <- readMM(file.path(sc_dir, "count_matrix_sparse.mtx"))
+sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
+rownames(sc_meta) <- sc_meta$X
+sc_gene <- read.csv(file = file.path(sc_dir, "count_matrix_genes.tsv"), sep = "\t", header = FALSE)
+colnames(sc_gene) <- "symbol.sc"
+sc_barcode <- read.csv(file = file.path(sc_dir, "count_matrix_barcodes.tsv"), sep = "\t", header = FALSE)
+colnames(sc_count) <- sc_barcode$V1
+rownames(sc_count) <- sc_gene$symbol.sc
+sc_count <- as(sc_count, "sparseMatrix")
+sc_count <- as(sc_count, "CsparseMatrix")
+
+
+# Run deconvolution for all datasets
+for (dataset in names(st_dirs)) {
+  run_deconvolution(st_meta = st_meta_all[[dataset]],
+                    spatial_location = spatial_all[[dataset]],
+                    output_dir = output_dirs[[dataset]])
+}
+
 # Visualize proportions for all datasets
+widths <- list(He = 9, `10x` = 9, Wu = 9)
+pie_radii <- list(He = 0.5, `10x` = 0.7, Wu = 0.7)
+point_sizes <- list(He = 3.5, `10x` = 1, Wu = 1)
+y_reverse_bool <- list(He = T, `10x` = F, Wu = F)
+x_reverse_bool <- list(He = F, `10x` = T, Wu = T)
+xy_flip_bool <- list(He = F, `10x` = T, Wu = T)
+
 for (dataset in names(st_dirs)) {
   visualize_proportions(st_meta = st_meta_all[[dataset]], 
                         output_dir = output_dirs[[dataset]],
@@ -449,4 +439,17 @@ for (dataset in names(st_dirs)) {
 }
 
 
+# Create input csv file for STpath pipeline
+
+for (dataset in names(output_dirs)) {
+  prop_files = list.files(output_dirs[[dataset]], pattern=".csv")
+  lst <- lapply(prop_files, function(x){ read.csv(file.path(output_dirs[[dataset]], x), 
+                                                  header=TRUE, stringsAsFactors=FALSE) })
+  lst <- lapply(lst, function(x) {
+    x$X <- paste0(x$sid, "_", x$X)
+    return(x)
+  })
+  prop <- do.call("bind_rows", lst)
+  write.csv(prop, file.path(output_dirs[[dataset]], paste0("Proportion_", dataset, "_major.csv")))
+}
 
