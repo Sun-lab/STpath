@@ -1,10 +1,4 @@
 # STpath
-## Prerequisites
-Before running the pipeline, ensure that the following software and libraries are installed:
-   - Python 3.11
-   - TensorFlow 2.7.1
-   - Shell access with Slurm workload manager
-
 ## Scripts
 ### `run_STpath.py`
 This script handles the main logic for the pipeline:
