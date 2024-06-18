@@ -441,15 +441,38 @@ for (dataset in names(st_dirs)) {
 
 # Create input csv file for STpath pipeline
 
+STpath_input_dirs <- list(
+  He = "../../data/He_2020/",
+  `10x` = "../../data/10X/",
+  Wu = "../../data/Wu_2021/"
+)
 for (dataset in names(output_dirs)) {
   prop_files = list.files(output_dirs[[dataset]], pattern=".csv")
-  lst <- lapply(prop_files, function(x){ read.csv(file.path(output_dirs[[dataset]], x), 
-                                                  header=TRUE, stringsAsFactors=FALSE) })
+  fn <- gsub("Proportion_|_celltype_major.csv", "", prop_files)
+  
+  lst <- lapply(prop_files, function(x){ read.csv(file.path(output_dirs[[dataset]], x), header=TRUE, stringsAsFactors=FALSE) })
   lst <- lapply(lst, function(x) {
-    x$X <- paste0(x$sid, "_", x$X)
+    x$X1 <- x$X
+    x$X <- paste0(x$sid, "_", x$X1)
+    x$invasive.cancer = x$Cancer.Epithelial
+    x$stroma = x$Endothelial + x$PVL + x$CAFs
+    x$lymphocyte = x$T.cells + x$B.cells + x$Plasmablasts
+    x$others = x$Myeloid + x$Normal.Epithelial
     return(x)
   })
+  
+  lapply(seq_along(lst), function(i) {
+    write.csv(lst[[i]], file.path(STpath_input_dirs[[dataset]], 
+                                    paste0("Proportion_", fn[i], ".csv")))
+  })
+  
   prop <- do.call("bind_rows", lst)
-  write.csv(prop, file.path(output_dirs[[dataset]], paste0("Proportion_", dataset, "_major.csv")))
+  write.csv(prop, file.path(STpath_input_dirs[[dataset]], paste0("Proportion_", dataset, ".csv")))
 }
+
+
+
+
+
+
 
