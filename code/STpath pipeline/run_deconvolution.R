@@ -1,27 +1,17 @@
-# ******************************************************************************
-# Program:             run_deconvolution.R
-# Purpose:             Code to perform cell type deconvolution for spatial transcriptomics
-# Data inputs:         scRNA-seq reference count data (count matrix + barcodes + genes);
-#                      spatial transcriptomics (ST) count data (filtered count matrix,
-#                      barcodes, features + spatial information)
-# Data outputs:        sampleID.RData: input data of each sample;
-#                      CARD_obj_sampleID.RData: deconvoluted object;
-#                      Proportion_sampleID.csv: cell types proportions of each spot
-# Author:              Zhining Sui
-# Date last modified:  June 16 2024 by Zhining Sui
-# ******************************************************************************
 # -----------------------------------------------------------------------------#
-# # Variables created in this file:
-# sample_ids       "a vector of sample IDs"
-# sc_count         "sparse count matrix of reference scRNA-seq"
-# sc_meta          "metadata of reference scRNA-seq"
-# st_count         "filtered sparse count matrix of ST"
-# st_meta          "metadata with sample_id, subtype, count_matrix_dir, feature_dir, barcode_dir"
-# spatial_location "spatial location information of ST, with row names being barcode, having one column of row position and one of column position"
-# CARD_obj         "deconvoluted object"
-# prop             "proportions of cell types of each spot"
-# p1               "visualization of the proportions of all spots"
-# p2               "visualization of the spatial distribution of the cell type of interest"
+# Date last modified: June 16, 2024 by Zhining Sui
+# Program: run_deconvolution.R
+# Purpose: Perform cell type deconvolution for spatial transcriptomics data using reference scRNA-seq data.
+
+# Data Inputs:
+# - scRNA-seq reference count data: A sparse count matrix, metadata for cells, and gene names.
+# - Spatial transcriptomics (ST) count data: Filtered sparse count matrix, metadata for spots, and spatial location information.
+
+# Data Outputs:
+# - CARD_obj_<sampleID>.rds: Deconvoluted object for each sample.
+# - CARD_alg_matrix_<sampleID>.rds: Algorithm matrix for each sample.
+# - Proportion_<sampleID>.csv: Cell type proportions for each spot in the sample.
+# - Plots showing the cell type proportions and spatial distributions saved as JPG files in the specified output directory.
 # -----------------------------------------------------------------------------#
 
 # Load necessary libraries
@@ -40,9 +30,17 @@ library(EnsDb.Hsapiens.v79)
 library(dplyr)
 library(grid)
 
-## Function to get gene symbols from gene IDs
+
+# Define functions --------------------------------------------------------
+
+# -----------------------------------------------------------------------------#
+# Convert gene IDs to gene symbols using multiple sources.
+# Args:
+#     gene_ids (vector): A vector of gene IDs to convert.
+# Returns:
+#     all_matches (data.frame): A data frame with the original gene IDs and the corresponding gene symbols from different sources.
+# -----------------------------------------------------------------------------#
 get_gene_symbols <- function(gene_ids) {
-  
   # biomaRt
   ensembl <- useEnsembl(biomart = "genes")
   ensembl <- useDataset(dataset = "hsapiens_gene_ensembl", mart = ensembl)
@@ -83,7 +81,19 @@ get_gene_symbols <- function(gene_ids) {
 }
 
 
-## Function to run deconvolution
+# -----------------------------------------------------------------------------#
+# Perform cell type deconvolution on spatial transcriptomics data using reference scRNA-seq data.
+# Args:
+#     st_meta (data.frame): Metadata for spatial transcriptomics samples. Contains sample_id, subtype, count_matrix_dir, feature_dir, and barcode_dir.
+#     spatial_location (data.frame): Spatial location information for ST spots, with row names being barcodes, having one column of row position and one of column position.
+#     output_dir (str): Directory to save the deconvolution results.
+# Outputs:
+#     Saves the following files to the output directory:
+#     - CARD_obj_<sampleID>.rds: Deconvoluted object for each sample.
+#     - CARD_alg_matrix_<sampleID>.rds: Algorithm matrix for each sample.
+#     - Proportion_<sampleID>.csv: Cell type proportions for each spot in the sample.
+# -----------------------------------------------------------------------------#
+
 run_deconvolution <- function(st_meta, spatial_location, output_dir) {
   
   for (i in 1:nrow(st_meta)) {
@@ -227,7 +237,24 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
   }
 }
 
-## Function to visualize the cell type proportions and spatial distribution
+
+# -----------------------------------------------------------------------------#
+# Visualize the cell type proportions and spatial distribution for each sample.
+# Args:
+#     st_meta (data.frame): Metadata for spatial transcriptomics samples.
+#     output_dir (str): Directory to save the visualizations.
+#     ct.visualize (vector): Cell types of interest to visualize.
+#     width (numeric): Width of the output plots.
+#     pie_radius (numeric): Radius of the pie charts in the plots.
+#     point_size (numeric): Size of the points in the proportion plots.
+#     x_reverse (bool): Whether to reverse the x-axis.
+#     y_reverse (bool): Whether to reverse the y-axis.
+#     xy_flip (bool): Whether to flip the x and y axes.
+# Outputs:
+#     Saves the following plots to the output directory:
+#     - cell_type_proportion_<sampleID>.jpg: Visualization of the cell type proportions for all spots.
+#     - specific_type_proportion_<sampleID>.jpg: Visualization of the spatial distribution of the cell type proportions.
+# -----------------------------------------------------------------------------#
 visualize_proportions <- function(st_meta, output_dir, ct.visualize = NULL, 
                                   width = 10, point_size = 2, pie_radius = 1,
                                   x_reverse = F, y_reverse = F, xy_flip = F) {
@@ -289,9 +316,10 @@ visualize_proportions <- function(st_meta, output_dir, ct.visualize = NULL,
   }
 }
 
-# Main run ----------------------------------------------------------------
 
-# Define paths for scRNA-seq and spatial transcriptomics (ST) data
+
+# Define paths for scRNA-seq and spatial transcriptomics (ST) data --------
+
 sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/data/scRNASeq/"
 st_dirs <- list(
   He = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/He_2020/data/",
@@ -305,12 +333,13 @@ output_dirs <- list(
 )
 
 
-# Prepare st_meta and spatial_location for each ST dataset
+
+# Prepare st_meta and spatial_location for each ST dataset ----------------
+
 st_meta_all <- list()
 spatial_all <- list()
 
-# Wu_2021 -----------------------------------------------------------------
-
+###### Wu_2021 
 # Create metadata for the spatial transcriptomics data
 st_dir <- st_dirs$Wu
 metadata_files = list.files(file.path(st_dir, "metadata"), pattern="_metadata.csv")
@@ -340,15 +369,13 @@ for (i in 1:nrow(st_meta)) {
   # sp$spot_id <- paste0(sp$sid, "_", sp$V1)
   spatial <- rbind(spatial, sp)
 }
-
 st_meta_all[["Wu"]] <- st_meta
 spatial_all[["Wu"]] <- spatial
 
-# 10x Visium --------------------------------------------------------------
-
+###### 10x Visium 
+# Create metadata for the spatial transcriptomics data
 st_dir <- st_dirs$`10x`
 sample_ids = c("Visium_FFPE_Human_Breast_Cancer", "Visium_Human_Breast")
-# Create metadata for the spatial transcriptomics data
 st_meta <- data.frame(sid = sample_ids,
                       subtype = NA,
                       count_matrix_dir = file.path(st_dir, sample_ids, "filtered_feature_bc_matrix/matrix.mtx.gz"),
@@ -366,14 +393,12 @@ for (i in 1:nrow(st_meta)) {
   sp$spot_id <- sp$V1
   spatial <- rbind(spatial, sp)
 }
-
 st_meta_all[["10x"]] <- st_meta
 spatial_all[["10x"]] <- spatial
 
-# He_2020 -----------------------------------------------------------------
-
-st_dir <- st_dirs$He
+###### He_2020 
 # Create metadata for the spatial transcriptomics data
+st_dir <- st_dirs$He
 st_meta <- read.csv(file.path(st_dir, "metadata.csv"))
 st_meta$sid <- paste0(st_meta$patient, "_", st_meta$replicate)
 st_meta$subtype <- st_meta$type
@@ -393,12 +418,12 @@ for (i in 1:nrow(st_meta)) {
   sp$y <- as.integer(sapply(strsplit(sp$X.1, "x"), "[[", 2))
   spatial <- rbind(spatial, sp)
 }
-
 st_meta_all[["He"]] <- st_meta
 spatial_all[["He"]] <- spatial
 
 
-# Load reference scRNA-seq data
+# Load reference scRNA-seq data -------------------------------------------
+
 sc_count <- readMM(file.path(sc_dir, "count_matrix_sparse.mtx"))
 sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
 rownames(sc_meta) <- sc_meta$X
@@ -411,14 +436,16 @@ sc_count <- as(sc_count, "sparseMatrix")
 sc_count <- as(sc_count, "CsparseMatrix")
 
 
-# Run deconvolution for all datasets
+# Run deconvolution for each dataset --------------------------------------
 for (dataset in names(st_dirs)) {
   run_deconvolution(st_meta = st_meta_all[[dataset]],
                     spatial_location = spatial_all[[dataset]],
                     output_dir = output_dirs[[dataset]])
 }
 
-# Visualize proportions for all datasets
+
+# Visualize proportions for all datasets ----------------------------------
+
 widths <- list(He = 9, `10x` = 9, Wu = 9)
 pie_radii <- list(He = 0.5, `10x` = 0.7, Wu = 0.7)
 point_sizes <- list(He = 3.5, `10x` = 1, Wu = 1)
@@ -439,7 +466,8 @@ for (dataset in names(st_dirs)) {
 }
 
 
-# Create input csv file for STpath pipeline
+
+# Create input csv file for STpath pipeline -------------------------------
 
 STpath_input_dirs <- list(
   He = "../../data/He_2020/",

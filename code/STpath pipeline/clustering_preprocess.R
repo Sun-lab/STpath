@@ -1,40 +1,38 @@
+# -----------------------------------------------------------------------------#
 # Date last modified: May 31, 2024 by Zhining Sui
 # Program: clustering_preprocess.R
 # Purpose: Preprocess and filter spatial transcriptomics (ST) expression data to prepare for clustering.
-#-------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------#
 # Data Inputs:
-# - `raw_data_dir`: Path to the raw ST data directory (where the count matrices locate).
-# - `processed_data_dir`: Path to the processed data directory (where the Seurat objects will be saved).
-# - `figure_dir`: Path to the directory where figures will be saved.
-# - metadata file for the sample (includes information for each sample)
-# - metadata file for spatial transcriptomics data (includes the file names of count matrices).
+# - raw_data_dir: Path to the raw ST data directory (where the count matrices are located).
+# - processed_data_dir: Path to the processed data directory (where the Seurat objects will be saved).
+# - figure_dir: Path to the directory where figures will be saved.
+# - metadata.csv: Metadata file for the samples (includes information for each sample).
+# - prop_ann_meta.RData: Metadata file for the spatial transcriptomics data (includes the file names of count matrices)
 #
 # Data Outputs:
-# - Processed and filtered Seurat objects saved in `processed_data_dir`.
-# - Quality control (QC) plots saved in `figure_dir`.
-#-------------------------------------------------------------------------------
+# - merged_st_obj_unfilt.rds: Unfiltered Seurat object for all samples.
+# - merged_st_obj_filt_spots.rds: Seurat object with filtered spots.
+# - merged_st_obj_filt_zeros_per_sample.rds: Seurat object with genes filtered per sample.
+# - merged_st_obj_filt_common_high_expr_genes.rds: Seurat object with common high-expression genes filtered.
+# - merged_st_obj_filt_zeros_all.rds: Seurat object with genes filtered across all samples.
+# - QC plots saved as PDF files in the figure directory.
+# -----------------------------------------------------------------------------#
 # Notes:
 # 1. This script includes spot filtering to remove spots with abnormal gene detection. (Section `Filter spots`)
-#   - Filter out spots that have very few or a lot features detected, < 500 or > 4000.
+#   - Filter out spots that have very few or a lot of features detected, < 500 or > 4000.
 #   - Only filter out genes that are not expressed in all the spots. 
-#   - Output Seurat object: `merged_st_obj_filt_spots.rds`
-# 2. After spot filtering, three ways of gene filtering is performed to remove genes that are rarely expressed:
+# 2. After spot filtering, three ways of gene filtering are performed to remove genes that are rarely expressed:
 #   - Section `Filter genes 1`: 
 #     - For each sample, after filtering out poor spots, filter out genes that are not expressed in more than 90% of spots. 
-#     - Output Seurat object: `merged_st_obj_filt_zeros_per_sample.rds`
 #   - Section `Filter genes 2`: 
 #     - Filter out any genes that are not expressed in more than 90% of spots in at least one sample.
 #     - Identify common highly expressed genes that are expressed in more than 10% of spots in all samples. Filter out all other genes. 
-#     - Output Seurat object: `merged_st_obj_filt_common_high_expr_genes.rds`
 #   - Section `Filter genes 3`: 
 #     - First merge all the samples to get a pooled expression matrix, and then filter out genes that are not expressed in more than 90% of spots. 
-#     - Output Seurat object: `merged_st_obj_filt_zeros_all.rds`
-#-------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------#
 
-
-
-filtered_zeros_all_90: f
-
+# Load necessary libraries
 library(Seurat) 
 library(tidyverse)
 library(Matrix) 
@@ -43,20 +41,15 @@ library(cowplot)
 theme_set(theme_cowplot()) 
 options(future.globals.maxSize = 1e9) 
 
-# Define directory paths
-raw_data_dir = "../../../st2image_data/He_et_al_2020/data/"
-processed_data_dir = "../../data/He_2020/"
-figure_dir = "../../figure/He_2020/"
+# Define functions --------------------------------------------------------
 
-# Load processed metadata for spots with information, proportions and annotations.
-load(file.path(processed_data_dir, "prop_ann_meta.RData"))
-# Read ST data metadata
-st_meta <- read.csv(file.path(raw_data_dir, "metadata.csv"))
-
-# Get unique IDs for spots in ST data
-spots <- unique(prop_ann_meta$X) 
-
-# Function to process the count matrix of each sample and create Seurat object
+# -----------------------------------------------------------------------------#
+# Preprocess the count matrix of each sample and create Seurat object.
+# Args:
+#     sample_meta (data.frame): Metadata for each sample.
+# Returns:
+#     Seurat object: A Seurat object for each sample.
+# -----------------------------------------------------------------------------#
 process_sample <- function(sample_meta) {
   # Get sample ID
   s1 <- paste0(sample_meta$patient, "_", sample_meta$replicate) 
@@ -85,7 +78,14 @@ process_sample <- function(sample_meta) {
   CreateSeuratObject(counts = st_counts_s, min.features = 100, project = s1)
 }
 
-# Function to create QC plots
+# -----------------------------------------------------------------------------#
+# Create quality control (QC) plots for Seurat object.
+# Args:
+#     obj (Seurat object): The Seurat object to create QC plots for.
+#     prefix (str): Prefix for the output file names.
+# Outputs:
+#     QC plots saved as PDF files in the specified figure directory.
+# -----------------------------------------------------------------------------#
 create_qc_plots <- function(obj, prefix) {
   pdf(file.path(figure_dir, paste0(prefix, "_QC.pdf")), width = 24, height = 8)
   
@@ -106,8 +106,18 @@ create_qc_plots <- function(obj, prefix) {
   dev.off()
 }
 
-# Create a merged Seurat object for all samples ---------------------------
+# Define directory paths --------------------------------------------------
+raw_data_dir = "../../../st2image_data/He_et_al_2020/data/"
+processed_data_dir = "../../data/He_2020/"
+figure_dir = "../../figure/He_2020/"
 
+
+# Load metadata for samples and ST spots ----------------------------------
+load(file.path(processed_data_dir, "prop_ann_meta.RData"))
+st_meta <- read.csv(file.path(raw_data_dir, "metadata.csv"))
+spots <- unique(prop_ann_meta$X) # Get unique IDs for spots in ST data
+
+# Create a merged Seurat object for all samples ---------------------------
 # Process all samples and create Seurat object for each sample
 all_st_obj <- lapply(1:nrow(st_meta), function(i) process_sample(st_meta[i,]))
 # Merge Seurat objects into one over

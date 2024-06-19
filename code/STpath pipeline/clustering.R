@@ -1,35 +1,21 @@
+# -----------------------------------------------------------------------------#
 # Date last modified: May 31, 2024 by Zhining Sui
 # Program: clustering.R
 # Purpose: Normalize, integrate, and cluster spatial transcriptomics (ST) data and identify differentially expressed (DE) markers.
-#-------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------#
 # Data Inputs:
-# - `processed_data_dir`: Path to the processed data directory (where the Seurat objects to be clustered are saved).
-# - `cluster_rslt_dir`: Path to the directory where clustering results will be saved.
-# - `merged_st_obj`: Seurat object containing filtered ST data (should be in `processed_data_dir`).
-# - `id_symbol_mapping`: Data frame for mapping gene IDs to gene symbols (optional).
+# - processed_data_dir: Path to the processed data directory (where the Seurat objects to be clustered are saved).
+# - cluster_rslt_dir: Path to the directory where clustering results will be saved.
+# - merged_st_obj: Seurat object containing filtered ST data (should be in processed_data_dir).
+# - id_symbol_mapping: Data frame for mapping gene IDs to gene symbols (optional).
 #
 # Data Outputs:
-# - Normalized, integrated, and clustered Seurat objects saved in `processed_data_dir` and `cluster_rslt_dir`.
-# - Identified DE markers and top 10 DE markers for each cluster saved in `cluster_rslt_dir`.
-#-------------------------------------------------------------------------------
-# Notes:
-# 1. **Normalization** (function `normalize_data`):
-#    - SCTransform normalization followed by PCA, neighbor finding, clustering, and UMAP embedding.
-#    - Log-normalization followed by PCA, neighbor finding, clustering, and UMAP embedding.
-#    - Output Seurat object: `merged_st_obj_normalized_<suffix>.rds`
-# 2. **Integration** (function `integrate_data`):
-#    - Integrate data using CCA, RPCA, and Harmony methods with both log-normalized and SCTransform data.
-#    - Output Seurat object: `integrated_st_obj_<suffix>.rds`
-# 3. **Clustering** (function `perform_clustering`):
-#    - Perform clustering using integrated reductions at multiple resolutions.
-#    - Output Seurat object: `clustered_st_obj_<suffix>.rds`
-# 4. **Identification of DE Markers** (function `identify_DE_markers`):
-#    - Identify DE markers for each cluster.
-#    - Output list of DE markers: `DE_markers_identified_<suffix>.rds`
-# 5. **Identification of Top 10 DE Markers** (function `identify_top10_markers`):
-#    - Extract top 10 DE markers for each cluster based on adjusted p-value and log fold change.
-#    - Output list of top 10 DE markers: `top10_DE_markers_identified_<suffix>.rds`
-#-------------------------------------------------------------------------------
+# - merged_st_obj_normalized_<suffix>.rds: Normalized Seurat object.
+# - integrated_st_obj_<suffix>.rds: Integrated Seurat object.
+# - clustered_st_obj_<suffix>.rds: Clustered Seurat object.
+# - DE_markers_identified_<suffix>.rds: List of identified DE markers for each cluster.
+# - top10_DE_markers_identified_<suffix>.rds: List of top 10 DE markers for each cluster.
+#------------------------------------------------------------------------------#
 
 
 library(Seurat) 
@@ -41,7 +27,13 @@ options(future.globals.maxSize = 1e9)
 
 # Define functions --------------------------------------------------------
 
-# Normalization function
+# -----------------------------------------------------------------------------#
+# Normalize the Seurat object using SCTransform and log-normalization.
+# Args:
+#     obj (Seurat object): The Seurat object to normalize.
+# Returns:
+#     Seurat object: The normalized Seurat object with PCA, neighbor finding, clustering, and UMAP embeddings.
+# -----------------------------------------------------------------------------#
 normalize_data <- function(obj) {
   obj <- SCTransform(obj, return.only.var.genes = F) # SCTransform normalization
   obj <- RunPCA(obj, reduction.name = "pca.unintegrated.sct") # PCA
@@ -60,7 +52,14 @@ normalize_data <- function(obj) {
   obj
 }
 
-# Integration function
+
+# -----------------------------------------------------------------------------#
+# Integrate the Seurat object using CCA, RPCA, and Harmony methods for both log-normalized and SCTransform data.
+# Args:
+#     obj (Seurat object): The Seurat object to integrate.
+# Returns:
+#     Seurat object: The integrated Seurat object with integrated reductions.
+# -----------------------------------------------------------------------------#
 integrate_data <- function(obj) {
   obj <- IntegrateLayers(object = obj, method = CCAIntegration, normalization.method = "LogNormalize", orig.reduction = "pca.unintegrated.lognorm", new.reduction = "integrated.cca.lognorm")
   obj <- IntegrateLayers(object = obj, method = RPCAIntegration, normalization.method = "LogNormalize", orig.reduction = "pca.unintegrated.lognorm", new.reduction = "integrated.rpca.lognorm", k.weight = 80)
@@ -72,7 +71,13 @@ integrate_data <- function(obj) {
   obj
 }
 
-# Clustering function
+# -----------------------------------------------------------------------------#
+# Perform clustering on the integrated Seurat object using integrated reductions at multiple resolutions.
+# Args:
+#     obj (Seurat object): The integrated Seurat object to cluster.
+# Returns:
+#     Seurat object: The clustered Seurat object with UMAP embeddings.
+# -----------------------------------------------------------------------------#
 perform_clustering <- function(obj) {
   reductions <- names(obj@reductions)[startsWith(names(obj@reductions), "integrated")]
   DefaultAssay(obj) <- "RNA"
@@ -94,7 +99,13 @@ perform_clustering <- function(obj) {
   obj
 }
 
-# Identify differentially expressed genes
+# -----------------------------------------------------------------------------#
+# Identify differentially expressed markers for each cluster.
+# Args:
+#     obj (Seurat object): The clustered Seurat object to identify markers.
+# Returns:
+#     list: A list of data frames, each containing DE markers for a cluster.
+# -----------------------------------------------------------------------------#
 identify_DE_markers <- function(obj) {
   cluster_methods <- sort(colnames(obj@meta.data)[startsWith(colnames(obj@meta.data), "integrated")])
   markers_identified <- list()
@@ -109,7 +120,13 @@ identify_DE_markers <- function(obj) {
   markers_identified
 }
 
-# Identify top 10 differentially expressed markers
+# -----------------------------------------------------------------------------#
+# Identify the top 10 differentially expressed markers for each cluster based on adjusted p-value and log fold change.
+# Args:
+#     markers_identified (list): List of data frames containing DE markers.
+# Returns:
+#     list: A list of data frames, each containing the top 10 DE markers for a cluster.
+# -----------------------------------------------------------------------------#
 identify_top10_markers <- function(markers_identified) {
   top10_DE_markers <- list()
   for (cm in names(markers_identified)) {

@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This script processes image patches to determine if they contain a sufficient amount of tissue for further analysis.
-It uses various image processing techniques such as contrast enhancement, thresholding, and stain normalization.
-The script supports multiple stain normalization methods and saves the processed images in the specified format.
+--------------------------------------------------------------------------------
+Date last modified: May 31, 2024 by Zhining Sui
+Program: image_preprocessing.py
+Purpose: Process image patches to determine if they contain a sufficient amount of tissue for further analysis.
 
-Input:
+This script uses various image processing techniques such as contrast enhancement, thresholding, and stain normalization.
+The script supports multiple stain normalization methods and saves the processed images in the specified format.
+--------------------------------------------------------------------------------
+Data Inputs:
 - dir_img_target: A target image path for stain normalization.
 - dir_to_transform: A directory of images to be processed and normalized.
 - output_format: The format to save normalized images (e.g., 'tiff', 'jpeg', 'jpg', 'png').
@@ -14,16 +18,15 @@ Input:
 - tissue_check_threshold: (Optional) The minimum tissue area ratio to consider the patch as valid.
 - save_tissue_check_dir: (Optional) Directory to save the tissue check plots.
 
-Output:
+Data Outputs:
 - Normalized images saved in the specified format and directory.
 - (Optional) Plots showing tissue detection if tissue_check_threshold and save_tissue_check_dir are provided.
-
+--------------------------------------------------------------------------------
 Functions:
 - save_image: Saves the processed image in the specified format.
 - stain_normalize: Normalizes the stain of images in a directory using a specified method and optionally checks for sufficient tissue.
 - is_valid_patch: Checks if an image patch contains sufficient tissue area for further analysis.
 """
-
 
 import os
 import re
@@ -137,23 +140,22 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
 def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', threshold_method='hysteresis', hist_params=None, hyst_params=None, clean_params=None, display=False, save_dir=None, patch_id="patch"):
     """
     Check if the patch is valid by analyzing the tissue area.
-    
+
     Args:
         patch (ndarray): The input image patch.
-        tissue_threshold (float): The minimum tissue area ratio to consider the patch as valid. Optional (default=0.5).
-        contrast_method (str): The contrast enhancement method ('none', 'histogram', 'adaptive'). Optional (default='histogram').
-        threshold_method (str): The thresholding method ('hysteresis', 'otsu'). Optional (default='hysteresis').
-        hist_params (dict): Parameters for the histogram equalization method. Optional.
-        hyst_params (dict): Parameters for the hysteresis thresholding method. Optional.
-        clean_params (dict): Parameters for the function remove_small_objects(). Optional.
-        display (bool): Whether to display the intermediate results. Optional (default=False).
+        tissue_threshold (float): The minimum tissue area ratio to consider the patch as valid.
+        contrast_method (str): The contrast enhancement method.
+        threshold_method (str): The thresholding method.
+        hist_params (dict): Parameters for the histogram equalization method.
+        hyst_params (dict): Parameters for the hysteresis thresholding method.
+        clean_params (dict): Parameters for the function remove_small_objects().
+        display (bool): Whether to display the intermediate results.
         save_dir (str): Directory to save the plots.
-        patch_id (str): ID of the patch to be used in the saved figure filename. Optional (default='patch').
+        patch_id (str): ID of the patch to be used in the saved figure filename.
 
     Returns:
         bool: True if the tissue area ratio is above the threshold, False otherwise.
     """
-    
     
     # Default parameters for contrast methods
     if hist_params is None:

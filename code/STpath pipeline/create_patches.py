@@ -1,37 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Date last modified: May. 31, 2024 by Zhining Sui
+--------------------------------------------------------------------------------
+Date last modified: May 31, 2024 by Zhining Sui
 Program: create_patches.py
 Purpose: Create patches with exactly one filtered spot in each patch.
--------------------------------------------------------------------------------
-How to Use This Script:
-1. **Data Inputs**: 
-    - **Input CSV file**: 
-        - The script reads input data from a CSV file which specifies the paths to required files for each WSI.
-        - The expected columns in the CSV file are:
-            - `sample_id`: Unique identifier for each sample/WSI.
-            - `image_path`: Path to the full-resolution image file (`*.tif`).
-            - `diameter`: Diameter of the spots (can be a path to `scalefactors_json.json` file, numbers, or empty).
-            - `spatial_path`: Path to the spatial pixel coordinates file.
-            - `barcode_path`: Path to the barcodes file, or to the filtered matrix if there is no barcodes file.
-            - `output_dir`: Directory where the patches will be saved.
-            - `barcode_col`: Column number for the barcode in `spatial_path`.
-            - `array_row_col`: Column number for the row position in `spatial_path` (optional).
-            - `array_col_col`: Column number for the column position in `spatial_path` (optional).
-            - `pxl_x_col`: Column number for the x pixel coordinate in `spatial_path`.
-            - `pxl_y_col`: Column number for the y pixel coordinate in `spatial_path`.
-2. **Data Outputs**: 
-    - Patches of the filtered spots are saved in `output_dir`, either in JPG or TIFF format.
-3. **Adjusting Patch Radius**:
+--------------------------------------------------------------------------------
+Data Inputs:
+- input_csv: Path to the CSV file with paths to required files for each WSI.
+    - `sample_id`: Unique identifier for each sample/WSI.
+    - `image_path`: Path to the full-resolution image file (`*.tif`).
+    - `diameter`: Diameter of the spots (can be a path to `scalefactors_json.json` file, numbers, or empty).
+    - `spatial_path`: Path to the spatial pixel coordinates file.
+    - `barcode_path`: Path to the barcodes file, or to the filtered matrix if there is no barcodes file.
+    - `output_dir`: Directory where the patches will be saved.
+    - `barcode_col`: Column number for the barcode in `spatial_path`.
+    - `array_row_col`: Column number for the row position in `spatial_path` (optional).
+    - `array_col_col`: Column number for the column position in `spatial_path` (optional).
+    - `pxl_x_col`: Column number for the x pixel coordinate in `spatial_path`.
+    - `pxl_y_col`: Column number for the y pixel coordinate in `spatial_path`.
+
+Data Outputs:
+- Patches of the filtered spots saved in `output_dir`, either in JPG or TIFF format.
+--------------------------------------------------------------------------------
+Functions:
+- locate_pixels: Overlay crosses on the image at specific coordinates.
+- rgba2rgb: Convert RGBA image to RGB.
+- read_sample_ids: Read sample IDs from a text file.
+- find_radius: Find the radius of the spots using spatial coordinates.
+- plot_diff: Plot differences between adjacent spots.
+- create_patches: Create patches for each filtered spot in the specified format.
+--------------------------------------------------------------------------------
+Notes:
+1. Adjusting Patch Radius:
     - Modify the global parameter `FACTOR` to adjust the radius of the patches relative to the radius of the spots. 
     - For 10X Visium, the radius of a spot is 27.5µm, and the distance between the centers of two spots should be 100µm. So, `FACTOR` can be at most 1.8 to avoid overlap between patches.
-4. **Coordinate Handling**:
+2. Coordinate Handling:
     - Ensure the pixel coordinates in the `spatial_path` CSV file are correctly assigned to the x and y axes. 
     - Check the generated `spots_{sample_id}.jpg` in `output_dir` to verify if the crosses match the WSI. Adjust the coordinate assignment if necessary.
     - For 10X Visium, the 5th and 6th columns in `tissue_positions_list.csv` are the pixel coordinates of the y and x axes, respectively. The coordinate system for the Python Imaging Library has the origin at the upper left corner. The x-axis (horizontal) increases from left to right, and the y-axis (vertical) increases from top to bottom. 
     - For 10X Visium, the 3rd and 4th columns in `tissue_positions_list.csv` are the row and column positions of the spot, respectively. Ensure the detected image has the correct orientation (hourglass at the upper left corner, triangle at the lower left corner, filled hexagon at the upper right corner, and open hexagon at the lower right corner). 
     - To locate spots in an image using pixel coordinates, use the `locate_pixels()` function.
-
-Notes:
     - For detailed information on fiducial alignment for spatial transcriptomics, visit:
       https://support.10xgenomics.com/spatial-gene-expression/software/visualization/latest/alignment#id_fiducials
 -------------------------------------------------------------------------------
@@ -52,6 +61,16 @@ FACTOR = 1.1  # radius of patches/radius of spots
 
 # function to put crosses on the image with specific coordinates
 def locate_pixels(sample_id, image_path, pts, save_dir):
+    """
+    Overlay crosses on the image at specific coordinates.
+    Args:
+        sample_id (str): Unique identifier for each sample/WSI.
+        image_path (str): Path to the full-resolution image file.
+        pts (ndarray): Coordinates of the spots.
+        save_dir (str): Directory to save the output image with crosses.
+    Outputs:
+        A saved image with crosses at specified coordinates.
+    """
 
     Image.MAX_IMAGE_PIXELS = None 
     image = Image.open(image_path)
@@ -70,7 +89,14 @@ def locate_pixels(sample_id, image_path, pts, save_dir):
     
 
 def rgba2rgb(rgba, background=(255, 255, 255)):
-    """Convert RGBA image to RGB."""
+    """
+    Convert RGBA image to RGB.
+    Args:
+        rgba (ndarray): The RGBA image.
+        background (tuple): The background color to use.
+    Returns:
+        ndarray: The RGB image.
+    """
     row, col, ch = rgba.shape
     if ch == 3:
         return rgba
@@ -82,13 +108,28 @@ def rgba2rgb(rgba, background=(255, 255, 255)):
     return rgb.astype('uint8')
 
 def read_sample_ids(file_path):
-    """Read sample IDs from a text file."""
+    """
+    Read sample IDs from a text file.
+    Args:
+        file_path (str): Path to the text file containing sample IDs.
+    Returns:
+        list: List of sample IDs.
+    """
     with open(file_path, 'r') as file:
         sample_ids = file.read().splitlines()
     return sample_ids
 
 def find_radius(coords_fn = None, coords = None, diff_plot=False):
-    
+    """
+    Find the radius of the spots using spatial coordinates.
+    Args:
+        coords_fn (str): Path to the coordinates file.
+        coords (DataFrame): DataFrame containing spatial coordinates.
+        diff_plot (bool): Whether to plot differences between adjacent spots.
+    Returns:
+        DataFrame: Updated coordinates with calculated radius.
+        (Optional) Plots of differences between adjacent spots.
+    """
     # Load coordinates file
     if coords is None:
         if coords_fn.endswith(".gz"):
@@ -124,6 +165,14 @@ def find_radius(coords_fn = None, coords = None, diff_plot=False):
     return coords, mean_diff, var_diff
 
 def plot_diff(adjacent_coords, coords_fn):
+    """
+    Plot differences between adjacent spots.
+    Args:
+        adjacent_coords (DataFrame): DataFrame containing adjacent spot differences.
+        coords_fn (str): Path to the coordinates file.
+    Outputs:
+        A plot showing differences between adjacent spots.
+    """
     adjacent_coords = adjacent_coords.reset_index()
     adjacent_coords_long = pd.melt(adjacent_coords, id_vars=['index', 'same'], value_vars=['pxl_x', 'pxl_y'])
 
@@ -137,6 +186,14 @@ def plot_diff(adjacent_coords, coords_fn):
     
     
 def create_patches(samples_df, output_format = 'jpg'):
+    """
+    Create patches for each filtered spot in the specified format.
+    Args:
+        samples_df (DataFrame): DataFrame containing sample information.
+        output_format (str): Format to save the patches ('jpg' or 'tiff').
+    Outputs:
+        Patches saved in the specified output directory.
+    """
     for index, row in samples_df.iterrows():
         sample_id = row['sample_id']
         image_path = row['image_path']
