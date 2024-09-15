@@ -127,6 +127,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
       feature <- read.table(file = gzfile(st_meta[i, "feature_dir"]),
                             sep = '\t', header = FALSE)
       barcode_names <- barcode$V1
+      # feature_names <- feature$V1
       feature_names <- feature[, sapply(feature, function(column) !("Gene Expression" %in% column) && !any(grepl("^ENSG", column)))]
 
       # Assign to the dimension with same length.
@@ -203,7 +204,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     cat(s1, "Create CARD object.\n")
     cat(sprintf("dim(sc_count) for subtype %s:", type1), dim(sc_count_i), "\n")
     cat("dim(st_count): ", dim(st_count), "\n")
-    cell_type_res <- "celltype_major"
+    cell_type_res <- "Annotation"
 
     CARD_obj <- createCARDObject(
       sc_count = sc_count_i,
@@ -212,18 +213,18 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
       spatial_location = spatial_location_i,
       ct.varname = cell_type_res,
       ct.select = unique(sc_meta_i[[cell_type_res]]),
-      sample.varname = "orig.ident",
+      sample.varname = "sid",
       minCountGene = 100,
       minCountSpot = 5
     )
     gc()
-
+    
     # Run deconvolution
     cat("start CARD deconvolution.\n")
     CARD_obj <- CARD_deconvolution(CARD_object = CARD_obj)
     cat("finish CARD deconvolution.\n")
 
-    dir.create(output_dir, showWarnings = FALSE)
+    dir.create(output_dir, showWarnings = T)
 
     # Save CARD object and results
     saveRDS(CARD_obj, file = file.path(output_dir, sprintf("/CARD_obj_%s_%s.rds", s1, cell_type_res)))
@@ -258,8 +259,15 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
 visualize_proportions <- function(st_meta, output_dir, ct.visualize = NULL, 
                                   width = 10, point_size = 2, pie_radius = 1,
                                   x_reverse = F, y_reverse = F, xy_flip = F) {
-  colors = c("#FFD92F","#D95F02","#FCCDE5","#D9D9D9","#377EB8","#7FC97F",
-             "#BEAED4","#FDC086","#A6761D")
+  colors = c(`B-cells` = "#2a5fbd",
+             CAFs = "#7ddffa",
+             `Cancer Epithelial` = "#117d30",
+             Endothelial = "#71f25a", 
+             Myeloid = "#ebc857",
+             `Normal Epithelial` ="#D39200",
+             Plasmablasts = "#F8766D",
+             PVL = "#DB72FB",
+             `T-cells` = "#bd2a84")
   cell_type_res = "celltype_major"
   
   for(i in 1:nrow(st_meta)){
@@ -283,7 +291,7 @@ visualize_proportions <- function(st_meta, output_dir, ct.visualize = NULL,
       spatial_location = CARD_obj@spatial_location, 
       ct.visualize = ct.visualize,                 
       colors = c("lightblue","lightyellow","red"), 
-      NumCols = 2,
+      NumCols = 3,
       pointSize = point_size) 
     
     if(x_reverse){
@@ -332,6 +340,13 @@ output_dirs <- list(
   Wu = "../../output/Wu_2021/deconvolution/"
 )
 
+
+st_dirs <- list(
+  Janesick = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/"
+)
+output_dirs <- list(
+  Janesick = "../../output/Janesick_2023/deconvolution/"
+)
 
 
 # Prepare st_meta and spatial_location for each ST dataset ----------------
@@ -421,6 +436,30 @@ for (i in 1:nrow(st_meta)) {
 st_meta_all[["He"]] <- st_meta
 spatial_all[["He"]] <- spatial
 
+###### Janesick_2023
+# Create metadata for the spatial transcriptomics data
+st_dir <- st_dirs$Janesick
+sample_ids = c("VisiumS1")
+st_meta <- data.frame(sid = sample_ids,
+                      subtype = NA,
+                      count_matrix_dir = file.path(st_dir, sample_ids, "filtered_feature_bc_matrix/matrix.mtx.gz"),
+                      feature_dir = file.path(st_dir, sample_ids, "filtered_feature_bc_matrix/features.tsv.gz"),
+                      barcode_dir = file.path(st_dir, sample_ids, "filtered_feature_bc_matrix/barcodes.tsv.gz"))
+
+# Create spatial location data
+spatial <- data.frame()
+for (i in 1:nrow(st_meta)) {
+  sp <- read.csv(file.path(st_dir, st_meta[i, "sid"], "spatial", "tissue_positions.csv"), 
+                 header = T, sep = ',')
+  sp <- sp[c(1,3,4)]
+  colnames(sp)[2:3] <- c("x", "y")
+  sp$sid <- st_meta[i, "sid"]
+  sp$spot_id <- sp$barcode
+  spatial <- rbind(spatial, sp)
+}
+st_meta_all[["Janesick"]] <- st_meta
+spatial_all[["Janesick"]] <- spatial
+
 
 # Load reference scRNA-seq data -------------------------------------------
 
@@ -435,6 +474,20 @@ rownames(sc_count) <- sc_gene$symbol.sc
 sc_count <- as(sc_count, "sparseMatrix")
 sc_count <- as(sc_count, "CsparseMatrix")
 
+sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/FRP/sample_filtered_feature_bc_matrix"
+sc_count <- readMM(file.path(sc_dir, "matrix.mtx.gz"))
+sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
+rownames(sc_meta) <- sc_meta$Barcode
+sc_gene <- read.csv(file = file.path(sc_dir, "features.tsv.gz"), sep = "\t", header = FALSE)
+sc_barcode <- read.csv(file = file.path(sc_dir, "barcodes.tsv.gz"), sep = "\t", header = FALSE)
+colnames(sc_count) <- sc_barcode$V1
+rownames(sc_count) <- sc_gene$V1
+sc_count <- as(sc_count, "sparseMatrix")
+sc_count <- as(sc_count, "CsparseMatrix")
+
+sc_count <- sc_count[, intersect(sc_meta$Barcode, sc_barcode$V1)]
+sc_meta <- sc_meta[colnames(sc_count), ]
+sc_meta$sid <- "S1"
 
 # Run deconvolution for each dataset --------------------------------------
 for (dataset in names(st_dirs)) {
@@ -446,7 +499,17 @@ for (dataset in names(st_dirs)) {
 
 # Visualize proportions for all datasets ----------------------------------
 
-widths <- list(He = 9, `10x` = 9, Wu = 9)
+colors = c(`B cells` = "#2a5fbd",
+           CAFs = "#7ddffa",
+           `Cancer Epithelial` = "#117d30",
+           Endothelial = "#71f25a", 
+           Myeloid = "#ebc857",
+           `Normal Epithelial` ="#D39200",
+           Plasmablasts = "#F8766D",
+           PVL = "#DB72FB",
+           `T cells` = "#bd2a84")
+
+widths <- list(He = 9, `10x` = 14, Wu = 12)
 pie_radii <- list(He = 0.5, `10x` = 0.7, Wu = 0.7)
 point_sizes <- list(He = 3.5, `10x` = 1, Wu = 1)
 y_reverse_bool <- list(He = T, `10x` = F, Wu = F)
@@ -456,7 +519,15 @@ xy_flip_bool <- list(He = F, `10x` = T, Wu = T)
 for (dataset in names(st_dirs)) {
   visualize_proportions(st_meta = st_meta_all[[dataset]], 
                         output_dir = output_dirs[[dataset]],
-                        ct.visualize = c("Cancer Epithelial", "T-cells",  "CAFs", "Normal Epithelial"),
+                        ct.visualize = c("B-cells",
+                                         "CAFs",
+                                         "Cancer Epithelial",
+                                         "Endothelial", 
+                                         "Myeloid" ,
+                                         "Normal Epithelial",
+                                         "Plasmablasts",
+                                         "PVL",
+                                         "T-cells"),
                         width = widths[[dataset]],
                         point_size = point_sizes[[dataset]],
                         pie_radius = pie_radii[[dataset]],
@@ -474,6 +545,7 @@ STpath_input_dirs <- list(
   `10x` = "../../data/10X/",
   Wu = "../../data/Wu_2021/"
 )
+
 for (dataset in names(output_dirs)) {
   prop_files = list.files(output_dirs[[dataset]], pattern=".csv")
   fn <- gsub("Proportion_|_celltype_major.csv", "", prop_files)
@@ -497,9 +569,6 @@ for (dataset in names(output_dirs)) {
   prop <- do.call("bind_rows", lst)
   write.csv(prop, file.path(STpath_input_dirs[[dataset]], paste0("Proportion_", dataset, ".csv")))
 }
-
-
-
 
 
 

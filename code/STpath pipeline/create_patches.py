@@ -55,6 +55,7 @@ import pandas as pd
 import gzip
 import matplotlib.pyplot as plt
 import seaborn as sns
+import h5py
 
 # Global parameter
 FACTOR = 1.1  # radius of patches/radius of spots
@@ -251,7 +252,7 @@ def create_patches(samples_df, output_format = 'jpg'):
             else:
                 diameter = diameter
             
-            
+
             # load barcodes for the filtered matrix (in-tissue spots)
             barcodes_df = pd.read_csv(gzip.open(barcode_path, 'rt'), sep='\t', header=None, index_col=None)
             if barcodes_df.shape[1] == 1:
@@ -292,10 +293,11 @@ def create_patches(samples_df, output_format = 'jpg'):
 def main():
     INPUT_CSV = '../../data/Wu_2021/create_patches_input.csv'  
     # INPUT_CSV = '../../data/He_2020/create_patches_input.csv' 
-    # NPUT_CSV = '../../data/10X/create_patches_input.csv'  
+    # INPUT_CSV = '../../data/10X/create_patches_input.csv'  
     
+    INPUT_CSV = 'create_patches_input.csv'  
     samples_df = pd.read_csv(INPUT_CSV)
-    
+
     required_columns = ['sample_id', 'image_path', 'diameter', 'spatial_path', 'barcode_path', 'output_dir',
                         'barcode_col', 'array_row_col', 'array_col_col', 'pxl_y_col', 'pxl_x_col']
     for col in required_columns:

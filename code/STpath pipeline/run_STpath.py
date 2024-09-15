@@ -53,7 +53,7 @@ def setup_paths(result_path, project, outcome_list, task):
     
 
 # Add image paths to dataframe and split into training, validation, and testing sets
-def prepare_dataframe(df, filename, path, train_split, val_split, test_split):
+def prepare_dataframe(df, filename, prefix_filename, path, train_split, val_split, test_split):
     """
     Adds a column for image paths and splits the dataframe into training, validation, and testing sets.
     
@@ -72,6 +72,24 @@ def prepare_dataframe(df, filename, path, train_split, val_split, test_split):
             - val_df (pd.DataFrame): Dataframe for validation.
             - test_df (pd.DataFrame): Dataframe for testing.
     """
+   
+    if filename not in df.columns:
+        if 'Unnamed: 0' in df.columns:
+            df.rename(columns={'Unnamed: 0': filename}, inplace=True)
+        else:
+            raise ValueError(f"Column {filename} does not exist in the dataframe. Available columns are: {df.columns.tolist()}")
+
+    # Ensure 'Unnamed: 0' is not in columns
+    if 'Unnamed: 0' in df.columns:
+        df.drop(columns=['Unnamed: 0'], inplace=True)
+        
+    # Ensure patch_id column exists after renaming
+    if filename not in df.columns:
+        raise ValueError(f"Column {filename} does not exist in the dataframe after renaming. Available columns are: {df.columns.tolist()}")
+    
+    if prefix_filename is not None:
+        df[filename] = prefix_filename + '_' + df[filename].astype(str)
+
     # Ensure filenames are strings
     df[filename] = df[filename].astype(str)
     
@@ -83,7 +101,8 @@ def prepare_dataframe(df, filename, path, train_split, val_split, test_split):
             print(f"Non-string filename: {fn}")
             return None
     
-    df['img_path'] = df[filename].apply(construct_path)
+    if 'img_path' not in df:
+        df['img_path'] = df[filename].apply(construct_path)
     
     # Split the dataframe
     train_df = df.sample(frac=train_split, random_state=SEED)
@@ -467,7 +486,7 @@ def run_hyperparams(base_model, classification, fine_tuning, train_df, val_df, t
         plot_learning_curves(classification, fine_history, fine_name, fine_tuning)
 
 
-def run(project, task, data_file, outcome_list, patch_id, prefix_patch_id, image_path, result_path, base_model, image, optimizer, batch_size, learning_rate, dropout_rate, dense_layer_size, test_split, val_split, seed, image_resize, num_epoch, patience):
+def run(project, task, data_file, outcome_list, patch_id, prefix_patch_id, image_path, result_path, base_model, image, optimizer, batch_size, learning_rate, dropout_rate, dense_layer_size, test_split, val_split, seed, image_resize, num_epoch, patience, train_data_file, test_data_file, validation_data_file):
     """
     Main function to run the training process with specified parameters.
     
@@ -510,43 +529,86 @@ def run(project, task, data_file, outcome_list, patch_id, prefix_patch_id, image
     if os.path.isfile(os.path.join(EVAL_PATH, f"test_pred_{model_name}.csv")):
         sys.exit()
     
-    df = pd.read_csv(data_file)
+    if len([x for x in (train_data_file, test_data_file, validation_data_file) if x is not None]) == 0:
+        df = pd.read_csv(data_file)
+    else: 
+        train_df = pd.read_csv(train_data_file)
+        test_df = pd.read_csv(test_data_file)
+        df = pd.concat([train_df, test_df], ignore_index=True)
+        if validation_data_file is not None:
+            val_df = pd.read_csv(validation_data_file)
+            df = pd.concat([df, val_df], ignore_index=True)
     
     if task == "classification":
+        is_classification = True
         number = pd.value_counts(df[outcome_list])
         classes = number[number > 50].index
         classes = [c for c in classes if c not in ["nan", "Artefact", "Uncertain"]]
-        df = df.loc[df[outcome_list].isin(classes), ]
-            
-    if patch_id not in df.columns:
-        if 'Unnamed: 0' in df.columns:
-            df.rename(columns={'Unnamed: 0': patch_id}, inplace=True)
+        if 'train_df' in vars():
+            train_df = train_df.loc[train_df[outcome_list].isin(classes), ]
+            test_df = test_df.loc[test_df[outcome_list].isin(classes), ]
+            train_df[outcome_list] = train_df[outcome_list].apply(str)
+            test_df[outcome_list] = test_df[outcome_list].apply(str)
+            if 'val_df' in vars():
+                val_df = val_df.loc[val_df[outcome_list].isin(classes), ]
+                val_df[outcome_list] = val_df[outcome_list].apply(str)
         else:
-            raise ValueError(f"Column {patch_id} does not exist in the dataframe. Available columns are: {df.columns.tolist()}")
-
-    # Ensure 'Unnamed: 0' is not in columns
-    if 'Unnamed: 0' in df.columns:
-        df.drop(columns=['Unnamed: 0'], inplace=True)
+            df = df.loc[df[outcome_list].isin(classes), ]
+            df[outcome_list] = df[outcome_list].apply(str)
         
-    # Ensure patch_id column exists after renaming
-    if patch_id not in df.columns:
-        raise ValueError(f"Column {patch_id} does not exist in the dataframe after renaming. Available columns are: {df.columns.tolist()}")
-    
-    if prefix_patch_id is not None:
-        df[patch_id] = prefix_patch_id + '_' + df[patch_id].astype(str)
-
-    if task == "classification":
-        df[outcome_list] = df[outcome_list].apply(str)
-        is_classification = True
     else:
-        df[outcome_list] = df[outcome_list].apply(pd.to_numeric)
         is_classification = False
-        
-    print(df)
+        if 'train_df' in vars():
+            train_df[outcome_list] = train_df[outcome_list].apply(pd.to_numeric)
+            test_df[outcome_list] = test_df[outcome_list].apply(pd.to_numeric)
+            if 'val_df' in vars():
+                val_df[outcome_list] = val_df[outcome_list].apply(pd.to_numeric)
+        else:
+            df[outcome_list] = df[outcome_list].apply(pd.to_numeric)
     
     
+    if len([x for x in (train_data_file, test_data_file, validation_data_file) if x is not None]) == 0:
+        df, train_df, val_df, test_df = prepare_dataframe(df=df, filename=patch_id, 
+                                                          prefix_filename=prefix_patch_id,
+                                                          path=image_path, 
+                                                          train_split=1 - test_split - val_split, 
+                                                          val_split=val_split, 
+                                                          test_split=test_split)
+    else: 
+        if 'val_df' in vars():
+            train_df, _, _, _ = prepare_dataframe(df=train_df, filename=patch_id, 
+                                                  prefix_filename=prefix_patch_id,
+                                                  path=image_path, 
+                                                  train_split=1 - test_split - val_split, 
+                                                  val_split=val_split, 
+                                                  test_split=test_split)
+            test_df, _, _, _ = prepare_dataframe(df=test_df, filename=patch_id, 
+                                                  prefix_filename=prefix_patch_id,
+                                                  path=image_path, 
+                                                  train_split=1 - test_split - val_split, 
+                                                  val_split=val_split, 
+                                                  test_split=test_split)
+            val_df, _, _, _ = prepare_dataframe(df=val_df, filename=patch_id, 
+                                                  prefix_filename=prefix_patch_id,
+                                                  path=image_path, 
+                                                  train_split=1 - test_split - val_split, 
+                                                  val_split=val_split, 
+                                                  test_split=test_split)
+        else: 
+            _, train_df, val_df, _ = prepare_dataframe(df=train_df, filename=patch_id, 
+                                                       prefix_filename=prefix_patch_id,
+                                                       path=image_path, 
+                                                       train_split=0.8, 
+                                                       val_split=0.2, 
+                                                       test_split=0)
+            test_df, _, _, _ = prepare_dataframe(df=test_df, filename=patch_id, 
+                                                       prefix_filename=prefix_patch_id,
+                                                       path=image_path, 
+                                                       train_split=0.8, 
+                                                       val_split=0.2, 
+                                                       test_split=0)
     
-    df, train_df, val_df, test_df = prepare_dataframe(df, patch_id, image_path, 1 - test_split - val_split, val_split, test_split)
+
     outcome_str = '_'.join(outcome_list) if isinstance(outcome_list, list) else outcome_list
     train_df.to_csv(os.path.join(result_path, f'training_{project}_{outcome_str}.csv'))
     val_df.to_csv(os.path.join(result_path, f'validation_{project}_{outcome_str}.csv'))
@@ -559,7 +621,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Take inputs')
     parser.add_argument('--project', default="", type=str, help='a string of project name')
     parser.add_argument('--task', default="classification", type=str, help='a string of task type (classification, regression)')
-    parser.add_argument('--data_file', default="", type=str, help='a string of the name of the csv file containing the predictor and response variables')
+    parser.add_argument('--data_file', default=None, type=str, help='a string of the name of the csv file containing the predictor and response variables')
     parser.add_argument('--result_path', default="", type=str, help='a string of the directory saving all results of the project')
     parser.add_argument('--image_path', default="", type=str, help='a string of the path to the image patches')
     parser.add_argument('-n', '--outcome_list', default=[], nargs='+', help='a list of column names for the response variable')
@@ -578,6 +640,9 @@ def parse_args():
     parser.add_argument('--num_epoch', default=500, type=int, help='an integer of the maximum number of epochs')
     parser.add_argument('--patience', default=20, type=int, help='an integer of the early stopping patience')
     parser.add_argument('--prefix_patch_id', default=None, type=str, help="a string of prefix to be added to the patch_id")
+    parser.add_argument('--train_data_file', default=None, type=str, help="a string of the name of the csv file containing the predictor and response variables for the train data")
+    parser.add_argument('--test_data_file', default=None, type=str, help="a string of the name of the csv file containing the predictor and response variables for the test data")
+    parser.add_argument('--validation_data_file', default=None, type=str, help="a string of the name of the csv file containing the predictor and response variables for the validation data")
     
     args = parser.parse_args()
 

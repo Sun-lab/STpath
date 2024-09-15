@@ -137,7 +137,7 @@ def stain_normalize(dir_img_target, dir_to_transform, output_format, output_path
         print(f"The image {os.path.basename(dir_to_transform)} has been normalized and saved in the destination directory.")
 
 
-def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', threshold_method='hysteresis', hist_params=None, hyst_params=None, clean_params=None, display=False, save_dir=None, patch_id="patch"):
+def is_valid_patch(patch, tissue_threshold=0, contrast_method='histogram', threshold_method='hysteresis', hist_params=None, hyst_params=None, clean_params=None, display=False, save_dir=None, patch_id="patch"):
     """
     Check if the patch is valid by analyzing the tissue area.
 
@@ -260,12 +260,12 @@ def is_valid_patch(patch, tissue_threshold=0.5, contrast_method='histogram', thr
 
 # Example usage
 ORIGINAL_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch/'
-NORMALIZED_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch_normalized/'
-TISSUE_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/10X/patch_tissue_detected/'
+NORMALIZED_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/Wu_2021/patch_normalized/'
+TISSUE_IMG_DIR = '/Users/zhiningsui/GitHub/STpath/output/Wu_2021/patch_tissue_detected/'
 
 for method in ['macenko', 'vahadane', 'reinhard']:
-    stain_normalize(dir_img_target=ORIGINAL_IMG_DIR + '10X_FFPE_GGAACCGTGTAAATTG-1.jpg',
-                    dir_to_transform=ORIGINAL_IMG_DIR,
+    stain_normalize(dir_img_target='/Users/zhiningsui/GitHub/STpath/output/Wu_2021/patch/CID4290_AATCTATGCCGGAGCC-1.jpg',
+                    dir_to_transform='/Users/zhiningsui/GitHub/STpath/output/Wu_2021/patch_jpg/1142243F/',
                     output_format='jpg', output_path=NORMALIZED_IMG_DIR + method +' /', 
                     method=method, tissue_check_threshold = 0.2, save_tissue_check_dir = TISSUE_IMG_DIR)
 
