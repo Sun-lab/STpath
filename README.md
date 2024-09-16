@@ -1,7 +1,7 @@
 # STpath
 ## Quick start guide
 ### Install conda and setup the conda environment
-Using the conda environment file, `environment.yaml`, to create the python environment by running the following commands in the terminal.
+Use the conda environment file, `environment.yaml`, to create the Python environment by running the following commands in the terminal.
 ```
 ## make sure conda is installed
 conda --version
@@ -14,6 +14,26 @@ conda activate STpath-env
 
 ## check you have the right conda environment
 conda info --envs
+```
+### Install R packages
+Use the following R code to install the required packages.
+```
+packages <- c("car", "caret", "concaveman", "cowplot", "cvms", "data.table", "dplyr", "ggbeeswarm", "ggcorrplot", "ggplot2", "ggpointdensity", "gprofiler2", "gtable", "grid", "gridExtra", "knitr", "likert", "Matrix", "MCMCpack", "multiROC",  "patchwork", "RANN" "RColorBrewer", "readr", "reshape2", "scales", "sf", "sp", "stringr", "styler", "tidyverse", "viridis", "yarrr")
+install_if_missing <- function(p) {
+  if (!p %in% installed.packages()) {
+    install.packages(p)
+  }
+}
+invisible(sapply(packages, install_if_missing))
+
+BiocManager::install("SingleCellExperiment")
+BiocManager::install("SummarizedExperiment")
+devtools::install_github('xuranw/MuSiC')
+devtools::install_github('YMa-lab/CARD')
+BiocManager::install("biomaRt")
+BiocManager::install("org.Hs.eg.db")
+BiocManager::install("EnsDb.Hsapiens.v79")
+remotes::install_github("satijalab/seurat", "seurat5", quiet = TRUE)
 ```
 
 ## Scripts
