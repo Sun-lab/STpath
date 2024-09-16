@@ -1,4 +1,21 @@
 # STpath
+## Quick start guide
+### Install conda and setup the conda environment
+Using the conda environment file, `environment.yaml`, to create the python environment by running the following commands in the terminal.
+```
+## make sure conda is installed
+conda --version
+
+## create environment
+conda env create -f environment.yml
+
+## activate conda environment
+conda activate STpath-env
+
+## check you have the right conda environment
+conda info --envs
+```
+
 ## Scripts
 ### `run_STpath.py`
 This script handles the main logic for the pipeline:
