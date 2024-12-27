@@ -187,7 +187,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     }
     sc_count_i <- sc_count[, cells2use]
     sc_meta_i <- sc_meta[cells2use, ]
-
+    
     # Prepare spatial location
     spatial_location_i <- spatial_location %>%
       dplyr::filter(spot_id %in% colnames(st_count) & sid == s1) %>%
@@ -204,7 +204,8 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
     cat(s1, "Create CARD object.\n")
     cat(sprintf("dim(sc_count) for subtype %s:", type1), dim(sc_count_i), "\n")
     cat("dim(st_count): ", dim(st_count), "\n")
-    cell_type_res <- "Annotation"
+    # cell_type_res <- "Annotation"
+    cell_type_res <- "celltype_major"
 
     CARD_obj <- createCARDObject(
       sc_count = sc_count_i,
@@ -213,7 +214,7 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir) {
       spatial_location = spatial_location_i,
       ct.varname = cell_type_res,
       ct.select = unique(sc_meta_i[[cell_type_res]]),
-      sample.varname = "sid",
+      sample.varname = "orig.ident",
       minCountGene = 100,
       minCountSpot = 5
     )
@@ -332,19 +333,13 @@ sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/
 st_dirs <- list(
   He = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/He_2020/data/",
   `10x` = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/10X/data/",
-  Wu = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/data/"
+  Wu = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/data/",
+  Janesick = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/"
 )
 output_dirs <- list(
   He = "../../output/He_2020/deconvolution/",
   `10x` = "../../output/10X/deconvolution/",
-  Wu = "../../output/Wu_2021/deconvolution/"
-)
-
-
-st_dirs <- list(
-  Janesick = "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/"
-)
-output_dirs <- list(
+  Wu = "../../output/Wu_2021/deconvolution/",
   Janesick = "../../output/Janesick_2023/deconvolution/"
 )
 
@@ -474,20 +469,19 @@ rownames(sc_count) <- sc_gene$symbol.sc
 sc_count <- as(sc_count, "sparseMatrix")
 sc_count <- as(sc_count, "CsparseMatrix")
 
-sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/FRP/sample_filtered_feature_bc_matrix"
-sc_count <- readMM(file.path(sc_dir, "matrix.mtx.gz"))
-sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
-rownames(sc_meta) <- sc_meta$Barcode
-sc_gene <- read.csv(file = file.path(sc_dir, "features.tsv.gz"), sep = "\t", header = FALSE)
-sc_barcode <- read.csv(file = file.path(sc_dir, "barcodes.tsv.gz"), sep = "\t", header = FALSE)
-colnames(sc_count) <- sc_barcode$V1
-rownames(sc_count) <- sc_gene$V1
-sc_count <- as(sc_count, "sparseMatrix")
-sc_count <- as(sc_count, "CsparseMatrix")
-
-sc_count <- sc_count[, intersect(sc_meta$Barcode, sc_barcode$V1)]
-sc_meta <- sc_meta[colnames(sc_count), ]
-sc_meta$sid <- "S1"
+# sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Janesick_2023/data/FRP/sample_filtered_feature_bc_matrix"
+# sc_count <- readMM(file.path(sc_dir, "matrix.mtx.gz"))
+# sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
+# rownames(sc_meta) <- sc_meta$Barcode
+# sc_gene <- read.csv(file = file.path(sc_dir, "features.tsv.gz"), sep = "\t", header = FALSE)
+# sc_barcode <- read.csv(file = file.path(sc_dir, "barcodes.tsv.gz"), sep = "\t", header = FALSE)
+# colnames(sc_count) <- sc_barcode$V1
+# rownames(sc_count) <- sc_gene$V1
+# sc_count <- as(sc_count, "sparseMatrix")
+# sc_count <- as(sc_count, "CsparseMatrix")
+# sc_count <- sc_count[, intersect(sc_meta$Barcode, sc_barcode$V1)]
+# sc_meta <- sc_meta[colnames(sc_count), ]
+# sc_meta$sid <- "S1"
 
 # Run deconvolution for each dataset --------------------------------------
 for (dataset in names(st_dirs)) {
@@ -496,6 +490,9 @@ for (dataset in names(st_dirs)) {
                     output_dir = output_dirs[[dataset]])
 }
 
+run_deconvolution(st_meta = st_meta_all$Wu,
+                  spatial_location = spatial_all$Wu,
+                  output_dir = output_dirs$Wu)
 
 # Visualize proportions for all datasets ----------------------------------
 
@@ -572,4 +569,123 @@ for (dataset in names(output_dirs)) {
 
 
 
+
+# Predict expression from proportions -------------------------------------
+# Wu et data
+sc_count <- readMM(file.path(sc_dir, "count_matrix_sparse.mtx"))
+sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
+rownames(sc_meta) <- sc_meta$X
+sc_gene <- read.csv(file = file.path(sc_dir, "count_matrix_genes.tsv"), sep = "\t", header = FALSE)
+colnames(sc_gene) <- "symbol.sc"
+sc_barcode <- read.csv(file = file.path(sc_dir, "count_matrix_barcodes.tsv"), sep = "\t", header = FALSE)
+colnames(sc_count) <- sc_barcode$V1
+rownames(sc_count) <- sc_gene$symbol.sc
+sc_count <- as(sc_count, "sparseMatrix")
+sc_count <- as(sc_count, "CsparseMatrix")
+
+avg_sc_ref <- list()
+for (subtype in unique(sc_meta$subtype)) {
+  cells2use <- which(sc_meta$subtype == subtype)
+  sc_count_i <- sc_count[, cells2use]
+  sc_meta_i <- sc_meta[cells2use, ]
+  avg_expr_type <- matrix(nrow = nrow(sc_count_i),
+                          ncol = length(unique(sc_meta_i$celltype_major)))
+  colnames(avg_expr_type) <- unique(sc_meta_i$celltype_major)
+  rownames(avg_expr_type) <- rownames(sc_count_i)
+  for (ct in unique(sc_meta_i$celltype_major)) {
+    cells <- sc_meta_i[sc_meta_i$celltype_major == ct,]$X
+    expr <- sc_count_i[, cells]
+    avg_expr_type[, ct] <- rowMeans(expr)
+  }
+  avg_sc_ref[[subtype]] <- avg_expr_type
+}
+
+st_meta <- st_meta_all$Wu
+output_dir <- output_dirs$Wu
+predicted_expr_list <- list()
+sample_wise_cor <- list()
+gene_wise_cor <- list()
+for (i in 1:nrow(st_meta)) {
+  # Retrieve the reference average expression matrix for the specific cell subtype
+  avg_type_ref <- avg_sc_ref[[st_meta[i, "subtype"]]]
+  # Get the sample ID for the current iteration
+  s1 <- st_meta[i, "sid"]
+  # Read the cell type proportion data for the current sample
+  prop <- read.csv(file.path(output_dir, sprintf("/Proportion_%s_celltype_major.csv", s1)),
+                   check.names = F)
+  # Set the first column as rownames and clean up the proportion data
+  colnames(prop)[1] <- "X"
+  prop <- prop %>%
+    column_to_rownames("X") %>%
+    dplyr::select(-sid) %>%
+    t()
+  # Calculate predicted gene expression using matrix multiplication
+  predicted_expr <- avg_type_ref %*% prop
+  # Store the predicted expression in a list
+  predicted_expr_list[[s1]] <- predicted_expr
+  
+  # Read the spatial transcriptomics count matrix for the sample
+  stdata_s <- readMM(st_meta[i, "count_matrix_dir"])
+  # Handle missing column or row names for the count matrix
+  if(is.null(colnames(stdata_s)) || is.null(rownames(stdata_s))){
+    barcode <- read.table(file = gzfile(st_meta[i, "barcode_dir"]),
+                          sep = '\t', header = FALSE)
+    feature <- read.table(file = gzfile(st_meta[i, "feature_dir"]),
+                          sep = '\t', header = FALSE)
+    barcode_names <- barcode$V1
+    # feature_names <- feature$V1
+    feature_names <- feature[, sapply(feature, function(column) !("Gene Expression" %in% column) && !any(grepl("^ENSG", column)))]
+    
+    # Assign to the dimension with same length.
+    if (ncol(stdata_s) == length(barcode_names) && nrow(stdata_s) == length(feature_names)) {
+      colnames(stdata_s) <- barcode_names
+      rownames(stdata_s) <- feature_names
+    } else if (nrow(stdata_s) == length(barcode_names) && ncol(stdata_s) == length(feature_names)) {
+      rownames(stdata_s) <- barcode_names
+      colnames(stdata_s) <- feature_names
+    } else {
+      cat("The lengths of the barcode or feature names do not match the dimensions of the matrix.\n")
+    }
+  }
+  # Convert the matrix to a sparse format for efficient computation
+  stdata_s <- as(stdata_s, "sparseMatrix")
+  stdata_s <- as(stdata_s, "CsparseMatrix")
+  # Extract the count matrix for columns (samples) matching the predicted expression matrix
+  st_count <- stdata_s[, colnames(predicted_expr)]
+  # Find common genes between the predicted and observed matrices
+  common_genes <- intersect(rownames(st_count), rownames(predicted_expr))
+  st_count <- st_count[common_genes,]
+  predicted_expr <- predicted_expr[common_genes, ]
+  
+  # Compute sample-wise correlations directly
+  column_wise_correlation <- sapply(seq_len(ncol(st_count)), function(i) {
+    cor(st_count[, i], predicted_expr[, i], method = "pearson")
+  })
+  names(column_wise_correlation) <- colnames(st_count)
+  sample_wise_cor[[s1]] <- column_wise_correlation
+ 
+  # Compute gene-wise correlations directly
+  row_wise_correlation <- sapply(seq_len(nrow(st_count)), function(i) {
+    cor(st_count[i, ], predicted_expr[i, ], method = "pearson")
+  })
+  names(row_wise_correlation) <- rownames(st_count)
+  gene_wise_cor[[s1]] <- row_wise_correlation
+}
+
+save(gene_wise_cor, predicted_expr_list, sample_wise_cor, avg_sc_ref, file = "card_predict_expression.rda")
+
+cat("Summary of sample-wise correlations:\n")
+sapply(sample_wise_cor, summary)
+hist(sample_wise_cor$`1142243F`, main = "Sample-wise Correlation for 1142243F", 
+     xlab = "Correlation", breaks = 100)
+hist(sample_wise_cor$`1160920F`, main = "Sample-wise Correlation for 1160920F", 
+     xlab = "Correlation", breaks = 100)
+hist(sample_wise_cor$CID4290, main = "Sample-wise Correlation for CID4290", 
+     xlab = "Correlation", breaks = 100)
+hist(sample_wise_cor$CID4465, main = "Sample-wise Correlation for CID4465", 
+     xlab = "Correlation", breaks = 100)
+hist(sample_wise_cor$CID44971, main = "Sample-wise Correlation for CID44971", 
+     xlab = "Correlation", breaks = 100)
+hist(sample_wise_cor$CID4535, main = "Sample-wise Correlation for CID4535", 
+     xlab = "Correlation", breaks = 100)
 
