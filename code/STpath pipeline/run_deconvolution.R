@@ -603,6 +603,7 @@ for (subtype in unique(sc_meta$subtype)) {
 st_meta <- st_meta_all$Wu
 output_dir <- output_dirs$Wu
 predicted_expr_list <- list()
+observed_st_expr_list <- list()
 sample_wise_cor <- list()
 gene_wise_cor <- list()
 for (i in 1:nrow(st_meta)) {
@@ -652,40 +653,99 @@ for (i in 1:nrow(st_meta)) {
   stdata_s <- as(stdata_s, "CsparseMatrix")
   # Extract the count matrix for columns (samples) matching the predicted expression matrix
   st_count <- stdata_s[, colnames(predicted_expr)]
-  # Find common genes between the predicted and observed matrices
-  common_genes <- intersect(rownames(st_count), rownames(predicted_expr))
-  st_count <- st_count[common_genes,]
-  predicted_expr <- predicted_expr[common_genes, ]
-  
-  # Compute sample-wise correlations directly
-  column_wise_correlation <- sapply(seq_len(ncol(st_count)), function(i) {
-    cor(st_count[, i], predicted_expr[, i], method = "pearson")
-  })
-  names(column_wise_correlation) <- colnames(st_count)
-  sample_wise_cor[[s1]] <- column_wise_correlation
- 
-  # Compute gene-wise correlations directly
-  row_wise_correlation <- sapply(seq_len(nrow(st_count)), function(i) {
-    cor(st_count[i, ], predicted_expr[i, ], method = "pearson")
-  })
-  names(row_wise_correlation) <- rownames(st_count)
-  gene_wise_cor[[s1]] <- row_wise_correlation
+  observed_st_expr_list[[s1]] <- st_count
+  # # Find common genes between the predicted and observed matrices
+  # common_genes <- intersect(rownames(st_count), rownames(predicted_expr))
+  # st_count <- st_count[common_genes,]
+  # predicted_expr <- predicted_expr[common_genes, ]
+  # 
+  # # Compute sample-wise correlations directly
+  # column_wise_correlation <- sapply(seq_len(ncol(st_count)), function(i) {
+  #   cor(st_count[, i], predicted_expr[, i], method = "pearson")
+  # })
+  # names(column_wise_correlation) <- colnames(st_count)
+  # sample_wise_cor[[s1]] <- column_wise_correlation
+  # 
+  # # Compute gene-wise correlations directly
+  # row_wise_correlation <- sapply(seq_len(nrow(st_count)), function(i) {
+  #   cor(st_count[i, ], predicted_expr[i, ], method = "pearson")
+  # })
+  # names(row_wise_correlation) <- rownames(st_count)
+  # gene_wise_cor[[s1]] <- row_wise_correlation
 }
 
-save(gene_wise_cor, predicted_expr_list, sample_wise_cor, avg_sc_ref, file = "card_predict_expression.rda")
+save(predicted_expr_list, observed_st_expr_list, gene_wise_cor, sample_wise_cor, avg_sc_ref, file = "card_predict_expression.rda")
 
 cat("Summary of sample-wise correlations:\n")
 sapply(sample_wise_cor, summary)
+par(mfrow = c(2,3))
 hist(sample_wise_cor$`1142243F`, main = "Sample-wise Correlation for 1142243F", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation",  breaks = 30, xlim = c(0,1))
 hist(sample_wise_cor$`1160920F`, main = "Sample-wise Correlation for 1160920F", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation", breaks = 30, xlim = c(0,1))
 hist(sample_wise_cor$CID4290, main = "Sample-wise Correlation for CID4290", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation", breaks = 30, xlim = c(0,1))
 hist(sample_wise_cor$CID4465, main = "Sample-wise Correlation for CID4465", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation", breaks = 30, xlim = c(0,1))
 hist(sample_wise_cor$CID44971, main = "Sample-wise Correlation for CID44971", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation", breaks = 30, xlim = c(0,1))
 hist(sample_wise_cor$CID4535, main = "Sample-wise Correlation for CID4535", 
-     xlab = "Correlation", breaks = 100)
+     xlab = "Correlation", breaks = 30, xlim = c(0,1))
+
+
+spot <- names(sort(sample_wise_cor$`1142243F`, decreasing = T)[1])
+
+spot_df <- data.frame(cbind( predicted_expr_list$`1142243F`[, spot],
+                  observed_st_expr_list$`1142243F`[, spot]))
+colnames(spot_df) <- c("Predicted", "Observed")
+spot_df$Predicted <- round(spot_df$Predicted)
+ggplot(spot_df, aes(x = Observed, y = Predicted)) +
+  geom_point(alpha = 0.5)
+
+
+setwd("/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/Visium")
+input <- read.csv("create_patches_input.csv")[,-1]
+fns <- list.files("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/coord")
+
+ids <- gsub("_coord.csv", "", fns)
+info <- input[input$sample_id %in% ids, ]
+info$spatial_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/coord/", info$sample_id, "_coord.csv")
+all(file.exists(info$spatial_path))
+info$image_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/image/", info$sample_id, ".png")
+all(file.exists(info$image_path))
+
+for (id in info$sample_id ) {
+  sp <- read.csv(info[info$sample_id == id, "spatial_path"])
+  info[info$sample_id == id, "diameter"] <- unique(sp$r) * 2
+}
+
+info$pxl_x_col <- 3
+info$pxl_y_col <- 2
+info$barcode_col <- 1
+info$output_dir <- "../../output/STImage-1K4M/Visium/patch/"
+write.csv(info, "create_patches_input.csv", row.names = F)
+ 
+
+
+###############
+###############
+setwd("/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/ST")
+fns <- list.files("/Users/zhiningsui/GitHub/STImage-1K4M/ST/coord")
+ids <- gsub("_coord.csv", "", fns)
+info <- data.frame(sample_id = ids)
+info$spatial_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/ST/coord/", info$sample_id, "_coord.csv")
+all(file.exists(info$spatial_path))
+info$image_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/ST/image/", info$sample_id, ".png")
+all(file.exists(info$image_path))
+
+for (id in info$sample_id ) {
+  sp <- read.csv(info[info$sample_id == id, "spatial_path"])
+  info[info$sample_id == id, "diameter"] <- unique(sp$r) * 2
+}
+
+info$pxl_x_col <- 3
+info$pxl_y_col <- 2
+info$barcode_col <- 1
+info$output_dir <- "../../output/STImage-1K4M/Visium/patch/"
+write.csv(info, "create_patches_input.csv", row.names = F)
 

@@ -210,7 +210,7 @@ def create_patches(samples_df, output_format = 'jpg'):
         
         try:
             # load spatial information
-            sp = pd.read_csv(spatial_path, header=None, index_col=None)
+            sp = pd.read_csv(spatial_path, header=0, index_col=None)
             sp.columns = [f'col_{i+1}' for i in range(sp.shape[1])]
             rename_dict = {
                f'col_{barcode_col}': 'barcode',
@@ -253,14 +253,17 @@ def create_patches(samples_df, output_format = 'jpg'):
                 diameter = diameter
             
 
-            # load barcodes for the filtered matrix (in-tissue spots)
-            barcodes_df = pd.read_csv(gzip.open(barcode_path, 'rt'), sep='\t', header=None, index_col=None)
-            if barcodes_df.shape[1] == 1:
-                barcodes = barcodes_df[0].tolist()
-            else: # if there is no separate barcodes file, but only has the filtered matrix file.
-                barcodes = [x for x in barcodes_df[0].tolist() if str(x) != 'nan']
-            # extract spatial information of the filtered spots by matching barcodes
-            sp_filtered = sp[sp["barcode"].isin(barcodes)]
+            # load barcodes for the filtered matrix (in-tissue spots) if exists
+            if not pd.isna(barcode_path):
+                barcodes_df = pd.read_csv(gzip.open(barcode_path, 'rt'), sep='\t', header=None, index_col=None)
+                if barcodes_df.shape[1] == 1:
+                    barcodes = barcodes_df[0].tolist()
+                else: # if there is no separate barcodes file, but only has the filtered matrix file.
+                    barcodes = [x for x in barcodes_df[0].tolist() if str(x) != 'nan']
+                # extract spatial information of the filtered spots by matching barcodes
+                sp_filtered = sp[sp["barcode"].isin(barcodes)]
+            else:
+                sp_filtered = sp
             
             os.makedirs(output_dir, exist_ok=True)
             
@@ -291,11 +294,11 @@ def create_patches(samples_df, output_format = 'jpg'):
             print(f'Error processing sample {sample_id}: {e}')
     
 def main():
-    INPUT_CSV = '../../data/Wu_2021/create_patches_input.csv'  
+    # INPUT_CSV = '../../data/Wu_2021/create_patches_input.csv'  
     # INPUT_CSV = '../../data/He_2020/create_patches_input.csv' 
     # INPUT_CSV = '../../data/10X/create_patches_input.csv'  
+    INPUT_CSV = '/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/Visium/create_patches_input.csv'
     
-    INPUT_CSV = 'create_patches_input.csv'  
     samples_df = pd.read_csv(INPUT_CSV)
 
     required_columns = ['sample_id', 'image_path', 'diameter', 'spatial_path', 'barcode_path', 'output_dir',
