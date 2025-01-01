@@ -703,49 +703,9 @@ ggplot(spot_df, aes(x = Observed, y = Predicted)) +
   geom_point(alpha = 0.5)
 
 
-setwd("/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/Visium")
-input <- read.csv("create_patches_input.csv")[,-1]
-fns <- list.files("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/coord")
-
-ids <- gsub("_coord.csv", "", fns)
-info <- input[input$sample_id %in% ids, ]
-info$spatial_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/coord/", info$sample_id, "_coord.csv")
-all(file.exists(info$spatial_path))
-info$image_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/Visium/image/", info$sample_id, ".png")
-all(file.exists(info$image_path))
-
-for (id in info$sample_id ) {
-  sp <- read.csv(info[info$sample_id == id, "spatial_path"])
-  info[info$sample_id == id, "diameter"] <- unique(sp$r) * 2
-}
-
-info$pxl_x_col <- 3
-info$pxl_y_col <- 2
-info$barcode_col <- 1
-info$output_dir <- "../../output/STImage-1K4M/Visium/patch/"
-write.csv(info, "create_patches_input.csv", row.names = F)
- 
 
 
-###############
-###############
-setwd("/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/ST")
-fns <- list.files("/Users/zhiningsui/GitHub/STImage-1K4M/ST/coord")
-ids <- gsub("_coord.csv", "", fns)
-info <- data.frame(sample_id = ids)
-info$spatial_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/ST/coord/", info$sample_id, "_coord.csv")
-all(file.exists(info$spatial_path))
-info$image_path <- paste0("/Users/zhiningsui/GitHub/STImage-1K4M/ST/image/", info$sample_id, ".png")
-all(file.exists(info$image_path))
 
-for (id in info$sample_id ) {
-  sp <- read.csv(info[info$sample_id == id, "spatial_path"])
-  info[info$sample_id == id, "diameter"] <- unique(sp$r) * 2
-}
 
-info$pxl_x_col <- 3
-info$pxl_y_col <- 2
-info$barcode_col <- 1
-info$output_dir <- "../../output/STImage-1K4M/Visium/patch/"
-write.csv(info, "create_patches_input.csv", row.names = F)
+
 

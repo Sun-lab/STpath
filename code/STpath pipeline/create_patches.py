@@ -185,8 +185,8 @@ def plot_diff(adjacent_coords, coords_fn):
     ).set(title=coords_fn)
     plt.show()
     
-    
-def create_patches(samples_df, output_format = 'jpg'):
+
+def create_patches(samples_df, output_format = 'jpg', include_prefix = False):
     """
     Create patches for each filtered spot in the specified format.
     Args:
@@ -285,11 +285,16 @@ def create_patches(samples_df, output_format = 'jpg'):
                 x, y = centerX - patch_radius, centerY - patch_radius
                 cropped_img = slide_rgb[round(y):round(y + 2 * patch_radius), round(x):round(x + 2 * patch_radius)]
                 
+                if include_prefix:
+                    output_fn = f'{output_dir}/{sample_id}_{spot_row["barcode"]}'
+                else: 
+                    output_fn = f'{output_dir}/{spot_row["barcode"]}'
+                
                 if output_format == "tiff":
-                    tiff.imwrite(f'{output_dir}/{sample_id}_{spot_row["barcode"]}.tif', cropped_img)
+                    tiff.imwrite(f'{output_fn}.tif', cropped_img)
                 elif output_format == "jpg":
-                    Image.fromarray(cropped_img).save(f'{output_dir}/{sample_id}_{spot_row["barcode"]}.jpg', "JPEG", quality=100)
-                print(f'Created patch for spot: {sample_id}_{spot_row["barcode"]} in {output_format} format')
+                    Image.fromarray(cropped_img).save(f'{output_fn}.jpg', "JPEG", quality=100)
+                print(f'Created patch for spot: {output_fn} in {output_format} format')
         except Exception as e:
             print(f'Error processing sample {sample_id}: {e}')
     
@@ -297,7 +302,7 @@ def main():
     # INPUT_CSV = '../../data/Wu_2021/create_patches_input.csv'  
     # INPUT_CSV = '../../data/He_2020/create_patches_input.csv' 
     # INPUT_CSV = '../../data/10X/create_patches_input.csv'  
-    INPUT_CSV = '/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/Visium/create_patches_input.csv'
+    INPUT_CSV = '/Users/zhiningsui/GitHub/STpath/data/STImage-1K4M/create_patches_input_brca.csv'
     
     samples_df = pd.read_csv(INPUT_CSV)
 
