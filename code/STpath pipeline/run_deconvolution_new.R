@@ -14,7 +14,7 @@ library(EnsDb.Hsapiens.v79)
 library(dplyr)
 library(grid)
 
-source("func_deconvolution.R")
+source("deconvolution.R")
 
 # Set directories 
 sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/data/scRNASeq/"
@@ -98,12 +98,7 @@ visualize_proportions(st_meta = st_meta,
 
 
 # Create input csv file for STpath pipeline -------------------------------
-
-STpath_input_dirs <- list(
-  He = "../../data/He_2020/",
-  `10x` = "../../data/10X/",
-  Wu = "../../data/Wu_2021/"
-)
+STpath_input_dir <- "/Users/zhiningsui/GitHub/STpath/data/STimage-1K4M/"
 
 for (dataset in names(output_dirs)) {
   prop_files = list.files(output_dirs[[dataset]], pattern=".csv")

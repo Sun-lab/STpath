@@ -77,10 +77,19 @@ get_gene_symbols <- function(gene_ids) {
 #     - Proportion_<sampleID>.csv: Cell type proportions for each spot in the sample.
 # -----------------------------------------------------------------------------#
 
-run_deconvolution <- function(st_meta, spatial_location, output_dir, save_CARD_objs = T) {
+run_deconvolution <- function(st_meta, spatial_location, output_dir, cell_type_res = "celltype_major", save_CARD_objs = T) {
   
   for (i in 1:nrow(st_meta)) {
     s1 <- st_meta[i, "sid"]
+    if(file.exists(file.path(output_dir, sprintf("/Proportion_%s_%s.csv", s1, cell_type_res)))){
+      cat("=================================================\n")
+      cat(s1, "has been deconvoluted previously.\n")
+      next
+    } else{
+      cat("=================================================\n")
+      cat(s1, "\n")()
+    }
+    
     if(sum(colnames(st_meta) %in% "subtype")==0){
       type1 <- NA
     } else {
@@ -196,7 +205,6 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir, save_CARD_o
     cat(sprintf("dim(sc_count) for subtype %s:", type1), dim(sc_count_i), "\n")
     cat("dim(st_count): ", dim(st_count), "\n")
     # cell_type_res <- "Annotation"
-    cell_type_res <- "celltype_major"
     CARD_obj <- createCARDObject(
       sc_count = sc_count_i,
       sc_meta = sc_meta_i,
