@@ -20,9 +20,7 @@ for (id in sp_info$slide ) {
   sp <- read.csv(sp_info[sp_info$slide == id, "spatial_path"])
   sp_info[sp_info$slide == id, "diameter"] <- unique(sp$r) * 2
 }
-
 sp_info$count_matrix_dir <- file.path(sp_info$dir, "gene_exp", paste0(sp_info$slide, "_count.csv"))
-
 write.csv(sp_info, 
           "/Users/zhiningsui/GitHub/STpath/data/STimage-1K4M/create_patches_input.csv",
           row.names = F)
@@ -30,7 +28,6 @@ write.csv(sp_info,
 sp_info <- sp_info[sp_info$involve_cancer == "True" &
                      sp_info$species == "human" &
                      sp_info$tissue == "breast", ]
-
 write.csv(sp_info, 
           "/Users/zhiningsui/GitHub/STpath/data/STimage-1K4M/create_patches_input_brca.csv",
           row.names = F)
@@ -56,6 +53,7 @@ sc_dir <- "/Users/zhiningsui/Library/CloudStorage/Dropbox/st2image_data/Wu_2021/
 output_dir <- "../../output/STimage-1K4M/deconvolution/ST"
 
 tmp <- read.csv(st_meta$count_matrix_dir[170])
+
 
 # Prepare st_meta and spatial_location for each ST dataset ----------------
 st_meta_all <- list()
