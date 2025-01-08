@@ -77,7 +77,9 @@ get_gene_symbols <- function(gene_ids) {
 #     - Proportion_<sampleID>.csv: Cell type proportions for each spot in the sample.
 # -----------------------------------------------------------------------------#
 
-run_deconvolution <- function(st_meta, spatial_location, output_dir, cell_type_res = "celltype_major", save_CARD_objs = T) {
+run_deconvolution <- function(sc_count, sc_meta,
+                              st_meta, spatial_location, 
+                              output_dir, cell_type_res = "celltype_major", save_CARD_objs = T) {
   
   for (i in 1:nrow(st_meta)) {
     s1 <- st_meta[i, "sid"]
@@ -87,13 +89,19 @@ run_deconvolution <- function(st_meta, spatial_location, output_dir, cell_type_r
       next
     } else{
       cat("=================================================\n")
-      cat(s1, "\n")()
+      cat(s1, "\n")
     }
     
     if(sum(colnames(st_meta) %in% "subtype")==0){
       type1 <- NA
     } else {
       type1 <- st_meta[i, "subtype"]
+      type1 <- ifelse(type1 %in% unique(sc_meta$subtype), type1, NA)
+    }
+    
+    if(is.na(type1)){
+      cat("Subtype unspecified/mismatched.\n")
+      next
     }
     
     # Load and prepare spatial transcriptomics count data

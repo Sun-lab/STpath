@@ -1,3 +1,5 @@
+rm(list = ls())
+setwd("~/GitHub/STpath/code/STpath pipeline")
 # Load necessary libraries
 library(ggplot2)
 library(data.table)
@@ -23,8 +25,6 @@ output_dir <- "/Users/zhiningsui/GitHub/STpath/output/STimage-1K4M/deconvolution
 
 # Load metadata for the ST data
 st_meta <- read.csv("/Users/zhiningsui/GitHub/STpath/data/STimage-1K4M/create_patches_input_brca.csv")
-st_meta$sid <- st_meta$slide
-
 # Create spatial location data
 spatial <- data.frame()
 for (i in 1:nrow(st_meta)) {
@@ -50,9 +50,14 @@ colnames(sc_count) <- sc_barcode$V1
 rownames(sc_count) <- sc_gene$symbol.sc
 sc_count <- as(sc_count, "sparseMatrix")
 sc_count <- as(sc_count, "CsparseMatrix")
+sc_count.log2trans <- log2(sc_count+1)
+sc_count.log2trans <- as(sc_count.log2trans, "sparseMatrix")
+sc_count.log2trans <- as(sc_count.log2trans, "CsparseMatrix")
 
 # Run deconvolution --------------------------------------
-run_deconvolution(st_meta = st_meta,
+run_deconvolution(sc_count = sc_count, 
+                  sc_meta = sc_meta,
+                  st_meta = st_meta,
                   spatial_location = spatial,
                   output_dir = output_dir,
                   save_CARD_objs = F)
@@ -68,15 +73,6 @@ colors = c(`B cells` = "#2a5fbd",
            Plasmablasts = "#F8766D",
            PVL = "#DB72FB",
            `T cells` = "#bd2a84")
-
-widths <- list(He = 9, `10x` = 14, Wu = 12)
-pie_radii <- list(He = 0.5, `10x` = 0.7, Wu = 0.7)
-point_sizes <- list(He = 3.5, `10x` = 1, Wu = 1)
-y_reverse_bool <- list(He = T, `10x` = F, Wu = F)
-x_reverse_bool <- list(He = F, `10x` = T, Wu = T)
-xy_flip_bool <- list(He = F, `10x` = T, Wu = T)
-
-
 visualize_proportions(st_meta = st_meta, 
                       output_dir = output_dir,
                       ct.visualize = c("B-cells",
@@ -95,50 +91,27 @@ visualize_proportions(st_meta = st_meta,
                       x_reverse = F,
                       xy_flip = T)
 
-
-
 # Create input csv file for STpath pipeline -------------------------------
 STpath_input_dir <- "/Users/zhiningsui/GitHub/STpath/data/STimage-1K4M/"
-
-for (dataset in names(output_dirs)) {
-  prop_files = list.files(output_dirs[[dataset]], pattern=".csv")
-  fn <- gsub("Proportion_|_celltype_major.csv", "", prop_files)
-  
-  lst <- lapply(prop_files, function(x){ read.csv(file.path(output_dirs[[dataset]], x), header=TRUE, stringsAsFactors=FALSE) })
-  lst <- lapply(lst, function(x) {
-    x$X1 <- x$X
-    x$X <- paste0(x$sid, "_", x$X1)
-    x$invasive.cancer = x$Cancer.Epithelial
-    x$stroma = x$Endothelial + x$PVL + x$CAFs
-    x$lymphocyte = x$T.cells + x$B.cells + x$Plasmablasts
-    x$others = x$Myeloid + x$Normal.Epithelial
-    return(x)
-  })
-  
-  lapply(seq_along(lst), function(i) {
-    write.csv(lst[[i]], file.path(STpath_input_dirs[[dataset]], 
-                                  paste0("Proportion_", fn[i], ".csv")))
-  })
-  
-  prop <- do.call("bind_rows", lst)
-  write.csv(prop, file.path(STpath_input_dirs[[dataset]], paste0("Proportion_", dataset, ".csv")))
-}
-
-
+prop_files = list.files(output_dir, pattern=".csv")
+fn <- gsub("Proportion_|_celltype_major.csv", "", prop_files)
+lst <- lapply(prop_files, function(x){ read.csv(file.path(output_dir, x), header=TRUE, stringsAsFactors=FALSE) })
+lst <- lapply(lst, function(x) {
+  x$invasive.cancer = x$Cancer.Epithelial
+  x$stroma = x$Endothelial + x$PVL + x$CAFs
+  x$lymphocyte = x$T.cells + x$B.cells + x$Plasmablasts
+  x$others = x$Myeloid + x$Normal.Epithelial
+  return(x)
+})
+lapply(seq_along(lst), function(i) {
+  write.csv(lst[[i]], file.path(STpath_input_dir, 
+                                paste0("Proportion_", fn[i], ".csv")))
+})
+prop <- do.call("bind_rows", lst)
+write.csv(prop, file.path(STpath_input_dir, "Proportion_STimage-1K4M.csv"))
 
 
 # Predict expression from proportions -------------------------------------
-# Wu et data
-sc_count <- readMM(file.path(sc_dir, "count_matrix_sparse.mtx"))
-sc_meta <- read.csv(file = file.path(sc_dir, "metadata.csv"))
-rownames(sc_meta) <- sc_meta$X
-sc_gene <- read.csv(file = file.path(sc_dir, "count_matrix_genes.tsv"), sep = "\t", header = FALSE)
-colnames(sc_gene) <- "symbol.sc"
-sc_barcode <- read.csv(file = file.path(sc_dir, "count_matrix_barcodes.tsv"), sep = "\t", header = FALSE)
-colnames(sc_count) <- sc_barcode$V1
-rownames(sc_count) <- sc_gene$symbol.sc
-sc_count <- as(sc_count, "sparseMatrix")
-sc_count <- as(sc_count, "CsparseMatrix")
 
 avg_sc_ref <- list()
 for (subtype in unique(sc_meta$subtype)) {
@@ -157,18 +130,64 @@ for (subtype in unique(sc_meta$subtype)) {
   avg_sc_ref[[subtype]] <- avg_expr_type
 }
 
-st_meta <- st_meta_all$Wu
-output_dir <- output_dirs$Wu
-predicted_expr_list <- list()
-observed_st_expr_list <- list()
-sample_wise_cor <- list()
-gene_wise_cor <- list()
-for (i in 1:nrow(st_meta)) {
-  # Retrieve the reference average expression matrix for the specific cell subtype
-  avg_type_ref <- avg_sc_ref[[st_meta[i, "subtype"]]]
-  # Get the sample ID for the current iteration
-  s1 <- st_meta[i, "sid"]
-  # Read the cell type proportion data for the current sample
+avg_expr_type <- matrix(nrow = nrow(sc_count),
+                        ncol = length(unique(sc_meta$celltype_major)))
+colnames(avg_expr_type) <- unique(sc_meta$celltype_major)
+rownames(avg_expr_type) <- rownames(sc_count)
+for (ct in unique(sc_meta$celltype_major)) {
+  cells <- sc_meta[sc_meta$celltype_major == ct,]$X
+  expr <- sc_count[, cells]
+  avg_expr_type[, ct] <- rowMeans(expr)
+}
+avg_sc_ref[["All"]] <- avg_expr_type
+
+# log2 transformation
+for (subtype in unique(sc_meta$subtype)) {
+  cells2use <- which(sc_meta$subtype == subtype)
+  sc_count_i <- sc_count.log2trans[, cells2use]
+  sc_meta_i <- sc_meta[cells2use, ]
+  avg_expr_type <- matrix(nrow = nrow(sc_count_i),
+                          ncol = length(unique(sc_meta_i$celltype_major)))
+  colnames(avg_expr_type) <- unique(sc_meta_i$celltype_major)
+  rownames(avg_expr_type) <- rownames(sc_count_i)
+  for (ct in unique(sc_meta_i$celltype_major)) {
+    cells <- sc_meta_i[sc_meta_i$celltype_major == ct,]$X
+    expr <- sc_count_i[, cells]
+    avg_expr_type[, ct] <- rowMeans(expr)
+  }
+  avg_sc_ref[[paste0(subtype, ".log2trans")]] <- avg_expr_type
+}
+
+avg_expr_type <- matrix(nrow = nrow(sc_count.log2trans),
+                        ncol = length(unique(sc_meta$celltype_major)))
+colnames(avg_expr_type) <- unique(sc_meta$celltype_major)
+rownames(avg_expr_type) <- rownames(sc_count.log2trans)
+for (ct in unique(sc_meta$celltype_major)) {
+  cells <- sc_meta[sc_meta$celltype_major == ct,]$X
+  expr <- sc_count.log2trans[, cells]
+  avg_expr_type[, ct] <- rowMeans(expr)
+}
+avg_sc_ref[["All.log2trans"]] <- avg_expr_type
+
+save(avg_sc_ref, file = file.path(output_dir, "sc_ref_avg_ct_expr.rda"))
+
+load(file.path(output_dir, "sc_ref_avg_ct_expr.rda"))
+
+expr_pred_all <- list()
+expr_pred_all.log2trans <- list()
+expr_obs_all <- list()
+expr_obs_all.log2trans <- list()
+
+slides <- c("Human_Breast_Wu_06052021_Visium_1142243F",
+            "Human_Breast_Wu_06052021_Visium_1160920F",
+            "Human_Breast_Wu_06052021_Visium_CID4465",
+            "Human_Breast_Wu_06052021_Visium_CID44971",
+            "Human_Breast_Wu_06052021_Visium_CID4535")
+
+for (i in 1:length(slides)) {
+  s1 <- slides[i]
+  type1 <- st_meta[st_meta$sid == s1, "subtype"]
+  # s1 <- st_meta[i, "sid"]
   prop <- read.csv(file.path(output_dir, sprintf("/Proportion_%s_celltype_major.csv", s1)),
                    check.names = F)
   # Set the first column as rownames and clean up the proportion data
@@ -177,83 +196,135 @@ for (i in 1:nrow(st_meta)) {
     column_to_rownames("X") %>%
     dplyr::select(-sid) %>%
     t()
-  # Calculate predicted gene expression using matrix multiplication
-  predicted_expr <- avg_type_ref %*% prop
+  # Retrieve the reference average expression matrix
+  sc_ct_avg <- avg_sc_ref[[type1]]
+  sc_ct_avg <- sc_ct_avg[, rownames(prop)]
+  # Calculate predicted gene expression
+  predicted_expr <- sc_ct_avg %*% prop
   # Store the predicted expression in a list
-  predicted_expr_list[[s1]] <- predicted_expr
+  expr_pred_all[[s1]] <- predicted_expr
+  
+  # Retrieve the reference average expression matrix
+  sc_ct_avg <- avg_sc_ref[[paste0(type1, ".log2trans")]]
+  sc_ct_avg <- sc_ct_avg[, rownames(prop)]
+  # Calculate predicted gene expression
+  predicted_expr <- sc_ct_avg %*% prop
+  # Store the predicted expression in a list
+  expr_pred_all.log2trans[[s1]] <- predicted_expr
+  
+  gc()
   
   # Read the spatial transcriptomics count matrix for the sample
-  stdata_s <- readMM(st_meta[i, "count_matrix_dir"])
-  # Handle missing column or row names for the count matrix
-  if(is.null(colnames(stdata_s)) || is.null(rownames(stdata_s))){
-    barcode <- read.table(file = gzfile(st_meta[i, "barcode_dir"]),
-                          sep = '\t', header = FALSE)
-    feature <- read.table(file = gzfile(st_meta[i, "feature_dir"]),
-                          sep = '\t', header = FALSE)
-    barcode_names <- barcode$V1
-    # feature_names <- feature$V1
-    feature_names <- feature[, sapply(feature, function(column) !("Gene Expression" %in% column) && !any(grepl("^ENSG", column)))]
-    
-    # Assign to the dimension with same length.
-    if (ncol(stdata_s) == length(barcode_names) && nrow(stdata_s) == length(feature_names)) {
-      colnames(stdata_s) <- barcode_names
-      rownames(stdata_s) <- feature_names
-    } else if (nrow(stdata_s) == length(barcode_names) && ncol(stdata_s) == length(feature_names)) {
-      rownames(stdata_s) <- barcode_names
-      colnames(stdata_s) <- feature_names
-    } else {
-      cat("The lengths of the barcode or feature names do not match the dimensions of the matrix.\n")
-    }
-  }
-  # Convert the matrix to a sparse format for efficient computation
+  stdata_s <- read.csv(st_meta[st_meta$sid == s1, "count_matrix_dir"]) %>%
+    remove_rownames %>% column_to_rownames(var="X") %>% t()
   stdata_s <- as(stdata_s, "sparseMatrix")
   stdata_s <- as(stdata_s, "CsparseMatrix")
+  stdata_s.log2trans <- log2(stdata_s+1)
+  stdata_s.log2trans <- as(stdata_s.log2trans, "sparseMatrix")
+  stdata_s.log2trans <- as(stdata_s.log2trans, "CsparseMatrix")
   # Extract the count matrix for columns (samples) matching the predicted expression matrix
   st_count <- stdata_s[, colnames(predicted_expr)]
-  observed_st_expr_list[[s1]] <- st_count
-  # # Find common genes between the predicted and observed matrices
-  # common_genes <- intersect(rownames(st_count), rownames(predicted_expr))
-  # st_count <- st_count[common_genes,]
-  # predicted_expr <- predicted_expr[common_genes, ]
-  # 
-  # # Compute sample-wise correlations directly
-  # column_wise_correlation <- sapply(seq_len(ncol(st_count)), function(i) {
-  #   cor(st_count[, i], predicted_expr[, i], method = "pearson")
-  # })
-  # names(column_wise_correlation) <- colnames(st_count)
-  # sample_wise_cor[[s1]] <- column_wise_correlation
-  # 
-  # # Compute gene-wise correlations directly
-  # row_wise_correlation <- sapply(seq_len(nrow(st_count)), function(i) {
-  #   cor(st_count[i, ], predicted_expr[i, ], method = "pearson")
-  # })
-  # names(row_wise_correlation) <- rownames(st_count)
-  # gene_wise_cor[[s1]] <- row_wise_correlation
+  expr_obs_all[[s1]] <- st_count
+  st_count <- stdata_s.log2trans[, colnames(predicted_expr)]
+  expr_obs_all.log2trans[[s1]] <- st_count
+
+  gc()
 }
 
-save(predicted_expr_list, observed_st_expr_list, gene_wise_cor, sample_wise_cor, avg_sc_ref, file = "card_predict_expression.rda")
+save(expr_pred_all, expr_obs_all, expr_pred_all.log2trans, expr_obs_all.log2trans, 
+     file = file.path(output_dir, "expr_pred_obs.rda"))
+load(file.path(output_dir, "expr_pred_obs.rda"))
+
+sample_wise_corr <- list()
+gene_wise_corr <- list()
+for (i in 1:3) {
+  s1 <- slides[i]
+  expr_pred <- expr_pred_all[[s1]]
+  expr_obs <- expr_obs_all[[s1]]
+  # Find common genes between the predicted and observed matrices
+  common_genes <- intersect(rownames(expr_obs), rownames(expr_pred))
+  expr_obs <- expr_obs[common_genes,]
+  expr_pred <- expr_pred[common_genes, ]
+  expr_obs <- expr_obs[, colnames(expr_pred)]
+  # Compute sample-wise correlations
+  colwise_corr <- sapply(seq_len(ncol(expr_obs)), function(i) {
+    cor(expr_obs[, i], expr_pred[, i], method = "pearson")
+  })
+  names(colwise_corr) <- colnames(expr_obs)
+  sample_wise_corr[[s1]] <- colwise_corr
+  # Compute gene-wise correlations
+  rowwise_corr <- sapply(seq_len(nrow(expr_obs)), function(i) {
+    cor(expr_obs[i, ], expr_pred[i, ], method = "pearson")
+  })
+  names(rowwise_corr) <- rownames(expr_obs)
+  gene_wise_corr[[s1]] <- rowwise_corr
+  
+  gc()
+}
+
+sample_wise_corr.log2trans <- list()
+gene_wise_corr.log2trans <- list()
+for (i in 151:189) {
+  s1 <- st_meta[i, "sid"]
+  expr_pred <- expr_pred_all.log2trans[[s1]]
+  expr_obs <- expr_obs_all.log2trans[[s1]]
+  # Find common genes between the predicted and observed matrices
+  common_genes <- intersect(rownames(expr_obs), rownames(expr_pred))
+  expr_obs <- expr_obs[common_genes,]
+  expr_pred <- expr_pred[common_genes, ]
+  expr_obs <- expr_obs[, colnames(expr_pred)]
+  # Compute sample-wise correlations
+  colwise_corr <- sapply(seq_len(ncol(expr_obs)), function(i) {
+    cor(expr_obs[, i], expr_pred[, i], method = "pearson")
+  })
+  names(colwise_corr) <- colnames(expr_obs)
+  sample_wise_corr.log2trans[[s1]] <- colwise_corr
+  # Compute gene-wise correlations
+  rowwise_corr <- sapply(seq_len(nrow(expr_obs)), function(i) {
+    cor(expr_obs[i, ], expr_pred[i, ], method = "pearson")
+  })
+  names(rowwise_corr) <- rownames(expr_obs)
+  gene_wise_corr.log2trans[[s1]] <- rowwise_corr
+}
+
+
+sample_wise_corr1 <- sample_wise_corr
+gene_wise_corr1 <- gene_wise_corr
+sample_wise_corr.log2trans1 <- sample_wise_corr.log2trans
+gene_wise_corr.log2trans1 <- gene_wise_corr.log2trans
+
+
+load("corr_pred_obs.rda")
+sample_wise_corr <- c(sample_wise_corr1, sample_wise_corr)
+gene_wise_corr <- c(gene_wise_corr1, gene_wise_corr)
+sample_wise_corr.log2trans <- c(sample_wise_corr.log2trans1, sample_wise_corr.log2trans)
+gene_wise_corr.log2trans <- c(gene_wise_corr.log2trans1, gene_wise_corr.log2trans)
+
+save(sample_wise_corr, gene_wise_corr, 
+     sample_wise_corr.log2trans, gene_wise_corr.log2trans, 
+     file = "corr_pred_obs.rda")
 
 cat("Summary of sample-wise correlations:\n")
-sapply(sample_wise_cor, summary)
-par(mfrow = c(2,3))
-hist(sample_wise_cor$`1142243F`, main = "Sample-wise Correlation for 1142243F", 
-     xlab = "Correlation",  breaks = 30, xlim = c(0,1))
-hist(sample_wise_cor$`1160920F`, main = "Sample-wise Correlation for 1160920F", 
-     xlab = "Correlation", breaks = 30, xlim = c(0,1))
-hist(sample_wise_cor$CID4290, main = "Sample-wise Correlation for CID4290", 
-     xlab = "Correlation", breaks = 30, xlim = c(0,1))
-hist(sample_wise_cor$CID4465, main = "Sample-wise Correlation for CID4465", 
-     xlab = "Correlation", breaks = 30, xlim = c(0,1))
-hist(sample_wise_cor$CID44971, main = "Sample-wise Correlation for CID44971", 
-     xlab = "Correlation", breaks = 30, xlim = c(0,1))
-hist(sample_wise_cor$CID4535, main = "Sample-wise Correlation for CID4535", 
-     xlab = "Correlation", breaks = 30, xlim = c(0,1))
+sapply(sample_wise_corr, summary)
 
+pdf("sample_wise_corr.pdf", width = 15, height = 15)
+par(mfrow = c(3,3))
+for (i in 1:length(sample_wise_corr)) {
+  hist(sample_wise_corr[[i]], main = paste0("Sample-wise Correlation for ", names(sample_wise_corr)[i]), 
+       xlab = "Correlation",  breaks = 30, xlim = c(0,1))
+}
+dev.off()
+
+i = 1
+hist(sample_wise_corr[[i]], main = paste0("Spot-wise Correlation for ", names(sample_wise_corr)[i]), 
+     xlab = "Correlation",  breaks = 30, xlim = c(0,1))
+hist(gene_wise_corr[[i]], main = paste0("Gene-wise Correlation for ", names(sample_wise_corr)[i]), 
+     xlab = "Correlation",  breaks = 30, xlim = c(0,1))
 
 spot <- names(sort(sample_wise_cor$`1142243F`, decreasing = T)[1])
 
-spot_df <- data.frame(cbind( predicted_expr_list$`1142243F`[, spot],
-                             observed_st_expr_list$`1142243F`[, spot]))
+spot_df <- data.frame(cbind( expr_pred_all$`1142243F`[, spot],
+                             expr_obs_all$`1142243F`[, spot]))
 colnames(spot_df) <- c("Predicted", "Observed")
 spot_df$Predicted <- round(spot_df$Predicted)
 ggplot(spot_df, aes(x = Observed, y = Predicted)) +
